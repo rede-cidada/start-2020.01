@@ -63,7 +63,7 @@ console.log(elementTitle.innerTextß); // Programa Start 2020
 
 ### Selecionando elementos pelo nome
 
-A atributo HTML name se destinava originalmente a atribuir nomes a elementos de formulário e o valor desse atributo é usado quando dados de formulário são enviados para um servidor. Assim como o atributo id, name atribui um nome a um elemento. Ao contrário de id, contudo, o valor de um atributo name não precisa ser único: vários elementos podem ter o mesmo nome e isso é comum no caso de botões de seleção e caixa de seleção em formulários web. Além disso ao contrário de id, o atributo name é válido somento em alguns elementos HTML, incluindo formulários, elementos de formulário, tag iframe e tag img.
+A atributo HTML name se destinava originalmente a atribuir nomes a elementos de formulário e o valor desse atributo é usado quando dados de formulário são enviados para um servidor. Assim como o atributo id, name atribui um nome a um elemento. Ao contrário de id, contudo, o valor de um atributo name não precisa ser único: vários elementos podem ter o mesmo nome e isso é comum no caso de botões de seleção e caixa de seleção em formulários web. Além disso ao contrário de id, o atributo name é válido somente em alguns elementos HTML, incluindo formulários, elementos de formulário, tag iframe e tag img.
 
 ```markup
 <!-- HTML -->
