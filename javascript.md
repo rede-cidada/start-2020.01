@@ -566,10 +566,17 @@ myButton.onclick = function() {
 
 ### Arrow functions
 
-Sintaxe curta em relação a function expression . Basta remover a palavra chave function e adicionar a seta   =&gt; após os argumentos.
+O ES6 introduziu a _sintaxe da função de seta_  \(Arrow function\), uma maneira mais curta de escrever funções usando a `() =>`notação especial 
+
+As funções de seta eliminam a necessidade de digitar a palavra chave`function` toda vez que você precisar criar uma função. Em vez disso, você primeiro inclui os parâmetros dentro do `( )`e, em seguida, adiciona uma seta `=>`que aponta para o corpo da função cercado `{ }`desta maneira:
+
+É importante estar familiarizado com as várias maneiras de escrever funções, porque você encontrará cada uma delas ao ler outro código JavaScript.
 
 ```javascript
-
+const rectangleArea = (width, height) => {
+  const area = width * height;
+  return area;
+};
 ```
 
 ### Objetos
