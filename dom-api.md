@@ -110,11 +110,13 @@ const items = document.getElementsByTagName('li');
 
 ### Métodos `node`
 
-![M&#xE9;todos pra navegar pela &#xE1;rvore do DOM](.gitbook/assets/image%20%282%29.png)
+![M&#xE9;todos pra navegar pela &#xE1;rvore do DOM.](.gitbook/assets/image%20%282%29.png)
 
 Tenho certeza de que poderia escrever alguns parágrafos sobre os diferentes métodos de acessar "nós" no DOM, mas acho que uma visão geral básica das possibilidades será suficiente para nossos propósitos aqui. Um "nó" é essencialmente qualquer elemento da sua página na estrutura do DOM, incluindo espaço em branco e texto entre tags HTML.
 
 Os diferentes métodos de nó disponíveis através da manipulação do DOM são os seguintes:
+
+![Estrutura de um elemento no DOM.](.gitbook/assets/image%20%283%29.png)
 
 ```javascript
 node.childNodes
