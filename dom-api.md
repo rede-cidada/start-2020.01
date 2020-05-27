@@ -27,27 +27,27 @@ Vamos converter os elementos HTML do código abaixo em uma árvore de objetos DO
 </html>
 ```
 
-
-
 ![Representa&#xE7;&#xE3;o da &#xE1;rvore de objetos do DOM.](.gitbook/assets/image.png)
 
-E como você pode ver, o primeiro elemento `<html>` no código é o nó mãe da árvore, enquanto os elementos `<head>` e `<body>` são nós filhos do nó mãe `<html>`. O `<title>` e os `<meta>` são filhos do elemento `<head>`, enquanto os elementos `<h1>` e o  `<p>` são nós filhos do elemento `<body>`. Se você já ouviu falar sobre a árvore genealógica em biologia, pense na árvore de objetos DOM como uma réplica semelhante da árvore genealógica
+E como você pode ver, o primeiro elemento `<html>` no código é o nó mãe da árvore, enquanto os elementos `<head>` e `<body>` são nós filhos do nó mãe `<html>`. O `<title>` e os `<meta>` são filhos do elemento `<head>`, enquanto os elementos `<h1>` e o `<p>` são nós filhos do elemento `<body>`. Se você já ouviu falar sobre a árvore genealógica em biologia, pense na árvore de objetos DOM como uma réplica semelhante da árvore genealógica
 
 ## Acessando o DOM <a id="How_Do_I_Access_the_DOM.3F"></a>
 
 > Você não precisa fazer nada de especial para começar a usar o DOM, todo navegador usa um modelo de objeto de documento para tornar as páginas da web acessíveis via JavaScript.
-
 
 ### Métodos de acesso DOM
 
 O DOM possui muitos métodos, são eles que fazem a ligação entre os nodes \(elementos\) e os eventos. Vamos estudar os métodos mais usados lembrando que existem muitos outros e você pode ver todos [nesse link](https://developer.mozilla.org/en-US/docs/Web/API/Document).
 
 ### Selecionando elementos pela identificação
-Qualquer elemento HTML pode ter um atributo id. O valor desse atributo deve ser único dentro do documento - dois elementos no mesmo documento não podem ter a mesma identificação. Você pode selecionar um elemento com base nessa identificação exclusiva com o método getElementById() do objeto document.
-```HTML
+
+Qualquer elemento HTML pode ter um atributo id. O valor desse atributo deve ser único dentro do documento - dois elementos no mesmo documento não podem ter a mesma identificação. Você pode selecionar um elemento com base nessa identificação exclusiva com o método getElementById\(\) do objeto document.
+
+```markup
 <h1 id="title">Programa Start</h1>
 ```
-```JS
+
+```javascript
 // index.js
 const elementTitle = document.getElementById("title");
 
@@ -62,14 +62,17 @@ console.log(elementTitle.innerTextß); // Programa Start 2020
 ```
 
 ### Selecionando elementos pelo nome
+
 A atributo HTML name se destinava originalmente a atribuir nomes a elementos de formulário e o valor desse atributo é usado quando dados de formulário são enviados para um servidor. Assim como o atributo id, name atribui um nome a um elemento. Ao contrário de id, contudo, o valor de um atributo name não precisa ser único: vários elementos podem ter o mesmo nome e isso é comum no caso de botões de seleção e caixa de seleção em formulários web. Além disso ao contrário de id, o atributo name é válido somento em alguns elementos HTML, incluindo formulários, elementos de formulário, tag iframe e tag img.
-```HTML
+
+```markup
 <!-- HTML -->
 <input type="radio" name="techs" value="react"/>
 <input type="radio" name="techs" value="vue"/>
 <input type="radio" name="techs" value="angular"/>
 ```
-```JS
+
+```javascript
 //
 // JavaScript
 //
@@ -85,12 +88,13 @@ console.log(elementos[2].value); // angular
 // Podemos alterar esses valores também:
 elementos[2].value = "svelt"
 console.log(elementos[2].value); // svelt
-
 ```
 
 ### Selecionando elementos pela tag
-```getElementsByTagName``` permite você percorrer o DOM procurando por todos os elementos em sua página com um nome de tag especificado. Aqui está a sintaxe:
-```HTML
+
+`getElementsByTagName` permite você percorrer o DOM procurando por todos os elementos em sua página com um nome de tag especificado. Aqui está a sintaxe:
+
+```markup
 <ul>
   <li>React</li>
   <li>Vue</li>
@@ -98,16 +102,21 @@ console.log(elementos[2].value); // svelt
   <li>Angular</li>
 </ul>
 ```
-```JS
+
+```javascript
 const items = document.getElementsByTagName('li');
-// HTMLCollection(4) [li, li, li, li]
+// HTMLCollection(4) [li, li, li, li]
 ```
 
-### Métodos ```node```
+### Métodos `node`
+
+![M&#xE9;todos pra navegar pela &#xE1;rvore do DOM](.gitbook/assets/image%20%282%29.png)
+
 Tenho certeza de que poderia escrever alguns parágrafos sobre os diferentes métodos de acessar "nós" no DOM, mas acho que uma visão geral básica das possibilidades será suficiente para nossos propósitos aqui. Um "nó" é essencialmente qualquer elemento da sua página na estrutura do DOM, incluindo espaço em branco e texto entre tags HTML.
 
 Os diferentes métodos de nó disponíveis através da manipulação do DOM são os seguintes:
-```JS
+
+```javascript
 node.childNodes
 node.firstChild
 node.lastChild
@@ -115,8 +124,10 @@ node.parentNode
 node.nextSibling
 node.previousSibling
 ```
-Em cada exemplo acima, o ``node`` seria o objeto que você está fazendo referência. Vamos ilustrar a diversidade desses métodos usando um exemplo simples:
-```HTML
+
+Em cada exemplo acima, o `node` seria o objeto que você está fazendo referência. Vamos ilustrar a diversidade desses métodos usando um exemplo simples:
+
+```markup
 <ul id="list">
   <li class="primeiro-item">React</li>
   <li>Vue</li>
@@ -124,17 +135,21 @@ Em cada exemplo acima, o ``node`` seria o objeto que você está fazendo referê
   <li>Angular</li>
 </ul>
 ```
+
 > Podemos acessar o primeiro item lista acima usando qualquer uma das três opções a seguir:
 
-```JS
+```javascript
 const minhaListaDeItens = document.getElementById("list"); 
 const meuPrimeiroItem = minhaListaDeItens.childNodes[1].className; // primeiro-item
 ```
-```JS
+
+```javascript
 const minhaListaDeItens = document.getElementById("list"); 
 const meuPrimeiroItem = minhaListaDeItens.firstElementChild.className; // primeiro-item
 ```
-```JS
+
+```javascript
 const minhaListaDeItens = document.getElementById("list"); 
 const meuPrimeiroItem = minhaListaDeItens.firstChild.nextSibling.className; // primeiro-item
 ```
+
