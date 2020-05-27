@@ -585,7 +585,7 @@ const name = parametroOne => {
 };
 
 // Quando a funcao tiver apenas um parametro, nao é 
-// necessário ter os parênteses
+// necessário ter os parênteses, mas se quiser colocar, tudo bem!
 ```
 
 ```javascript
