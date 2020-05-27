@@ -236,3 +236,61 @@ const proximoIrmao = terceiroItem.nextElementSibling // <li class="item-da-lista
 
 ### Acessando os atributos
 
+Os elementos HTML consistem em um nome de tag e um conjunto de pares nome/valor conhecidos como atributos. Por exemplo, o elemento ```<a>``` que define um hiperlink utiliza o valor de seu atributo ```href``` como destino do link.
+
+```HTML
+<a href=https://programastart2020.gitbook.io/programa-start/r" class="um-link-qualquer">
+  Vem aprender com a gente!
+</a>
+```
+
+Os valores de atributo dos elementos HTML estão disponíveis como propriedades dos objetos ```HTMLElement``` que representam esses elementos. Dessa forma:
+```JS
+const link = document.querySelector(".um-link-qualquer"); // retorna o elemento link acima
+const valorDoHref = link.href // "https://programastart2020.gitbook.io/programa-start/r%22"
+
+// Temos várias formas pra mudar os valores dos elementos no DOM, vamos testar alterando o atributo href do link acima:
+link.href = "https://github.com/rede-cidada"
+link.setAttribute("href", "https://github.com/simoneas02")
+```
+
+### Manipulando o DOM
+Podemos criar, inserir e excluir elementos da árvore DOM.
+
+A função ```document.createElement()``` aceita como parâmetro o nome da tag e retorna o elemento recém criado (mas ainda não inserido).
+
+Vamos adiconar um item na lista criada anteriormente com o valor ```Graphql```
+
+```JS
+
+// cria um <li> mas ainda não está inserido na árvore do DOM, então ainda não conseguimos ver na tela
+const itemDaLista = document.createElement("li"); //<li></li>
+
+// ```document.createTextNode()``` cria um nó de texto
+const texto = document.createTextNode("Graphql"); // "Graphql"
+
+// agora vamos adicionar o texto "Graphql" dentro do elemento <li>
+itemDaLista.appendChild(texto) // <li>Graphql</li>
+
+// vamos alocar a lista numa variável
+const lista = document.querySelector('.lista'); // <ul class="lista">...</ul>
+
+// agora adicionamos nosso item na nossa lista
+lista.appendChild(itemDaLista); // <li>Graphql</li>
+```
+
+Você pode ver [nesse link](http://devfuria.com.br/javascript/dom/) outras formas de adicionar e remover elementos no DOM.
+
+#### Resumo
+- ```document.createElement("nome-da-tag")``` para criar um elemento
+- ```document.createTextNode("algum texto")``` para criar um nó de texto
+- ```elemento_pai.appendChild(elemento_filho)``` para inserir um elemento na última posição
+- ```elemento_pai.insertBefore(elemento_filho, elemento_anterior)``` pra inserir um elemento em posição específica
+- ```elemento_pai.removeChild(elemento_filho)``` para remover um elemento
+
+## Referências
+- [Entendendo o DOM (Document Object Model)](https://tableless.com.br/entendendo-o-dom-document-object-model/)
+- [DOM - Document Object Model](http://devfuria.com.br/javascript/dom/)
+- [Khan Academy | Unidade: HTML/JS: tornando páginas web interativas](https://www.khanacademy.org/computing/computer-programming/html-js-jquery)
+- [Getting Started with the DOM](https://edidiongasikpo.com/getting-started-with-the-dom-ck9u4u82503or6es16p2rx7c1?source=weekly_email)
+- [10 Essential DOM Methods & Techniques for Practical JavaScript](https://www.impressivewebs.com/10-essential-dom-methods-techniques-for-practical-javascript/)
