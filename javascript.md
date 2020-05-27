@@ -570,7 +570,30 @@ O ES6 introduziu a _sintaxe da função de seta_  \(Arrow function\), uma maneir
 
 As funções de seta eliminam a necessidade de digitar a palavra chave`function` toda vez que você precisar criar uma função. Em vez disso, você primeiro inclui os parâmetros dentro do `( )`e, em seguida, adiciona uma seta `=>`que aponta para o corpo da função cercado `{ }`desta maneira:
 
-É importante estar familiarizado com as várias maneiras de escrever funções, porque você encontrará cada uma delas ao ler outro código JavaScript.
+É importante estar familiarizado com as várias maneiras de escrever funções, porque você encontrará cada uma delas ao ler outro código JavaScript. Vamos ver alguns exemplos:
+
+```javascript
+// Sem Parâmetro
+const name = () => {
+};
+```
+
+```javascript
+// Com um Parâmetro
+const name = parametroOne => {
+
+};
+
+// Quando a funcao tiver apenas um parametro, nao é 
+// necessário ter os parênteses
+```
+
+```javascript
+// // Com dois Parâmetro
+const name = (parametroOne,parametroTwo) => {
+
+};
+```
 
 ```javascript
 const rectangleArea = (width, height) => {
