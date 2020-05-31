@@ -168,3 +168,17 @@ Veja um exemplo da parte no nosso `index.html` onde temos a o `id` que estamos a
 </body>
 
 ```
+
+### 5. Criando o component <Figure />
+
+Continuando no desenvolvimento da nossa aplicação vamos criar o componente `<Figure />` que nada mais é que uma função que retorna uma imagem, veja abaixo a estrutura do nosso componente:
+
+```JS
+import React from "react"; // importando o react
+import reactImg from "./assets/img/react.png"; // importando a imagem
+
+// criando o cmponente <Figure/>
+export const Figure = () => <img className="image" src={reactImg} />;
+```
+
+Só um ponto de atenção de como a gente usa imagens no `React`, ela precisa ser importada recebendo um nome, que seria uma variável que vai representar o caminho da imagem, depois usamos essa `variável` no atributo `src` da tag `img`. Note que o valor repassado para o atributo deve ser entre chaves`{}`, já que se trata de um conteúdo `javascript` sendo utilizado dentro do `JSX`.
