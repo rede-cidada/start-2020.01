@@ -62,24 +62,22 @@ Aqui está nosso componente `Message`, que nada mais é que uma função que ret
 
 ```javascript
 // Message.js
-// importando o react
-import React from 'react'
+import React from 'react' // importando o react
 
 // criando nosso componente
 export const Message = () => <h1>Hello World React</h1>
 ```
 
-### 2. Usando o componente`<Message />`
+### 2. Usando o componente`<Message />` e criando o componente `<App />`
 
 Beleza, já temos nosso componente `Message`, agora em todas as páginas que a gente precisar mostrar essa mensagem é só importar nosso componente e usá-lo, veja o exemplo abaixo onde estamos usando ele no componente `App`:
 
 ```javascript
 // App.js
-import React from 'react'
+import React from 'react' // importando o react
+import { Message } from './Message' // importando nosso componente
 
-// importando nosso componente
-import { Message } from './Message'
-
+// criando o cmponente <App/>
 export const App = () => (
   <div className="App">
     {/* usando nosso componete */}
@@ -88,7 +86,7 @@ export const App = () => (
 )
 ```
 
-### O que é `JSX`?
+### 3. O que é `JSX`?
 
 Vamos dá uma pausa na nossa aplicação para entendermos o que é `JSX`.
 
@@ -100,9 +98,10 @@ Usamos o `JSX` no método `return` do nosso componente e sempre que for preciso 
 
 Vejamos no exemplo abaixo um componente com e sem o JSX:
 
-```javascript
-import React from "react";
-// exemplo de um componente de função com JSX
+```JS
+import React from "react"; // importando o react
+
+// exemplo de um componente de função usando JSX
 const Hello = (props) => {
   return <h1 className="title">Hello {props.name}!</h1>;
 };
@@ -123,11 +122,11 @@ const Hello = (props) => {
 
 Aqui vai algumas respostas dos itens que pontuamos na sessão: Criando o componente`<Message />`
 
-1. Todo componente React deve iniciar com a letra maiúscula.  
+1. Todo componente React deve iniciar com a letra maiúscula.
 
    1.1 Esse é a forma usada para identificar um elemento React e usar a função `createElement()` para criar um elemento React.
 
-2. Todo componente deve retornar um único elemento.  
+2. Todo componente deve retornar um único elemento.
 
    2.1 É assim que os parâmetros da função `createElement()` é definido, você pode brincar [aqui nesse link](https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&spec=false&loose=false&code_lz=MYewdgzgLgBAEgUwDZJDAvDAFABwE4g4QCUGAfDADwAWAjDMEgIYQQByTAtgugERQBLKEgS8yiFGgDe-QhAB0YLggC-AQkoB6OmQDcAKEOhIsAII4cGbKXQV9ASEoATAQDcy-mF--PqCJk4IeB7eoTCOEqgwStx8AEr-wFC8MJohYY7a_oHBnuHhlABmICBQQWQAsgEIMADuQtQwqK4IWsWl5Q5aLu5AA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.10.2&externalPlugins=) e verificar como ficaria complexo a criação de componentes React sem o uso do `JSX`
 
@@ -135,3 +134,37 @@ Aqui vai algumas respostas dos itens que pontuamos na sessão: Criando o compone
 
    3.1 Essa é a forma que a função `createElement()` usa para diferenciar javascript de simples textos.
 
+### 4. Usando o `ReactDOM.render()`
+
+Até o momento só declaramos alguns componentes porém ainda não conseguimos fazer com que os dados de fato apareça na página. Pra isso, devemos usar o método `ReactDOM.render()` que renderiza um elemento do React no DOM, você pode ler mais sobre ReactDOM [nesse link](https://pt-br.reactjs.org/docs/react-dom.html).
+
+O método `ReactDOM.render()` recebe dois parâmetros, o primeiro é o conteúdo que vai ser que vai ser apresentado na página e o segundo é onde no `DOM` esse conteúdo será inserido para então ser de fato apresentado na página.
+
+Aplicando a teoria acima na nossa aplicação, vamos usar o método `ReactDOM.render()` no arquivo `index.js` que é o primeiro arquivo a ser executado quando uma aplicação é inicializada, veja como utilizamos a cahmada no exemplo abaixo:
+
+```JS
+// index.js
+
+import React from "react"; // importando o react
+import ReactDOM from "react-dom"; // importando o ReactDom
+import { App } from "./App"; // importando nosso componente <App />
+
+// usando o ReactDOM.render()
+ReactDOM.render(
+  <App />, // 1º o conteúdo que vamos apresentar na página
+  document.getElementById("root"); // 2º onde vamos apresentar esse conteúdo
+);
+```
+
+Esse elemento que estamos acessando através do `id` está num arquivo chamado `index.html` e esse é o único aruivo `HTML` que temos na nossa aplicação e é nele que é inserido todos os componentes que criamos até agora.
+
+Veja um exemplo da parte no nosso `index.html` onde temos a o `id` que estamos acessando no código acima:
+
+```HTML
+// index.html
+
+<body>
+  <div id="root"></div> <!-- esse é o id que chamamos no ReactDOM.render() -->
+</body>
+
+```
