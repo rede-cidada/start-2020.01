@@ -22,7 +22,7 @@ Virtual DOM é uma técnica que o React usa pra atualizar a tela onde é constru
 
 Para entendermos os próximos conceitos vamos criar juntas essa pequena aplicação usando React.
 
-![Imagem da aplica&#xE7;&#xE3;o que vamos criar juntas nessa se&#xE7;&#xE3;o.](.gitbook/assets/image%20%284%29.png)
+![Imagem da aplica&#xE7;&#xE3;o que vamos criar juntas nessa se&#xE7;&#xE3;o.](.gitbook/assets/image%20%285%29.png)
 
 ### O que é componente?
 
@@ -36,6 +36,10 @@ Agora vamos tentar entender tudo isso através da nossa aplicação que conterá
 4. Existe uma lista de palavras que são reservadas do javascript que não conseguimos utilizá-las no retorno do nosso componente React, por exemplo `class` que usamos para por estilo no nosso componente é substituída por `className`.
 5. Componente `<App />` que retorna uma `<div>` com todos os componentes que criamos e na ordem que eles devem ser apresentados na tela.
 6. Por fim teremos o `index.js` que terá o método para de fato renderizar nosso componente `<App/>` no `DOM` e fazer com que o usuário possa visualizar nossa aplicação.
+
+Abaixo está uma representação da nossa aplicação dividida por componentes:
+
+![](.gitbook/assets/image%20%284%29.png)
 
 ### 1. Criando o componente`<Message />`
 
