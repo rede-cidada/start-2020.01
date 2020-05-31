@@ -31,8 +31,9 @@ Agora vamos tentar entender tudo isso através da nossa aplicação que conterá
 1. Componente `<Message />` que retorna um `<h1>` com uma mensagem.
 2. Componente `<Figure />` que retorna um `<img>` com uma imagem.
 3. Componente `<Button />` que retorna um `<button>` com um texto.
-4. Componente `<App />` que retorna uma `<div>` com todos os componentes que criamos e na ordem que eles devem ser apresentados na tela.
-5. Por fim teremos o `index.js` que terá o método para de fato renderizar nosso componente `<App/>` no `DOM` e fazer com que o usuário possa visualizar nossa aplicação.
+4. Existe uma lista de palavras que são reservadas do javascript que não conseguimos utilizá-las no retorno do nosso componente React, por exemplo `class` que usamos para por estilo no nosso componente é substituída por `className`.
+5. Componente `<App />` que retorna uma `<div>` com todos os componentes que criamos e na ordem que eles devem ser apresentados na tela.
+6. Por fim teremos o `index.js` que terá o método para de fato renderizar nosso componente `<App/>` no `DOM` e fazer com que o usuário possa visualizar nossa aplicação.
 
 ### 1. Criando o componente`<Message />`
 
@@ -41,10 +42,11 @@ Como já falamos, componentes são funções que retornam um elemento `React`, e
 Antes de iniciar a desenvolver nosso componente vamos ter alguns pontos de atenção, não se preocupe se não entender todos os conceitos agora, iremos entrar em detalhes sobre todos mais tarde:
 
 1. Todo componente React deve iniciar com a letra maiúscula.
-2. Todo componente React precisa importar a função `React`.
-3. No retorno do nosso componente, códigos javascript só funcionam se forem envolvidos por chaves.
+2. No retorno do nosso componente, códigos javascript só funcionam se forem envolvidos por chaves`{}`.
+3. Todo componente React precisa importar a função `React`.
 4. Todo componente deve retornar um único elemento, então fazendo uma analogia com o que aprendemos no `HTML`, o retorno de um componente React não pode conter irmãos nesse caso devemos envolvê-lo em um outro elemento, ou seja, no retorno de um componente React todos elementos tem sempre um único `pai`, veja o exemplo abaixo:
-5. ```markup
+
+   ```markup
      // Assim não funciona
      <div>...</div>
      <div>...</div>
@@ -61,10 +63,10 @@ Aqui está nosso componente `Message`, que nada mais é que uma função que ret
 ```javascript
 // Message.js
 // importando o react
-import React from "react";
+import React from 'react'
 
 // criando nosso componente
-export const Message = () => <h1>Hello World React</h1>;
+export const Message = () => <h1>Hello World React</h1>
 ```
 
 ### 2. Usando o componente`<Message />`
@@ -73,17 +75,57 @@ Beleza, já temos nosso componente `Message`, agora em todas as páginas que a g
 
 ```javascript
 // App.js
-import React from "react";
+import React from 'react'
 
 // importando nosso componente
-import { Message } from "./Message";
+import { Message } from './Message'
 
 export const App = () => (
   <div className="App">
-
     {/* usando nosso componete */}
     <Message />
   </div>
-);
+)
 ```
 
+### O que é `JSX`?
+
+Vamos dá uma pausa na nossa aplicação para entendermos o que é `JSX`.
+
+Para construir o virtual DOM é preciso criar uma sequência de instruções pra manipular a árvore do `DOM`. Construir com javascript a estrutura do HTML é um processo bem complexo, passamos por isso quando estudamos sobre a API do DOM. Por isso o time do React desenvolveu uma forma de escrever algo parecido com `HTML` porém que fosse traduzido facilmente para javascript, e isso é o `JSX`, ele tem uma estrutura muito parecida com `HTML` mas não é `HTML`, ele é convertido pra javascript que gera o virtual DOM.
+
+Você não consegue utilizar algumas palavras que são reservadas do javascript nos componentes React, por exemplo o atributo `class` no JSX a gente usa a palavra `className` porque no javascript `class` é reservada pra criação de classes. Veja [nesse link](https://pt-br.reactjs.org/docs/dom-elements.html) todas as palavras que são reservadas no javascript e qual as palavras que usamos para representá-las no React.
+
+Usamos o `JSX` no método `return` do nosso componente e sempre que for preciso usar código javascript dentro do `JSX`, o javascript precisa está envolvido por chaves`{}`. É comum usarmos javascript misturado com `JSX` pra retornarmos por exemplo valores dinâmicos usando variáveis, não se preocupe se até agora as coisas não estão fazendo muito sentido, veremos tudo isso na criação da nossa aplicação.
+
+Vejamos no exemplo abaixo um componente com e sem o JSX:
+
+```JS
+import React from "react";
+// exemplo de um componente de função
+const Hello = (props) => {
+  return <h1 className="title">Hello {props.name}!</h1>;
+};
+
+// o mesmo componente acima sem o uso do JSX
+const Hello = (props) => {
+  return React.createElement(
+    "h1", // o elemento que vai virar HTML
+    {
+      className: "title" // os atributos são passados nesse objeto
+    },
+    "Hello ", // aqui vai o conteúdo que ficará dentro do HTML
+    props.name,
+    "!"
+  );
+};
+```
+
+Aqui vai algumas respostas dos itens que pontuamos na sessão: Criando o componente`<Message />`
+
+1. Todo componente React deve iniciar com a letra maiúscula.  
+   1.1 Esse é a forma usada para identificar um elemento React e usar a função `createElement()` para criar um elemento react.
+2. Todo componente deve retornar um único elemento.  
+   2.1 É assim que os parâmetros da função `createElement()` é definido, você pode brincar [aqui nesse link](https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&spec=false&loose=false&code_lz=MYewdgzgLgBAEgUwDZJDAvDAFABwE4g4QCUGAfDADwAWAjDMEgIYQQByTAtgugERQBLKEgS8yiFGgDe-QhAB0YLggC-AQkoB6OmQDcAKEOhIsAII4cGbKXQV9ASEoATAQDcy-mF--PqCJk4IeB7eoTCOEqgwStx8AEr-wFC8MJohYY7a_oHBnuHhlABmICBQQWQAsgEIMADuQtQwqK4IWsWl5Q5aLu5AA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.10.2&externalPlugins=) e verificar como ficaria complexo a criação de componentes React sem o uso do `JSX`
+3. No retorno do nosso componente, códigos javascript só funcionam se forem envolvidos por chaves`{}`.
+   3.1 Essa é a forma que a função `createElement()` usa para diferenciar javascript de simples textos.
