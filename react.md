@@ -214,6 +214,8 @@ import { Button } from './Button' // importando nosso componente <Button />
 export const App = () => (
   <div className="app">
     <Figure />
+
+    {/* criando uma prop chamada "name" */}
     <Message name="React" />
 
     <div className="btn-groups">
@@ -224,6 +226,19 @@ export const App = () => (
     </div>
   </div>
 )
+```
+
+Alterando nosso componente `<Message />` para receber a prop `name`:
+
+```JSX
+import React from "react";
+
+// recebendo a prop como parâmetro
+export const Message = props => (
+
+  {/* usando o valor passado na prop "name" */}
+  <h1 className="message">Hello {props.name}!</h1>
+);
 ```
 
 Se você prestar atenção vai ver que usamos as props da mesma forma que atributos nas tags `HTML`, podemos dá qualquer nome para prop, mas o ideal é que seja algo que faça sentido com o que essa prop vai representar na sua página. No caso da nossa aplicação teremos três botões e cada um vai apresentar um nome de uma tecnologia. Essa é a forma que podemos passar dinamicamente valores entre os nossos componentes, se precisarmos usar esse mesmo botão em alguma outra página com o valor de Angular por exemplo, poderíamos usá-lo assim: `<Button tech="Angular" />` e magicamente teríamos um botão com um valor diferente na nossa página.
@@ -279,3 +294,41 @@ export class App extends Component {
   }
 }
 ```
+
+### 8. O que é `state` o React?
+
+Diferente das `props`, o `state` ou `estado` não é repassado ao componente e sim configurado dentro dele. Pense no estado como as propriedades de nossa classe que devem ser armazenadas para renderizarmos o componente da forma correta. Os estados só podem existir em componentes de classe e seus valores podem ser alterados, essas mudanças de valores são gerenciados pro vários métodos disponíveis em um componente do tipo classe e são guardados dentro da classe em um objeto usando essa sintaxe `state= {chave: 'valor'}`.
+
+Vamos tentar aplicar esse conceito à nossa aplicação, vamos alterar o componente `<Message />` para receber a prop name, e o valor dessa prop será repassado pelo state da classe `<App />`, ficou meio confuso, mas tente entender as palavras acima examinando as mudanção no código abaixo:
+
+```JS
+import React, { Component } from "react";
+import { Message } from "./Message";
+import { Figure } from "./Figure";
+import { Button } from "./Button";
+
+export class App extends Component {
+  // aqui criamos um estado
+  state = {
+    value: "React"
+  };
+
+  render() {
+    return (
+      <div className="app">
+        <Figure />
+
+        {/* agora usamos o valor do estado para repassar para o componente <Message /> */}
+        <Message name={this.state.value} />
+        <div className="btn-groups">
+          <Button tech="React" />
+          <Button tech="Javascript" />
+          <Button tech="JSX" />
+        </div>
+      </div>
+    );
+  }
+}
+```
+
+Para acessar os valores do nosso estado usamos a sintaxe `this.state.nome_da_propriedade`, no nosso exemplo acima, criamos uma propriedade chamada `value` (que poderia ser qualquer nome) e essa proriedade recebe o valor `React`, então em qualquer parte do código que eu precise usar esse valor eu posso acessá-lo assim: `this.state.value`
