@@ -331,4 +331,83 @@ export class App extends Component {
 }
 ```
 
-Para acessar os valores do nosso estado usamos a sintaxe `this.state.nome_da_propriedade`, no nosso exemplo acima, criamos uma propriedade chamada `value` (que poderia ser qualquer nome) e essa proriedade recebe o valor `React`, então em qualquer parte do código que eu precise usar esse valor eu posso acessá-lo assim: `this.state.value`
+Para acessar os valores do nosso estado usamos a variável `this.state.nome_da_propriedade`, no nosso exemplo acima, criamos uma propriedade chamada `value` (que poderia ser qualquer nome) e essa proriedade recebe o valor `React`, então em qualquer parte do código que eu precise usar esse valor eu posso acessá-lo assim: `this.state.value`
+
+### 9. Alterando o estado do nosso componente `<App />`
+
+Estamos quase no final da construção da nossa aplicação, o que precisamos fazer é:
+
+1. Quando um botão for clicado
+2. A mensagem irá alterar para `Hello + o nome do botão clicado`
+3. Então se clicarmos em `JSX`
+4. A mensagem será: `Hello JSX`
+
+Para fazer a ação acima vamos realizar as alterações abaixo no nosso componente `<App />`:
+
+- Criar uma função que recebe como parâmetro o valor do botão clicado;
+- Dentro dessa função alterar o valor do estado `value`, que agora receberá o valor desse botão;
+- Passar essa função como prop para o componente `<Button />`;
+- Usar essa prop no componente `<Button />`;
+
+O Reac não permite alterar o estado de um componente da mesma forma que alteramos uma variável comum, isso porque o estado é imutável, ou seja, ele nunca deve ser alterado e sempre deve ser sobreposto, pra isso o React tem a função `this.setState({ propriedade: valor})`, onde a propriedade é nome da propriedade que queremos alterar no nosso estado e o valor é a nova informação que queremos repassar para nossa propriedade.
+
+Aplicando o conceito acima no nosso componente `<App />`:
+
+```JS
+import React, { Component } from "react";
+import { Message } from "./Message";
+import { Figure } from "./Figure";
+import { Button } from "./Button";
+
+export class App extends Component {
+  state = {
+    value: "React"
+  };
+
+  // aqui estamos criando a nova função que recebe como parâmetro o valor do botão clicado
+  // e no retorno da função estamos alterando a propriedade "value"
+  handleClickTechnology = techName => this.setState({ value: techName });
+
+  render() {
+    return (
+      <div className="app">
+        <Figure />
+        <Message name={this.state.value} />
+        <div className="btn-groups">
+          <Button
+            tech="React"
+            {/* aqui estamos criando uma propriedade para o <Button /> que recebe como valor nossa função*/}
+            handleClickTechnology={() => this.handleClickTechnology("React")}
+          />
+          <Button
+            tech="Javascript"
+            handleClickTechnology={() =>
+              this.handleClickTechnology("Javascript")
+            }
+          />
+          <Button
+            tech="JSX"
+            handleClickTechnology={() => this.handleClickTechnology("JSX")}
+          />
+        </div>
+      </div>
+    );
+  }
+}
+```
+
+Chamando a função no `<Buttom />` através da nova propriedade:
+
+```JS
+import React from "react";
+
+export const Button = props => (
+  {/* aqui estamos passando a prop no evento onClick do botão*/}
+  <button className="btn" onClick={props.handleClickTechnology}>
+    {props.tech}
+  </button>
+);
+
+```
+
+Protinho, agora temos uma pequena aplicação com os conceitos básicos do React, agora sua atividade é criar qualquer coisa usando os conceitos aplicado aqui para praticar tudo o que foi passado, você pode acessar o [código completo aqui](https://codesandbox.io/s/hello-world-react-blc7h?file=/src/Button.js:0-158)
