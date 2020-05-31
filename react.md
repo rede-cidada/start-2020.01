@@ -20,7 +20,9 @@ Virtual DOM é uma técnica que o React usa pra atualizar a tela onde é constru
 
 ## Mão na massa
 
-Para entendermos os próximos conceitos vamos criar juntas uma pequena aplicação usando React.
+Para entendermos os próximos conceitos vamos criar juntas essa pequena aplicação usando React.
+
+![Imagem da aplica&#xE7;&#xE3;o que vamos criar juntas nessa se&#xE7;&#xE3;o.](.gitbook/assets/image%20%284%29.png)
 
 ### O que é componente?
 
@@ -98,7 +100,7 @@ Usamos o `JSX` no método `return` do nosso componente e sempre que for preciso 
 
 Vejamos no exemplo abaixo um componente com e sem o JSX:
 
-```JS
+```javascript
 import React from "react"; // importando o react
 
 // exemplo de um componente de função usando JSX
@@ -142,7 +144,7 @@ O método `ReactDOM.render()` recebe dois parâmetros, o primeiro é o conteúdo
 
 Aplicando a teoria acima na nossa aplicação, vamos usar o método `ReactDOM.render()` no arquivo `index.js` que é o primeiro arquivo a ser executado quando uma aplicação é inicializada, veja como utilizamos a cahmada no exemplo abaixo:
 
-```JS
+```javascript
 // index.js
 
 import React from "react"; // importando o react
@@ -160,20 +162,19 @@ Esse elemento que estamos acessando através do `id` está num arquivo chamado `
 
 Veja um exemplo da parte no nosso `index.html` onde temos a o `id` que estamos acessando no código acima:
 
-```HTML
+```markup
 // index.html
 
 <body>
   <div id="root"></div> <!-- esse é o id que chamamos no ReactDOM.render() -->
 </body>
-
 ```
 
-### 5. Criando o component <Figure />
+### 5. Criando o component
 
 Continuando no desenvolvimento da nossa aplicação vamos criar o componente `<Figure />` que nada mais é que uma função que retorna uma imagem, veja abaixo a estrutura do nosso componente:
 
-```JS
+```javascript
 import React from "react"; // importando o react
 import reactImg from "./assets/img/react.png"; // importando a imagem
 
@@ -187,7 +188,7 @@ Só um ponto de atenção de como a gente usa imagens no `React`, ela precisa se
 
 `Props` é forma de compartilhar informações entre os componentes React, para entender melhor esse conceito vamos criar o componente `<Button />` da nossa aplicação:
 
-```JS
+```javascript
 import React from "react"; // importando o react
 
 // criando o cmponente <Button/>
@@ -196,12 +197,11 @@ import React from "react"; // importando o react
 // estamos usando a propriedade chamada "tech" que foi um nome também que
 // escolhemos pra representar o valor apresentado em cada botão
 export const Button = props => <button className="btn">{props.tech}</button>;
-
 ```
 
 Agora vamos usar esse componente que criamos lá no nosso `<App />`
 
-```JS
+```javascript
 import React from "react";
 import { Message } from "./Message";
 import { Figure } from "./Figure";
@@ -223,3 +223,4 @@ export const App = () => (
 ```
 
 Se você prestar atenção vai ver que usamos as props da mesma forma que atributos nas tags `HTML`, podemos dá qualquer nome para prop, mas o ideal é que seja algo que faça sentido com o que essa prop vai representar na sua página. No caso da nossa aplicação teremos três botões e cada um vai apresentar um nome de uma tecnologia. Essa é a forma que podemos passar dinamicamente valores entre os nossos componentes, se precisarmos usar esse mesmo botão em alguma outra página com o valor de Angular por exemplo, poderíamos usá-lo assim: `<Button tech="Angular" />` e magicamente teríamos um botão com um valor diferente na nossa página.
+
