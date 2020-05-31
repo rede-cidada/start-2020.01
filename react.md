@@ -182,3 +182,44 @@ export const Figure = () => <img className="image" src={reactImg} />;
 ```
 
 Só um ponto de atenção de como a gente usa imagens no `React`, ela precisa ser importada recebendo um nome, que seria uma variável que vai representar o caminho da imagem, depois usamos essa `variável` no atributo `src` da tag `img`. Note que o valor repassado para o atributo deve ser entre chaves`{}`, já que se trata de um conteúdo `javascript` sendo utilizado dentro do `JSX`.
+
+### 6. O que é `Props` no React?
+
+`Props` é forma de compartilhar informações entre os componentes React, para entender melhor esse conceito vamos criar o componente `<Button />` da nossa aplicação:
+
+```JS
+import React from "react"; // importando o react
+
+// criando o cmponente <Button/>
+// repare que agora nosso componente recebe um parâmetro que chamamos de `props`
+// poderíamos dá qualquer nome, estamos usando a palavra "props" só por padrão mesmo
+// estamos usando a propriedade chamada "tech" que foi um nome também que
+// escolhemos pra representar o valor apresentado em cada botão
+export const Button = props => <button className="btn">{props.tech}</button>;
+
+```
+
+Agora vamos usar esse componente que criamos lá no nosso `<App />`
+
+```JS
+import React from "react";
+import { Message } from "./Message";
+import { Figure } from "./Figure";
+import { Button } from "./Button"; // importando nosso componente <Button />
+
+export const App = () => (
+  <div className="app">
+    <Figure />
+    <Message name="React" />
+
+    <div className="btn-groups">
+      {/* usando nosso componente e criando uma prop chamada "tech" */}
+      <Button tech="React" />
+      <Button tech="Javascript" />
+      <Button tech="JSX" />
+    </div>
+  </div>
+);
+```
+
+Se você prestar atenção vai ver que usamos as props da mesma forma que atributos nas tags `HTML`, podemos dá qualquer nome para prop, mas o ideal é que seja algo que faça sentido com o que essa prop vai representar na sua página. No caso da nossa aplicação teremos três botões e cada um vai apresentar um nome de uma tecnologia. Essa é a forma que podemos passar dinamicamente valores entre os nossos componentes, se precisarmos usar esse mesmo botão em alguma outra página com o valor de Angular por exemplo, poderíamos usá-lo assim: `<Button tech="Angular" />` e magicamente teríamos um botão com um valor diferente na nossa página.
