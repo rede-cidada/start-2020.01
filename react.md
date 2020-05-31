@@ -20,23 +20,23 @@ Virtual DOM é uma técnica que o React usa pra atualizar a tela onde é constru
 
 ## Mão na massa
 
-Para entendermos os próximos conceitos vamos criar juntas uma Pequena aplicação usando React.
+Para entendermos os próximos conceitos vamos criar juntas uma pequena aplicação usando React.
 
 ### O que é componente?
 
-As aplicações em React são baseadas em componentes que são pequenos blocos de códigos que podem ser reutilizados. Esses blocos são funções que podem receber dados de entrada como parâmetros e retornam um elemento React através do JSX e no final esses são transformados no DOM Virtual e mostrados na tela através do DOM.
+As aplicações em React são baseadas em componentes que são pequenos blocos de códigos que podem ser reutilizados. Esses blocos são funções que podem receber dados de entrada como parâmetros, retornam um elemento React através do `JSX` e no final esses são transformados no DOM Virtual e mostrados na tela através do `DOM`.
 
 Agora vamos tentar entender tudo isso através da nossa aplicação que conterá os seguintes componentes:
 
 1. Componente `<Message />` que retorna um `<h1>` com uma mensagem.
 2. Componente `<Figure />` que retorna um `<img>` com uma imagem.
 3. Componente `<Button />` que retorna um `<button>` com um texto.
-4. Componente `<App />` que retorna uma `<div>` com todos os componetes que criamos e na ordem que eles devem ser apresentados na tela.
-5. Por fim teremos o `index.js` que terá o método para de fato renderizar nosso componente `<App/>` no DOM e fazer com que o usuário possa visualizar nossa aplicação.
+4. Componente `<App />` que retorna uma `<div>` com todos os componentes que criamos e na ordem que eles devem ser apresentados na tela.
+5. Por fim teremos o `index.js` que terá o método para de fato renderizar nosso componente `<App/>` no `DOM` e fazer com que o usuário possa visualizar nossa aplicação.
 
 ### 1. Criando o componente`<Message />`
 
-Como já falamos, componetes são funções que retornam um elemento `React`, então bora tentar criar uma função para representar nosso componente `Message`.
+Como já falamos, componentes são funções que retornam um elemento `React`, então bora tentar criar uma função para representar nosso componente `Message`.
 
 Antes de iniciar a desenvolver nosso componente vamos ter alguns pontos de atenção, não se preocupe se não entender todos os conceitos agora, iremos entrar em detalhes sobre todos mais tarde:
 
@@ -44,22 +44,21 @@ Antes de iniciar a desenvolver nosso componente vamos ter alguns pontos de aten�
 2. Todo componente React precisa importar a função `React`.
 3. No retorno do nosso componente, códigos javascript só funcionam se forem envolvidos por chaves.
 4. Todo componente deve retornar um único elemento, então fazendo uma analogia com o que aprendemos no `HTML`, o retorno de um componente React não pode conter irmãos nesse caso devemos envolvê-lo em um outro elemento, ou seja, no retorno de um componente React todos elementos tem sempre um único `pai`, veja o exemplo abaixo:
+5. ```markup
+     // Assim não funciona
+     <div>...</div>
+     <div>...</div>
 
-- ```HTML
-    // Assim não funciona
-    <div>...</div>
-    <div>...</div>
-
-    // Assim funciona
-    <div>
-      <div>...</div>
-      <div>...</div>
-    </div>
-  ```
+     // Assim funciona
+     <div>
+       <div>...</div>
+       <div>...</div>
+     </div>
+   ```
 
 Aqui está nosso componente `Message`, que nada mais é que uma função que retorna uma mensagem:
 
-```JS
+```javascript
 // Message.js
 // importando o react
 import React from "react";
@@ -72,7 +71,7 @@ export const Message = () => <h1>Hello World React</h1>;
 
 Beleza, já temos nosso componente `Message`, agora em todas as páginas que a gente precisar mostrar essa mensagem é só importar nosso componente e usá-lo, veja o exemplo abaixo onde estamos usando ele no componente `App`:
 
-```JS
+```javascript
 // App.js
 import React from "react";
 
@@ -87,3 +86,4 @@ export const App = () => (
   </div>
 );
 ```
+
