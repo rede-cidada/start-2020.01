@@ -37,7 +37,7 @@ Agora vamos tentar entender tudo isso através da nossa aplicação que conterá
 5. Componente `<App />` que retorna uma `<div>` com todos os componentes que criamos e na ordem que eles devem ser apresentados na tela.
 6. Por fim teremos o `index.js` que terá o método para de fato renderizar nosso componente `<App/>` no `DOM` e fazer com que o usuário possa visualizar nossa aplicação.
 
-Abaixo está uma representação da nossa aplicação dividida por componentes:
+Abaixo está uma representação da nossa aplicação dividida por componentes, se olharmos com atenção podemos fazer uma analogia dos componentes que são pequenos blocos de códigos à pequenos blocos de lego que quando unimos os componentes montamos nossa aplicação, da mesma forma como conseguimos montar qualquer coisa com os pequenos blocos de lego.
 
 ![](.gitbook/assets/image%20%284%29.png)
 
