@@ -22,7 +22,7 @@ Virtual DOM é uma técnica que o React usa pra atualizar a tela onde é constru
 
 Para entendermos os próximos conceitos vamos criar juntas essa pequena aplicação usando React.
 
-![Imagem da aplica&#xE7;&#xE3;o que vamos criar juntas nessa se&#xE7;&#xE3;o.](.gitbook/assets/image%20%285%29.png)
+![Imagem da aplicação que vamos criar juntas nessa seção.](.gitbook/assets/image%20%285%29.png)
 
 ### O que é componente?
 
@@ -105,25 +105,25 @@ Usamos o `JSX` no método `return` do nosso componente e sempre que for preciso 
 Vejamos no exemplo abaixo um componente com e sem o JSX:
 
 ```javascript
-import React from "react"; // importando o react
+import React from 'react' // importando o react
 
 // exemplo de um componente de função usando JSX
 const Hello = (props) => {
-  return <h1 className="title">Hello {props.name}!</h1>;
-};
+  return <h1 className="title">Hello {props.name}!</h1>
+}
 
 // o mesmo componente acima sem o uso do JSX
 const Hello = (props) => {
   return React.createElement(
-    "h1", // o elemento que vai virar HTML
+    'h1', // o elemento que vai virar HTML
     {
-      className: "title" // os atributos são passados nesse objeto
+      className: 'title', // os atributos são passados nesse objeto
     },
-    "Hello ", // aqui vai o conteúdo de texto que ficará dentro do HTML
+    'Hello ', // aqui vai o conteúdo de texto que ficará dentro do HTML
     props.name, // aqui como é separado o javascript
-    "!" // aqui o restante do conteúdo de texto
-  );
-};
+    '!' // aqui o restante do conteúdo de texto
+  )
+}
 ```
 
 Aqui vai algumas respostas dos itens que pontuamos na sessão: Criando o componente`<Message />`
@@ -179,37 +179,37 @@ Veja um exemplo da parte no nosso `index.html` onde temos a o `id` que estamos a
 Continuando no desenvolvimento da nossa aplicação vamos criar o componente `<Figure />` que nada mais é que uma função que retorna uma imagem, veja abaixo a estrutura do nosso componente:
 
 ```javascript
-import React from "react"; // importando o react
-import reactImg from "./assets/img/react.png"; // importando a imagem
+import React from 'react' // importando o react
+import reactImg from './assets/img/react.png' // importando a imagem
 
 // criando o cmponente <Figure/>
-export const Figure = () => <img className="image" src={reactImg} />;
+export const Figure = () => <img className="image" src={reactImg} />
 ```
 
 Só um ponto de atenção de como a gente usa imagens no `React`, ela precisa ser importada recebendo um nome, que seria uma variável que vai representar o caminho da imagem, depois usamos essa `variável` no atributo `src` da tag `img`. Note que o valor repassado para o atributo deve ser entre chaves`{}`, já que se trata de um conteúdo `javascript` sendo utilizado dentro do `JSX`.
 
 ### 6. O que é `Props` no React?
 
-`Props` é forma de compartilhar informações entre os componentes React, para entender melhor esse conceito vamos criar o componente `<Button />` da nossa aplicação:
+`Props` é a abreviação pra propriedades e são representadas por um objeto. É a forma que usamos para compartilhar informações entre os componentes React. Para entender melhor esse conceito vamos criar o componente `<Button />` da nossa aplicação:
 
 ```javascript
-import React from "react"; // importando o react
+import React from 'react' // importando o react
 
 // criando o cmponente <Button/>
 // repare que agora nosso componente recebe um parâmetro que chamamos de `props`
 // poderíamos dá qualquer nome, estamos usando a palavra "props" só por padrão mesmo
 // estamos usando a propriedade chamada "tech" que foi um nome também que
 // escolhemos pra representar o valor apresentado em cada botão
-export const Button = props => <button className="btn">{props.tech}</button>;
+export const Button = (props) => <button className="btn">{props.tech}</button>
 ```
 
 Agora vamos usar esse componente que criamos lá no nosso `<App />`
 
 ```javascript
-import React from "react";
-import { Message } from "./Message";
-import { Figure } from "./Figure";
-import { Button } from "./Button"; // importando nosso componente <Button />
+import React from 'react'
+import { Message } from './Message'
+import { Figure } from './Figure'
+import { Button } from './Button' // importando nosso componente <Button />
 
 export const App = () => (
   <div className="app">
@@ -223,8 +223,59 @@ export const App = () => (
       <Button tech="JSX" />
     </div>
   </div>
-);
+)
 ```
 
 Se você prestar atenção vai ver que usamos as props da mesma forma que atributos nas tags `HTML`, podemos dá qualquer nome para prop, mas o ideal é que seja algo que faça sentido com o que essa prop vai representar na sua página. No caso da nossa aplicação teremos três botões e cada um vai apresentar um nome de uma tecnologia. Essa é a forma que podemos passar dinamicamente valores entre os nossos componentes, se precisarmos usar esse mesmo botão em alguma outra página com o valor de Angular por exemplo, poderíamos usá-lo assim: `<Button tech="Angular" />` e magicamente teríamos um botão com um valor diferente na nossa página.
 
+Podemos acessar a prop no componente recebendo elas por parâmetros nos componentes de função ou através do `this.props` no componente de classe. As props não se limitam a receber apenas strings, podemos passar qualquer tipo de valor pra ela, como array, objeto, função, número ou seja, qualquer valor que precisarmos compartilhar.
+
+Props possuem valores estáticos que são passados hierarquicamente do "pai" para o "filho" e não são alterados. No nosso exemplo o componente pai seria o `<App />` e não conseguimos passar um dado do componente `<Message />` para ele por exemplo.
+
+### 7. Componente de função x componente de classe?
+
+Até agora todos os componentes que criamos são componentes de função e tem um motivo por trás de tudo isso, se você prestar atenção, até agora só criamos componentes que mostram algo na tela, algo que nunca muda, algo que o usuário não interage escrevendo, clicando ou tentando alterar qualquer coisa na nossa aplicação. Esse é a responsabilidade de um componente de função, ele é usado pra criar componentes estáticos e que não tem alteração após apresentar os dados na página.
+
+Os componentes de função também são chamados de Stateless Components, ou componentes sem estado.
+Os componentes de classe também são chamados de Stateful Components, ou componentes com estados.
+
+#### O que muda num compoente de classe?
+
+Componente de classe é representado em javascript por uma classe, ele deve estender `Componente` do pacote `React`. Quando criamos um componente de classe temos acesso a vários métodos da biblioteca React, sendo que somente o método `render()` é obrigatório.
+
+Componentes de classe é útil quando precisamos alterar algo na página após o conteúdo ser apresentado. No nosso exemplo, vamos realizar as seguinte mudanças:
+
+- Mudar o componente `<App />` para que agora seja um componente de class.
+- Mudar o componente `<Message />` para que agora ele receba uma `prop` que vai substituir o nome da tecnologia, a mensagem agora ficaria: `Hello {props.tech}`.
+- Adicionar um estado no componente `<App />` que vai gerenciar a mudança da tecnologia passada na mensagem.
+- Adicionar uma função no componente `<Button />` que vai receber a seguinte ação: quando o usuário clicar no botão a mensagem mostrará: `Hello + tecnologia do botão clicado`.
+
+Transformando nosso componente `<App />` em um componente de classe:
+
+```JS
+import React, { Component } from "react"; // agora importamos também o Component
+import { Message } from "./Message";
+import { Figure } from "./Figure";
+import { Button } from "./Button";
+
+// aq alteramos nossa função pra uma classe
+export class App extends Component {
+
+  // chamamos o método render que é obrigatório para componente de classe
+  render() {
+
+    //  aqui continua tudo como era antes...
+    return (
+      <div className="app">
+        <Figure />
+        <Message name="React" />
+        <div className="btn-groups">
+          <Button tech="React" />
+          <Button tech="Javascript" />
+          <Button tech="JSX" />
+        </div>
+      </div>
+    );
+  }
+}
+```
