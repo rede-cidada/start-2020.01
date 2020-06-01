@@ -22,7 +22,7 @@ Virtual DOM é uma técnica que o React usa pra atualizar a tela onde é constru
 
 Para entendermos os próximos conceitos vamos criar juntas essa pequena aplicação usando React.
 
-![Imagem da aplicação que vamos criar juntas nessa seção.](.gitbook/assets/image%20%285%29.png)
+![Imagem da aplica&#xE7;&#xE3;o que vamos criar juntas nessa se&#xE7;&#xE3;o.](.gitbook/assets/image%20%285%29.png)
 
 ### O que é componente?
 
@@ -146,7 +146,7 @@ Até o momento só declaramos alguns componentes porém ainda não conseguimos f
 
 O método `ReactDOM.render()` recebe dois parâmetros, o primeiro é o conteúdo que vai ser que vai ser apresentado na página e o segundo é onde no `DOM` esse conteúdo será inserido para então ser de fato apresentado na página.
 
-Aplicando a teoria acima na nossa aplicação, vamos usar o método `ReactDOM.render()` no arquivo `index.js` que é o primeiro arquivo a ser executado quando uma aplicação é inicializada, veja como utilizamos a cahmada no exemplo abaixo:
+Aplicando a teoria acima na nossa aplicação, vamos usar o método `ReactDOM.render()` no arquivo `index.js` que é o primeiro arquivo a ser executado quando uma aplicação é inicializada, veja como utilizamos a chamada no exemplo abaixo:
 
 ```javascript
 // index.js
@@ -230,7 +230,7 @@ export const App = () => (
 
 Alterando nosso componente `<Message />` para receber a prop `name`:
 
-```JSX
+```jsx
 import React from "react";
 
 // recebendo a prop como parâmetro
@@ -251,23 +251,22 @@ Props possuem valores estáticos que são passados hierarquicamente do "pai" par
 
 Até agora todos os componentes que criamos são componentes de função e tem um motivo por trás de tudo isso, se você prestar atenção, até agora só criamos componentes que mostram algo na tela, algo que nunca muda, algo que o usuário não interage escrevendo, clicando ou tentando alterar qualquer coisa na nossa aplicação. Esse é a responsabilidade de um componente de função, ele é usado pra criar componentes estáticos e que não tem alteração após apresentar os dados na página.
 
-Os componentes de função também são chamados de Stateless Components, ou componentes sem estado.
-Os componentes de classe também são chamados de Stateful Components, ou componentes com estados.
+Os componentes de função também são chamados de Stateless Components, ou componentes sem estado. Os componentes de classe também são chamados de Stateful Components, ou componentes com estados.
 
-#### O que muda num compoente de classe?
+#### O que muda num componente de classe?
 
 Componente de classe é representado em javascript por uma classe, ele deve estender `Componente` do pacote `React`. Quando criamos um componente de classe temos acesso a vários métodos da biblioteca React, sendo que somente o método `render()` é obrigatório.
 
 Componentes de classe é útil quando precisamos alterar algo na página após o conteúdo ser apresentado. No nosso exemplo, vamos realizar as seguinte mudanças:
 
-- Mudar o componente `<App />` para que agora seja um componente de class.
-- Mudar o componente `<Message />` para que agora ele receba uma `prop` que vai substituir o nome da tecnologia, a mensagem agora ficaria: `Hello {props.tech}`.
-- Adicionar um estado no componente `<App />` que vai gerenciar a mudança da tecnologia passada na mensagem.
-- Adicionar uma função no componente `<Button />` que vai receber a seguinte ação: quando o usuário clicar no botão a mensagem mostrará: `Hello + tecnologia do botão clicado`.
+* Mudar o componente `<App />` para que agora seja um componente de class.
+* Mudar o componente `<Message />` para que agora ele receba uma `prop` que vai substituir o nome da tecnologia, a mensagem agora ficaria: `Hello {props.tech}`.
+* Adicionar um estado no componente `<App />` que vai gerenciar a mudança da tecnologia passada na mensagem.
+* Adicionar uma função no componente `<Button />` que vai receber a seguinte ação: quando o usuário clicar no botão a mensagem mostrará: `Hello + tecnologia do botão clicado`.
 
 Transformando nosso componente `<App />` em um componente de classe:
 
-```JS
+```javascript
 import React, { Component } from "react"; // agora importamos também o Component
 import { Message } from "./Message";
 import { Figure } from "./Figure";
@@ -299,9 +298,9 @@ export class App extends Component {
 
 Diferente das `props`, o `state` ou `estado` não é repassado ao componente e sim configurado dentro dele. Pense no estado como as propriedades de nossa classe que devem ser armazenadas para renderizarmos o componente da forma correta. Os estados só podem existir em componentes de classe e seus valores podem ser alterados, essas mudanças de valores são gerenciados pro vários métodos disponíveis em um componente do tipo classe e são guardados dentro da classe em um objeto usando essa sintaxe `state= {chave: 'valor'}`.
 
-Vamos tentar aplicar esse conceito à nossa aplicação, vamos alterar o componente `<Message />` para receber a prop name, e o valor dessa prop será repassado pelo state da classe `<App />`, ficou meio confuso, mas tente entender as palavras acima examinando as mudanção no código abaixo:
+Vamos tentar aplicar esse conceito à nossa aplicação, vamos alterar o componente `<Message />` para receber a prop name, e o valor dessa prop será repassado pelo state da classe `<App />`, ficou meio confuso, mas tente entender as palavras acima examinando as mudanças no código abaixo:
 
-```JS
+```javascript
 import React, { Component } from "react";
 import { Message } from "./Message";
 import { Figure } from "./Figure";
@@ -331,7 +330,7 @@ export class App extends Component {
 }
 ```
 
-Para acessar os valores do nosso estado usamos a variável `this.state.nome_da_propriedade`, no nosso exemplo acima, criamos uma propriedade chamada `value` (que poderia ser qualquer nome) e essa proriedade recebe o valor `React`, então em qualquer parte do código que eu precise usar esse valor eu posso acessá-lo assim: `this.state.value`
+Para acessar os valores do nosso estado usamos a variável `this.state.nome_da_propriedade`, no nosso exemplo acima, criamos uma propriedade chamada `value` \(que poderia ser qualquer nome\) e essa propriedade recebe o valor `React`, então em qualquer parte do código que eu precise usar esse valor eu posso acessá-lo assim: `this.state.value`
 
 ### 9. Alterando o estado do nosso componente `<App />`
 
@@ -344,16 +343,16 @@ Estamos quase no final da construção da nossa aplicação, o que precisamos fa
 
 Para fazer a ação acima vamos realizar as alterações abaixo no nosso componente `<App />`:
 
-- Criar uma função que recebe como parâmetro o valor do botão clicado;
-- Dentro dessa função alterar o valor do estado `value`, que agora receberá o valor desse botão;
-- Passar essa função como prop para o componente `<Button />`;
-- Usar essa prop no evento `onClick` do componente `<Button />`;
+* Criar uma função que recebe como parâmetro o valor do botão clicado;
+* Dentro dessa função alterar o valor do estado `value`, que agora receberá o valor desse botão;
+* Passar essa função como prop para o componente `<Button />`;
+* Usar essa prop no evento `onClick` do componente `<Button />`;
 
 O React não permite alterar o estado de um componente da mesma forma que alteramos uma variável comum, isso porque o estado é imutável, ou seja, ele nunca deve ser alterado e sempre deve ser sobreposto, pra isso o React tem a função `this.setState({ propriedade: valor})`, onde a propriedade é nome da propriedade que queremos alterar no nosso estado e o valor é a nova informação que queremos repassar para nossa propriedade.
 
 Aplicando o conceito acima no nosso componente `<App />`:
 
-```JS
+```javascript
 import React, { Component } from "react";
 import { Message } from "./Message";
 import { Figure } from "./Figure";
@@ -398,7 +397,7 @@ export class App extends Component {
 
 Chamando a função no `<Buttom />` através da nova propriedade:
 
-```JS
+```javascript
 import React from "react";
 
 export const Button = props => (
@@ -407,23 +406,22 @@ export const Button = props => (
     {props.tech}
   </button>
 );
-
 ```
 
-Protinho, agora temos uma pequena aplicação com os conceitos básicos do React, agora sua atividade é criar qualquer coisa usando os conceitos aplicado aqui para praticar tudo o que foi passado, você pode acessar o [código completo aqui](https://codesandbox.io/s/hello-world-react-blc7h?file=/src/Button.js:0-158)
+Prontinho, agora temos uma pequena aplicação com os conceitos básicos do React, agora sua atividade é criar qualquer coisa usando os conceitos aplicado aqui para praticar tudo o que foi passado, você pode acessar o [código completo aqui](https://codesandbox.io/s/hello-world-react-blc7h?file=/src/Button.js:0-158)
 
 ## Listas e `keys` no React
 
 Ainda olhando pra nossa aplicação, o componente `<Button />` é chamado 3x no componente `<App />`, vamos fazer as alterações abaixo pra aplicar os conceitos de listas no React:
 
-- Criar uma nova propriedade no estado da classe lista que vai receber um array de tecnologias
-- Usar o método `map` do javascript pra interar esse array retornando pra cada item um componente `<Button />` que receberá o valor do array como valor da prop `tech`.
+* Criar uma nova propriedade no estado da classe lista que vai receber um array de tecnologias
+* Usar o método `map` do javascript pra interar esse array retornando pra cada item um componente `<Button />` que receberá o valor do array como valor da prop `tech`.
 
-Quando usamos uma lista no retorno de componente React é necessário passar uma `key` para cada item da lista. Ela é um atributo string especial que juda o React a identificar qual item da lista foi alterado, adicionado ou removido. A `key` deve ser atribuída ao item dentro do array que está sendo interado, para dar uma identidade estável aos elementos e ela deve ser única.
+Quando usamos uma lista no retorno de componente React é necessário passar uma `key` para cada item da lista. Ela é um atributo string especial que ajuda o React a identificar qual item da lista foi alterado, adicionado ou removido. A `key` deve ser atribuída ao item dentro do array que está sendo manipulado, para dar uma identidade estável aos elementos e ela deve ser única.
 
 Vejamos abaixo como ficaram essas alterações:
 
-```JS
+```javascript
 import React, { Component } from "react";
 import { Message } from "./Message";
 import { Figure } from "./Figure";
@@ -462,11 +460,13 @@ export class App extends Component {
     );
   }
 }
-
 ```
 
 ## Ciclos de vida de um componente
 
-Podemos dizer que um ciclo de vida de um componente inicia quando ele é montado na tela, sofre algumas alterações e depois ele é desmontado. Um componente de classe possue vários métodos especiais para gerenciar o ciclo de vida de um componente, não vamos entrar em detalhes sobre eles nesse tutorial mas você pode ler mais sobre [nesse artigo.](https://blog.rocketseat.com.br/react-do-zero-ciclo-de-vida-stateless-components-e-arquitetura-flux/).
+Podemos dizer que um ciclo de vida de um componente inicia quando ele é montado na tela, sofre algumas alterações e depois ele é desmontado. Um componente de classe possui vários métodos especiais para gerenciar o ciclo de vida de um componente, não vamos entrar em detalhes sobre eles nesse tutorial mas você pode ler mais sobre [nesse artigo.](https://blog.rocketseat.com.br/react-do-zero-ciclo-de-vida-stateless-components-e-arquitetura-flux/).
 
-Abaixo uma imagem dos métodos utilizados para manupular o ciclo de vida de um componente React.
+Abaixo uma imagem dos métodos utilizados para manipular o ciclo de vida de um componente React.
+
+![Fases e m&#xE9;todos do ciclo de vida de um componente em React.](.gitbook/assets/image%20%286%29.png)
+
