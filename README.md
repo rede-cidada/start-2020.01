@@ -15,10 +15,9 @@ description: >-
 4. URL, IP e DNS
 5. Caminhos da Internet
 6. Rede, Intranet e Extranet
-7. IntranetExtranet
-8. Navegadores
-9. Cliente-Servidor 
-10. Referências Bibliográficas 
+7. Navegadores
+8. Cliente-Servidor 
+9. Referências Bibliográficas 
 
 ### O que é Internet?
 
