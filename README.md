@@ -15,7 +15,7 @@ description: >-
 4. URL, IP e DNS
 5. Caminhos da Internet
 6. Rede, Intranet e Extranet
-7. Navegadores
+7. Navegador
 8. Cliente-Servidor 
 9. Referências Bibliográficas 
 
