@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Fundamentos da Internet](README.md)
-* [Lógica de Programação](fundamentos-da-internet.md)
+* [Lógica de Programação](logica-programacao.md)
 * [HTML](html.md)
 * [CSS](css.md)
 * [DOM](dom-api.md)
