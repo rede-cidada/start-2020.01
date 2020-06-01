@@ -347,9 +347,9 @@ Para fazer a ação acima vamos realizar as alterações abaixo no nosso compone
 - Criar uma função que recebe como parâmetro o valor do botão clicado;
 - Dentro dessa função alterar o valor do estado `value`, que agora receberá o valor desse botão;
 - Passar essa função como prop para o componente `<Button />`;
-- Usar essa prop no componente `<Button />`;
+- Usar essa prop no evento `onClick` do componente `<Button />`;
 
-O Reac não permite alterar o estado de um componente da mesma forma que alteramos uma variável comum, isso porque o estado é imutável, ou seja, ele nunca deve ser alterado e sempre deve ser sobreposto, pra isso o React tem a função `this.setState({ propriedade: valor})`, onde a propriedade é nome da propriedade que queremos alterar no nosso estado e o valor é a nova informação que queremos repassar para nossa propriedade.
+O React não permite alterar o estado de um componente da mesma forma que alteramos uma variável comum, isso porque o estado é imutável, ou seja, ele nunca deve ser alterado e sempre deve ser sobreposto, pra isso o React tem a função `this.setState({ propriedade: valor})`, onde a propriedade é nome da propriedade que queremos alterar no nosso estado e o valor é a nova informação que queremos repassar para nossa propriedade.
 
 Aplicando o conceito acima no nosso componente `<App />`:
 
@@ -411,3 +411,56 @@ export const Button = props => (
 ```
 
 Protinho, agora temos uma pequena aplicação com os conceitos básicos do React, agora sua atividade é criar qualquer coisa usando os conceitos aplicado aqui para praticar tudo o que foi passado, você pode acessar o [código completo aqui](https://codesandbox.io/s/hello-world-react-blc7h?file=/src/Button.js:0-158)
+
+## Listas e `keys` no React
+
+Ainda olhando pra nossa aplicação, o componente `<Button />` é chamado 3x no componente `<App />`, vamos fazer as alterações abaixo pra aplicar os conceitos de listas no React:
+
+- Criar uma nova propriedade no estado da classe lista que vai receber um array de tecnologias
+- Usar o método `map` do javascript pra interar esse array retornando pra cada item um componente `<Button />` que receberá o valor do array como valor da prop `tech`.
+
+Quando usamos uma lista no retorno de componente React é necessário passar uma `key` para cada item da lista. Ela é um atributo string especial que juda o React a identificar qual item da lista foi alterado, adicionado ou removido. A `key` deve ser atribuída ao item dentro do array que está sendo interado, para dar uma identidade estável aos elementos e ela deve ser única.
+
+Vejamos abaixo como ficaram essas alterações:
+
+```JS
+import React, { Component } from "react";
+import { Message } from "./Message";
+import { Figure } from "./Figure";
+import { Button } from "./Button";
+
+export class App extends Component {
+  state = {
+    value: "React",
+    techs: ["React", "Javascript", "JSX"] // criamos um novo estado
+  };
+
+  handleClickTechnology = techName => this.setState({ value: techName });
+
+  render() {
+    return (
+      <div className="app">
+        <Figure />
+        <Message name={this.state.value} />
+
+        <ul className="btn-list">
+
+          {/* para cada item do array do nosso estados retornamos um novo componente <Button /> */}
+          {this.state.techs.map(tech => (
+
+            {/* passamos o valor do array para a key */}
+            <li className="btn-item" key={tech}>
+              <Button
+                tech={tech} {/* passamos o valor do array para o botão através da prop tech */}
+                handleClickTechnology={() => this.handleClickTechnology(tech)} {/* passamos o valor do array para a prop que passará para o evento click do botão */}
+              />
+            </li>
+          ))}
+        </ul>
+
+      </div>
+    );
+  }
+}
+
+```
