@@ -464,3 +464,9 @@ export class App extends Component {
 }
 
 ```
+
+## Ciclos de vida de um componente
+
+Podemos dizer que um ciclo de vida de um componente inicia quando ele é montado na tela, sofre algumas alterações e depois ele é desmontado. Um componente de classe possue vários métodos especiais para gerenciar o ciclo de vida de um componente, não vamos entrar em detalhes sobre eles nesse tutorial mas você pode ler mais sobre [nesse artigo.](https://blog.rocketseat.com.br/react-do-zero-ciclo-de-vida-stateless-components-e-arquitetura-flux/).
+
+Abaixo uma imagem dos métodos utilizados para manupular o ciclo de vida de um componente React.
