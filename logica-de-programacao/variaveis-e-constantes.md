@@ -1,3 +1,7 @@
+---
+description: Exercícios de Variáveis/Constantes/Operadores/Tipos de Dados.
+---
+
 # Variáveis/Constantes/Operadores/Tipos de Dados.
 
 ### Exercícios  - variáveis
