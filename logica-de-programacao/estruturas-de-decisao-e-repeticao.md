@@ -20,3 +20,5 @@
 13. Ler um valor inteiro \(aceitar somente valores entre 1 e 10\) e escrever a tabuada de 1 a 10 do valor lido.
 14. Escreva um algoritmo para imprimir os números de 1 \(inclusive\) a 10 \(inclusive\) em ordem crescente, utilizando a estrutura REPITA e um CONTADOR.
 
+
+
