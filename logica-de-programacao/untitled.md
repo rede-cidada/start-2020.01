@@ -4,8 +4,6 @@ description: 'Exercícios para praticar algoritmos, pseudocódigo e fluxograma'
 
 # Algoritmos, Pseudocódigos e Fluxograma
 
-
-
 ### Exercícios - Algoritmos
 
 1. Escreva um algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
