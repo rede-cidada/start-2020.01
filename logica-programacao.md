@@ -31,13 +31,13 @@ description: >-
    9. Sintaxe e semântica
 3. Referências Bibliográficas
 
-### **O que é lógica de programação?**
+## **O que é lógica de programação?**
 
 É um conjunto de regras e conceitos que nos ajudam a criar um código escrito.
 
 Na área de computação é muito importante saber lógica de programação e entender como utilizar na resolução de problemas através da programação. mais adiante vamos aprender as regras e conceitos, e como utilizá-los.
 
-### **Regras e Conceitos**
+## **Regras e Conceitos**
 
 ### **Algoritmos**‌
 
@@ -191,11 +191,11 @@ Exercício:
 4. Escreva a declaração de uma variável do tipo booleano de nome \(escolha um nome válido\) que tenha o valor 35.
 5. Escreva a declaração de uma variável do tipo numérico de nome \(escolha um nome válido\) que recebe o valor papagaio.
 
-**Operadores e expressões**
+### **Operadores e expressões**
 
 São símbolos especiais que tem um signiﬁcado próprio para as linguagens de programação e estão associados a determinadas operações. Temos quatro tipos: aritméticos, atribuição, comparação e lógico.
 
-**Operadores aritméticos**
+#### **Operadores aritméticos**
 
 * Soma `+`
 * Subtração `-`
@@ -215,7 +215,7 @@ b / d;
 b * d;
 ```
 
-**Operadores de atribuição**
+#### **Operadores de atribuição**
 
 * Igual `=` ---&gt; `x = y`
 * Adiciona valor `+=` ---&gt; `x = x + y`
@@ -232,7 +232,7 @@ var a = b / d;
 var a = b * d;
 ```
 
-**Operadores de comparação**
+#### **Operadores de comparação**
 
 * Igual a `==` `===` \(mesmo valor e mesmo tipo\)
 * Não é igual a `!=` `!==` \(mesmo valor e mesmo tipo\)
@@ -251,7 +251,7 @@ var a = 1 !== "1";
 var a = 3 >= 4 ? true : false;
 ```
 
-**Operadores lógicos**
+#### **Operadores lógicos**
 
 * E `&&` --&gt; Retorna true se as duas expressões forem verdadeiras
 * OU `||` --&gt; Retorna true se pelo menos uma das expressões for verdadeira
@@ -270,7 +270,8 @@ a >= b || d < a
 
 São estruturas que utilizamos para tomar a decisão de qual ação fazer. Temos condições e vemos qual é verdadeira ou falsa.
 
-**IF e ELSE**   
+#### **IF e ELSE** 
+
 Quando temos mais de um caminho a seguir, usamos o **if \(se\)** para decidir qual condição temos que cumprir para alcançar nosso objetivo, e o **else \(se não\)** para ser nosso caminho alternativo.
 
 Estrutura do If/Else
