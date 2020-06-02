@@ -19,8 +19,14 @@ description: 'Exercícios para praticar algoritmos, pseudocódigo e fluxograma'
 
 1. Desenhe um fluxogramas de um algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
 2. Desenhe um fluxogramas de um algoritmo para ler as dimensões de um retângulo \(base e altura\), calcular e escrever a área do retângulo.
+3. Escreva o algoritmo do fluxograma abaixo:
+
+![](../.gitbook/assets/screen-shot-2020-06-02-at-17.18.02.png)
+
+
 
 
 
   
+
 
