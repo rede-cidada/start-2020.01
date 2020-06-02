@@ -17,5 +17,6 @@
 
 ## Exercícios - Lógica de Programação <a id="logica-de-programacao"></a>
 
-* [Untitled](logica-de-programacao/untitled.md)
+* [Algoritmos, Pseudocódigos e Fluxograma](logica-de-programacao/untitled.md)
+* [Untitled](logica-de-programacao/untitled-1.md)
 
