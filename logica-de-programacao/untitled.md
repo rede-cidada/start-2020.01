@@ -1,10 +1,14 @@
+---
+description: 'Exercícios para praticar algoritmos, pseudocódigo e fluxograma'
+---
+
 # Algoritmos, Pseudocódigos e Fluxograma
 
 
 
-### Exercícios - Algorítmos
+### Exercícios - Algoritmos
 
-1. Escreva um Algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
+1. Escreva um algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
 2. Escreva um algoritmo para ler as dimensões de um retângulo \(base e altura\), calcular e escrever a área do retângulo.
 3. Escreva um algoritmo que leia a idade de uma pessoa em anos e escreva a idade dessa pessoa  apenas em dias. Considerar o ano com 365 dias e mês com 30 dias.
 
