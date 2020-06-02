@@ -145,7 +145,7 @@ Sintaxe para declaração de variável com tipo de dados
 tipo var1 [, var2, ..., varn ]
 ```
 
-**Tipos primitiv**
+**Tipos primitivo**
 
 Os tipos primitivos representam os tipos mais simples de dados. na tabela abaixo pode-se ver quais são os tipos primitivos.
 
