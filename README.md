@@ -21,7 +21,7 @@ description: >-
 
 
 
-[Video sobre a internet](https://www.youtube.com/watch?v=IEnyXBmrrBs&feature=youtu.be)
+[Video sobre a Internet](https://www.youtube.com/watch?v=IEnyXBmrrBs&feature=youtu.be)
 
 ### O que é Internet?
 
