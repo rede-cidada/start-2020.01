@@ -10,10 +10,15 @@
 
 ### Exercícios - Pseudocódigo 
 
-1. Escreva um pseudocódigo de um algoritmo para ler as dimensões de um retângulo \(base e altura\), calcular e escrever a área do retângulo
-2. 
+1. Escreva um pseudocódigo de um algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
+2. Escreva um pseudocódigo de um algoritmo para ler as dimensões de um retângulo \(base e altura\), calcular e escrever a área do retângulo.
+
 ### Exercícios - Fluxograma
 
-1. Desenhe o fluxogramas do algoritmo para uma ação que você faz no seu dia-a-dia
-2. Explique os símbolos utilizados no seu fluxograma 
+1. Desenhe um fluxogramas de um algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
+2. Desenhe um fluxogramas de um algoritmo para ler as dimensões de um retângulo \(base e altura\), calcular e escrever a área do retângulo.
+
+
+
+  
 
