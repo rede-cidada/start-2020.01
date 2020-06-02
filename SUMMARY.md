@@ -15,7 +15,7 @@
 * [Variáveis](exercicios-javascript/untitled.md)
 * [Tipos de Dados](exercicios-javascript/tipos-de-dados.md)
 
-## Lógica de Programação
+## Exercícios - Lógica de Programação <a id="logica-de-programacao"></a>
 
 * [Untitled](logica-de-programacao/untitled.md)
 
