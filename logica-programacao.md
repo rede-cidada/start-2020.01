@@ -419,7 +419,7 @@ Exercícios
 3. Faça um algoritmo para ler um número inteiro e informar se o número é par ou ímpar. 
 4. Faça um algoritmo para ler dois números inteiros A e B e informar se A é divisível por B.
 
-**Funções**
+### **Funções**
 
 Funções são blocos de código que executam determinada atividade. As funções são utilizadas quando são chamadas \(opa como assim chamadas?\) Quando dizemos que as funções são chamadas significa que elas são referenciadas.
 
@@ -452,7 +452,7 @@ function somarDoisNumeros(valorA, valorB) {
 }
 ```
 
-**Sintaxe e Semântica**
+### **Sintaxe e Semântica**
 
 > Na Engenharia de Software quando falamos de sintaxe geralmente nos referimos à forma de escrever código fonte \(palavras reservadas, comandos, recursos diversos\).   
 > Quando falamos de semântica, nos referimos ao significado dos modelos, ao nível de entendimento \(clareza, objetividade, detalhamento, coesão etc.\) de alguma coisa.   
