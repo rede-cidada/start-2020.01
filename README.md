@@ -19,6 +19,10 @@ description: >-
 8. Cliente-Servidor 
 9. Referências Bibliográficas 
 
+
+
+Video!!! colocar o link aqui.
+
 ### O que é Internet?
 
 A internet é um sistema de redes de computadores mundial, todos eles estão ligados uns aos outros. A comunicação via internet pode ser de dados, de voz, vídeo, multimídia, etc.
