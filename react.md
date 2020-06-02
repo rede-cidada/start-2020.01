@@ -22,7 +22,7 @@ Virtual DOM é uma técnica que o React usa pra atualizar a tela onde é constru
 
 Para entendermos os próximos conceitos vamos criar juntas essa pequena aplicação usando React.
 
-![Imagem da aplicação que vamos criar juntas nessa seção.](.gitbook/assets/image%20%285%29.png)
+![Imagem da aplica&#xE7;&#xE3;o que vamos criar juntas nessa se&#xE7;&#xE3;o.](.gitbook/assets/image%20%285%29.png)
 
 ### O que é componente?
 
@@ -259,10 +259,10 @@ Componente de classe é representado em javascript por uma classe, ele deve este
 
 Componentes de classe é útil quando precisamos alterar algo na página após o conteúdo ser apresentado. No nosso exemplo, vamos realizar as seguinte mudanças:
 
-- Mudar o componente `<App />` para que agora seja um componente de class.
-- Mudar o componente `<Message />` para que agora ele receba uma `prop` que vai substituir o nome da tecnologia, a mensagem agora ficaria: `Hello {props.tech}`.
-- Adicionar um estado no componente `<App />` que vai gerenciar a mudança da tecnologia passada na mensagem.
-- Adicionar uma função no componente `<Button />` que vai receber a seguinte ação: quando o usuário clicar no botão a mensagem mostrará: `Hello + tecnologia do botão clicado`.
+* Mudar o componente `<App />` para que agora seja um componente de class.
+* Mudar o componente `<Message />` para que agora ele receba uma `prop` que vai substituir o nome da tecnologia, a mensagem agora ficaria: `Hello {props.tech}`.
+* Adicionar um estado no componente `<App />` que vai gerenciar a mudança da tecnologia passada na mensagem.
+* Adicionar uma função no componente `<Button />` que vai receber a seguinte ação: quando o usuário clicar no botão a mensagem mostrará: `Hello + tecnologia do botão clicado`.
 
 Transformando nosso componente `<App />` em um componente de classe:
 
@@ -341,10 +341,10 @@ Estamos quase no final da construção da nossa aplicação, o que precisamos fa
 
 Para fazer a ação acima vamos realizar as alterações abaixo no nosso componente `<App />`:
 
-- Criar uma função que recebe como parâmetro o valor do botão clicado;
-- Dentro dessa função alterar o valor do estado `value`, que agora receberá o valor desse botão;
-- Passar essa função como prop para o componente `<Button />`;
-- Usar essa prop no evento `onClick` do componente `<Button />`;
+* Criar uma função que recebe como parâmetro o valor do botão clicado;
+* Dentro dessa função alterar o valor do estado `value`, que agora receberá o valor desse botão;
+* Passar essa função como prop para o componente `<Button />`;
+* Usar essa prop no evento `onClick` do componente `<Button />`;
 
 O React não permite alterar o estado de um componente da mesma forma que alteramos uma variável comum, isso porque o estado é imutável, ou seja, ele nunca deve ser alterado e sempre deve ser sobreposto, pra isso o React tem a função `this.setState({ propriedade: valor})`, onde a propriedade é nome da propriedade que queremos alterar no nosso estado e o valor é a nova informação que queremos repassar para nossa propriedade.
 
@@ -412,8 +412,8 @@ Prontinho, agora temos uma pequena aplicação com os conceitos básicos do Reac
 
 Ainda olhando pra nossa aplicação, o componente `<Button />` é chamado 3x no componente `<App />`, vamos fazer as alterações abaixo pra aplicar os conceitos de listas no React:
 
-- Criar uma nova propriedade no estado da classe lista que vai receber um array de tecnologias
-- Usar o método `map` do javascript pra interar esse array retornando pra cada item um componente `<Button />` que receberá o valor do array como valor da prop `tech`.
+* Criar uma nova propriedade no estado da classe lista que vai receber um array de tecnologias
+* Usar o método `map` do javascript pra interar esse array retornando pra cada item um componente `<Button />` que receberá o valor do array como valor da prop `tech`.
 
 Quando usamos uma lista no retorno de componente React é necessário passar uma `key` para cada item da lista. Ela é um atributo string especial que ajuda o React a identificar qual item da lista foi alterado, adicionado ou removido. A `key` deve ser atribuída ao item dentro do array que está sendo manipulado, para dar uma identidade estável aos elementos e ela deve ser única.
 
@@ -466,7 +466,7 @@ Podemos dizer que um ciclo de vida de um componente inicia quando ele é montado
 
 Abaixo uma imagem dos métodos utilizados para manipular o ciclo de vida de um componente React.
 
-![Fases e métodos do ciclo de vida de um componente em React.](.gitbook/assets/image%20%286%29.png)
+![Fases e m&#xE9;todos do ciclo de vida de um componente em React.](.gitbook/assets/image%20%286%29.png)
 
 ## O que é React Hooks?
 
@@ -476,21 +476,21 @@ Os Hooks são classificados em básicos e adicionais da seguinte forma:
 
 Hooks básicos:
 
-- useState
-- useEffect
-- useContext
+* useState
+* useEffect
+* useContext
 
 Hooks adicionais:
 
-- useReducer
-- useCallback
-- useMemo
-- useRef
-- useImperativeMethods
-- useMutationEffect
-- useLayoutEffect
+* useReducer
+* useCallback
+* useMemo
+* useRef
+* useImperativeMethods
+* useMutationEffect
+* useLayoutEffect
 
-### Transformando nosso componente `<App />` em um componente de classe e usando o `useState\(\)\`
+### Transformando nosso componente `<App />` em um componente de classe e usando o `useState`
 
 Veja abaixo como ficou nosso componente usando `hooks`, [aqui está o novo código com as alterações](https://codesandbox.io/s/hello-world-react-hooks-qxpnh?file=/src/App.js).
 
@@ -535,11 +535,12 @@ export const App = () => {
 
 ## Referências
 
-- [reprograma/T7-react-I](https://github.com/reprograma/T7-react-I)
-- [pt-br.reactjs.org/docs](https://pt-br.reactjs.org/docs/hello-world.html)
-- [Learn React by creating a comment app](https://www.qcode.in/learn-react-by-creating-a-comment-app/)
-- [Métodos do ciclo de vida de componentes ReactJS — Um mergulho profundo!](https://medium.com/creditas-tech/m%C3%A9todos-do-ciclo-de-vida-de-componentes-reactjs-um-mergulho-profundo-332ed7b3b782)
-- [O Guia Completo do React e o seu Ecossistema](https://medium.com/tableless/o-guia-completo-do-react-e-o-seu-ecossistema-b31a10ecd84f)
-- [React Hooks Cheatsheet](https://react-hooks-cheatsheet.com/)
-- [REACT – HOOKS ENTENDENDO O CONCEITO.](https://bognarjunior.wordpress.com/2018/11/04/react-hooks-entendendo-o-conceito/)
-- [Ganchos? Vamos conversar sobre React hooks](https://blog.getty.io/ganchos-vamos-conversar-sobre-react-hooks-1d4309e7b4c0)
+* [reprograma/T7-react-I](https://github.com/reprograma/T7-react-I)
+* [pt-br.reactjs.org/docs](https://pt-br.reactjs.org/docs/hello-world.html)
+* [Learn React by creating a comment app](https://www.qcode.in/learn-react-by-creating-a-comment-app/)
+* [Métodos do ciclo de vida de componentes ReactJS — Um mergulho profundo!](https://medium.com/creditas-tech/m%C3%A9todos-do-ciclo-de-vida-de-componentes-reactjs-um-mergulho-profundo-332ed7b3b782)
+* [O Guia Completo do React e o seu Ecossistema](https://medium.com/tableless/o-guia-completo-do-react-e-o-seu-ecossistema-b31a10ecd84f)
+* [React Hooks Cheatsheet](https://react-hooks-cheatsheet.com/)
+* [REACT – HOOKS ENTENDENDO O CONCEITO.](https://bognarjunior.wordpress.com/2018/11/04/react-hooks-entendendo-o-conceito/)
+* [Ganchos? Vamos conversar sobre React hooks](https://blog.getty.io/ganchos-vamos-conversar-sobre-react-hooks-1d4309e7b4c0)
+
