@@ -5,7 +5,7 @@
 ### Exercícios - Algorítmos
 
 1. Construa um Algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
-2. 
+
 ### Exercícios - Pseudocódigo 
 
 1. Fazer um pseudocódigo de um algoritmo com 15 linhas no máximo, para uma ação que você faz no seu dia-a-dia.
