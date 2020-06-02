@@ -1,3 +1,7 @@
+---
+description: Exercícios das estruturas de decisão e repetição
+---
+
 # Estruturas de decisão e repetição
 
 ### Exercícios - Estruturas de decisão e repetição
