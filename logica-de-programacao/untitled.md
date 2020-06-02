@@ -30,7 +30,13 @@ description: 'Exercícios para praticar algoritmos, pseudocódigo e fluxograma'
 
 
 
+### Desafios
 
+#### Elabore algoritmos e faça o fluxograma, em linguagem natural, para resolver as situações colocadas a seguir: 
+
+1. Um homem precisa atravessar um rio com um barco que possui capacidade de transportar apenas ele e mais uma de suas três cargas, que são: um cachorro, uma galinha e um saco de milho. O que o homem deve fazer para conseguir atravessar o rio sem perder as suas cargas? 
+2. Uma Torre de Hanói é formada por três discos sobrepostos transpassados por uma haste. Tendo mais duas hastes e podendo mover um disco por vez, mas nunca deixando um disco maior sobre um disco menor, como podemos passar os discos para uma outra haste? 
+3. Três jesuítas e três canibais precisam atravessar um rio. No entanto dispõem apenas de um barco com capacidade para duas pessoas. Por medida de segurança não se permite que em alguma das margens do rio a quantidade de jesuítas seja inferior à quantidade de canibais. Qual a seqüência de viagens necessárias para a travessia do rio com segurança para os jesuítas?
 
   
 
