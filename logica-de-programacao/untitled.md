@@ -9,6 +9,11 @@ description: 'Exercícios para praticar algoritmos, pseudocódigo e fluxograma'
 1. Escreva um algoritmo para uma ação que você faz no seu dia-a-dia, por exemplo, fritar ovo.
 2. Escreva um algoritmo para ler as dimensões de um retângulo \(base e altura\), calcular e escrever a área do retângulo.
 3. Escreva um algoritmo que leia a idade de uma pessoa em anos e escreva a idade dessa pessoa  apenas em dias. Considerar o ano com 365 dias e mês com 30 dias.
+4. Escreva um algoritmo para o cálculo de média final de um aluno, para ele saber se passou de ano ou não.
+   1. A média para passar de ano na escola é 7 
+   2. O ano escolar tem 3 trimestres 
+   3. Alunos aprovados devem ver a mensagem: Parabéns Beija-flor, você está aprovado!
+   4. Alunos reprovados devem ver a mensagem: João-de-barro , você está reprovado.
 
 ### Exercícios - Pseudocódigo 
 
