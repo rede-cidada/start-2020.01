@@ -102,7 +102,7 @@ export const Home = () => {
 };
 ```
 
-E por último temos um link em cada página que aponta pra `home` veja no exemplo da página  `hooks`   \[e aqui está o link da nossa aplicação\]\([https://codesandbox.io/s/hello-world-react-router-hl9yq?file=/src/App.js](https://codesandbox.io/s/hello-world-react-router-hl9yq?file=/src/App.js)\)
+E por último temos um link em cada página que aponta pra `home` veja no exemplo da página  `hooks`   [e aqui está o link da nossa aplicação](https://codesandbox.io/s/hello-world-react-router-hl9yq?file=/src/App.js).
 
 ```javascript
 import React from "react";
