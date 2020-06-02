@@ -18,6 +18,6 @@
 ## Exercícios - Lógica de Programação <a id="logica-de-programacao"></a>
 
 * [Algoritmos, Pseudocódigos e Fluxograma](logica-de-programacao/untitled.md)
-* [Variáveis e Constantes](logica-de-programacao/variaveis-e-constantes.md)
+* [Variáveis/Constantes/Operadores/Tipos de Dados.](logica-de-programacao/variaveis-e-constantes.md)
 * [Untitled](logica-de-programacao/untitled-1.md)
 
