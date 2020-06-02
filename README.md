@@ -110,9 +110,13 @@ Rede de computadores pode ser definida como um conjunto computadores e outros di
 =&gt; **LAN \(Local Area Network\):** são redes locais porque cobrem uma área limitada, visto que quanto maior a distância, maior a taxa de erros que pode ocorrer devido à falha de sinal. São usadas para ligar estações de trabalho, servidores, periféricos, em uma casa, escritório, etc.   
 =&gt; **WAN \(Wide Area Network\):** a WAN abrange uma grande área geográfica, como um país ou continente. A internet é a maior WAN que existe. Em geral uma WAN contém um conjunto de servidores que formam sub redes e ligam redes dentro de uma vasta área, permitindo a comunicação a grande distância.
 
-**Intranet** A intranet permite tudo o que a internet dispõe, porém é restrita a um certo público, por exemplo, todos os funcionários de uma empresa podem acessar a intranet com um nome de usuário e senha devidamente especificados pela coordenação da empresa O acesso a intranet geralmente é feito em um servidor local em uma rede local \(LAN\).
+**Intranet** 
 
-**Extranet** Quando alguma informação ou dado da intranet é aberta a clientes ou fornecedores de uma empresa, a rede passa a ser chamada de extranet. ou quando uma empresa tem uma intranet e seu fornecedor também, e ambas essas redes privadas compartilham uma rede entre si \(para facilitar pedidos, pagamentos, etc.\), essa rede compartilhada também é uma extranet.   
+A intranet permite tudo o que a internet dispõe, porém é restrita a um certo público, por exemplo, todos os funcionários de uma empresa podem acessar a intranet com um nome de usuário e senha devidamente especificados pela coordenação da empresa O acesso a intranet geralmente é feito em um servidor local em uma rede local \(LAN\).
+
+**Extranet** 
+
+Quando alguma informação ou dado da intranet é aberta a clientes ou fornecedores de uma empresa, a rede passa a ser chamada de extranet. ou quando uma empresa tem uma intranet e seu fornecedor também, e ambas essas redes privadas compartilham uma rede entre si \(para facilitar pedidos, pagamentos, etc.\), essa rede compartilhada também é uma extranet.   
 **=&gt;** A diferença básica entre intranet e extranet está em quem gerencia a rede. O funcionamento e a arquitetura da rede é a mesma. Quem gerencia uma intranet é só uma empresa. Já uma extranet, os gerentes são as várias empresas que compartilham a rede.
 
 ![Imagem Rede de computadores. Fonte:https://www.tecmundo.com.br/ \[7\]](https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz_%2F-M7t0BTHjyrLP3wgpG57%2F-M7t3JYdZeSyUWg5N3Uv%2Frede-internet.jpg?alt=media&token=3a3ca4f3-54e5-468e-a2b0-5d0d30a6c9f5)
