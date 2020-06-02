@@ -20,5 +20,5 @@
 * [Algoritmos, Pseudocódigos e Fluxograma](logica-de-programacao/untitled.md)
 * [Variáveis/Constantes/Operadores/Tipos de Dados.](logica-de-programacao/variaveis-e-constantes.md)
 * [Estruturas de decisão e repetição](logica-de-programacao/estruturas-de-decisao-e-repeticao.md)
-* [Untitled](logica-de-programacao/untitled-1.md)
+* [Funções](logica-de-programacao/untitled-1.md)
 
