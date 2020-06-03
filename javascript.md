@@ -22,7 +22,7 @@ A linguagem permite que  você desenvolva vários tipos de projetos, desde os ma
 
 * Sites  [http://fancyapps.com/fancybox/3/](http://fancyapps.com/fancybox/3/) [mirrorball.com](https://mirrorball.com/) [buzzworthystudio.com](https://buzzworthystudio.com/) [ark-shelter.com](https://ark-shelter.com/)
 * Aplicações web \(Gmail, Google Maps, Google Docs\)
-* Games \([ex: pacman](https://pacman.platzh1rsch.ch/)\)
+* Games \([ex: pacman](https://pacman.platzh1rsch.ch/), [https://play.gl/](https://play.gl/), [https://www.miumiu.com/miumiu-twist/en/](https://www.miumiu.com/miumiu-twist/en/)\)
 * Animações complexas
 
 ###  Javascript e a especificação ECMAScript
