@@ -8,7 +8,7 @@ Antes de estudarmos o JavaScript, vimos na aula de lógica de programação sobr
   
 Então como vamos dar essa instrução ao nosso computador? será que ele vai executar as minhas instruções do jogo que quero criar para _**web**_ escrevendo no idioma português? a resposta é: Não, precisamos estudar um _**"idioma"**_ uma linguagem da web que o computador entenda essa instruções para que eu comece a criar o meu jogo, então vamos começar a estudar o JavaScript.
 
-## O que é JavaScript?
+## Hello! o que é JavaScript?
 
 JavaScript é uma linguagem de programação interpretada, isso significa que você escreve o seu programa em um arquivo .js e abre esse arquivo em um navegador ou no node.js, ele automaticamente vai ser interpretado, diferente de uma linguagem compilada que primeiro tem que compilar o código para depois executar.\(exemplo developer tools\).  
   
@@ -20,7 +20,7 @@ O JavaScript foi criado para aplicações Front-End, onde faz a manipulação do
   
 A linguagem permite que  você desenvolva vários tipos de projetos, desde os mais simples e complexos como: 
 
-* Sites
+* Sites  [http://fancyapps.com/fancybox/3/](http://fancyapps.com/fancybox/3/) [mirrorball.com](https://mirrorball.com/) [buzzworthystudio.com](https://buzzworthystudio.com/) [ark-shelter.com](https://ark-shelter.com/)
 * Aplicações web \(Gmail, Google Maps, Google Docs\)
 * Games \([ex: pacman](https://pacman.platzh1rsch.ch/)\)
 * Animações complexas
