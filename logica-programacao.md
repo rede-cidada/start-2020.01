@@ -423,7 +423,7 @@ Exercícios
 
 Funções são blocos de código que executam determinada atividade. As funções são utilizadas quando são chamadas \(opa como assim chamadas?\) Quando dizemos que as funções são chamadas significa que elas são referenciadas.
 
-Estrutura de função
+**Estrutura de função**
 
 ```text
 function nomeDaFuncao(parametro1, parametro2) {
