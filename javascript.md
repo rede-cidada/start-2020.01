@@ -21,7 +21,7 @@ O JavaScript foi criado para aplicações Front-End, onde faz a manipulação do
 A linguagem permite que  você desenvolva vários tipos de projetos, desde os mais simples e complexos como: 
 
 * Sites  [http://fancyapps.com/fancybox/3/](http://fancyapps.com/fancybox/3/) [mirrorball.com](https://mirrorball.com/) [buzzworthystudio.com](https://buzzworthystudio.com/) [ark-shelter.com](https://ark-shelter.com/)
-* Aplicações web \(Gmail, Google Maps, Google Docs\)
+* Aplicações web \(Gmail, Google Maps, Google Docs, Github, Slack, Linkedin\)
 * Games \([ex: pacman](https://pacman.platzh1rsch.ch/), [https://play.gl/](https://play.gl/), [https://www.miumiu.com/miumiu-twist/en/](https://www.miumiu.com/miumiu-twist/en/)\)
 * Animações complexas
 
