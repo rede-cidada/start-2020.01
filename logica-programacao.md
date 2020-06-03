@@ -468,7 +468,7 @@ Podemos utilizar técnicas simples para facilitar a escrita e leitura de um cód
 4 - É melhor fazer várias funções pequenas ao invés de fazer uma função muito grande.   
 Essas são apenas algumas ações que podemos fazer para ter boas sintaxe e semântica em nossos algoritmos e códigos.
 
-**Referências Bibliográficas:**
+### **Referências Bibliográficas:**
 
 \[1\] [https://www.impacta.com.br/blog/2017/03/24/entenda-o-que-e-logica-de-programacao/](https://www.impacta.com.br/blog/2017/03/24/entenda-o-que-e-logica-de-programacao/)   
 \[2\] [https://www.infoescola.com/informatica/logica-de-programacao/](https://www.infoescola.com/informatica/logica-de-programacao/)   
