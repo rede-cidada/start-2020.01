@@ -1,11 +1,11 @@
 # Table of contents
 
 * [Fundamentos da Internet](README.md)
-* [Lógica de Programação](logica-programacao.md)
 * [HTML](html.md)
 * [CSS](css.md)
-* [DOM](dom-api.md)
+* [Lógica de Programação](logica-programacao.md)
 * [JavaScript](javascript.md)
+* [DOM](dom-api.md)
 * [API REST](api-rest.md)
 * [React](react.md)
 * [React Router](react-router.md)
