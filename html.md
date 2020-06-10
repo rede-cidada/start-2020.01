@@ -85,8 +85,8 @@ Vamos considerar um exemplo mais complicado que usa algumas novas tags:
 ```markup
 <body> 
   <div> 
-    <h1> Irmão para p, mas também neto do corpo </h1> 
-    <p> Irmão para h1, mas também neto do corpo </p> 
+    <h1>Irmão para p, mas também neto do corpo </h1> 
+    <p>Irmão para h1, mas também neto do corpo </p> 
   </div> 
 </body>
 
