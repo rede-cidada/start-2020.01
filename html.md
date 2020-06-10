@@ -724,10 +724,10 @@ Para adicionar isso a um formulário
 
 ```markup
 <form action="/example.html" method="POST">
-  <label for="payment">Cartao de crédito (no spaces):</label>
-  <br>
-  <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
-  <input type="submit" value="Submit">
+    <label for="payment">Cartao de crédito (no spaces):</label>
+    <br>
+    <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+    <input type="submit" value="Submit">
 </form>
 
 ```
