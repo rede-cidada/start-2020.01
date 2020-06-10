@@ -147,7 +147,7 @@ Um dos elementos mais populares em HTML é o `<div>`elemento `<div>`é a abrevia
 
 ```
 
-`<div>`s podem conter qualquer texto ou outros elementos HTML, como links, imagens ou vídeos. Lembre-se de sempre adicionar dois espaços de recuo ao aninhar elementos dentro de `<div>`s para melhor legibilidade.
+`<div>` podem conter qualquer texto ou outros elementos HTML, como links, imagens ou vídeos. Lembre-se de sempre adicionar dois espaços de recuo ao aninhar elementos dentro de `<div>` para melhor legibilidade.
 
 ## Atributos
 
