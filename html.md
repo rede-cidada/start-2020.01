@@ -546,18 +546,18 @@ Podemos comparar o uso dela com a página de um jornal, teríamos uma página, c
 
 ```markup
 <article id="esportes">
- <hgroup>
-  <h1>Esportes no Brasil</h1>
-  <h2>Um pouco sobre o que está acontecendo no mundo dos esportes</h2>
- </hgroup>
- <section id="futebol">
-  <h1>Futebol</h1>
-  <p>conteúdo</p>
- </section>
- <section id="basquete">
-  <h1>Basquete</h1>
-  <p>conteúdo</p>
- </section>
+   <hgroup>
+    <h1>Esportes no Brasil</h1>
+    <h2>Um pouco sobre o que está acontecendo no mundo dos esportes</h2>
+   </hgroup>
+   <section id="futebol">
+    <h1>Futebol</h1>
+    <p>conteúdo</p>
+   </section>
+   <section id="basquete">
+    <h1>Basquete</h1>
+    <p>conteúdo</p>
+   </section>
 </article>
 
 ```
