@@ -28,7 +28,7 @@ Aprender HTML é o primeiro passo na criação de sites, mas mesmo um pouco de c
 
 ![https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz\_%2F-M7rYDNp\_MyRgjGoq0hu%2F-M7rYf3D1Pr8hlSSfZD9%2FCaptura de Tela 2020-05-21 a&#x300;s 11.06.14.png?alt=media&amp;token=a7022673-e688-478f-a116-63430326ac78](https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz_%2F-M7rYDNp_MyRgjGoq0hu%2F-M7rYf3D1Pr8hlSSfZD9%2FCaptura%20de%20Tela%202020-05-21%20a%CC%80s%2011.06.14.png?alt=media&token=a7022673-e688-478f-a116-63430326ac78)
 
-Enter a caption for this image \(optional\)
+
 
 HTML é composto de _elementos_ . Esses elementos estruturam a página da web e definem seu conteúdo. Vamos dar uma olhada em como eles são escritos.
 
@@ -40,8 +40,6 @@ A imagem acima apresenta um elemento de parágrafo HTML. Como podemos ver, o ele
 
 Uma _tag_ e o _conteúdo_ entre elas são chamados de elementos HTML. Existem muitas tags que podemos usar para organizar e exibir texto e outros tipos de conteúdo, como imagens.
 
-‌
-
 Vamos revisar rapidamente cada parte do elemento representado:
 
 * _**Elemento HTML**_ \(ou simplesmente elemento\) - uma unidade de conteúdo em um documento HTML formado por tags HTML e o texto ou mídia que ele contém.
@@ -50,7 +48,7 @@ Vamos revisar rapidamente cada parte do elemento representado:
 * _**Conteúdo**_ - as informações \(texto ou outros elementos\) contidas entre as tags de abertura e fechamento de um elemento HTML.
 * _**Tag de fechamento**_ - a segunda tag HTML usada para finalizar um elemento HTML. As tags de fechamento têm uma barra \( `/`\) dentro delas, logo após o colchete angular esquerdo.
 
-‌
+
 
 ### Body Element
 
@@ -73,7 +71,7 @@ O HTML é organizado como uma coleção de relacionamentos de árvore genealógi
 
 ```markup
 <body> 
-  <p> Este parágrafo é um filho do corpo </ p > 
+  <p> Este parágrafo é um filho do corpo </p> 
 </body>
 
 ```
