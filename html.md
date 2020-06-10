@@ -248,8 +248,6 @@ Em HTML, você pode usar uma tag de _lista não ordenada_ \( `<ul>`\) para criar
 
 O `<ul>`elemento não deve conter texto bruto e não formatará automaticamente o texto bruto em uma lista não ordenada de itens. Itens de lista individuais devem ser adicionados à lista não ordenada usando a `<li>`tag A `<li>`tag do item ou da lista é usada para descrever um item em uma lista.
 
-
-
 ```markup
 <ul> 
   <li>Home</li> 
@@ -264,8 +262,6 @@ No exemplo acima, a lista foi criada usando a `<ul>`tag e todos os itens de list
 * Home
 * Sobre mim
 * Contato
-
-‌
 
 ## Listas ordenadas
 
