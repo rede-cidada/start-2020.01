@@ -324,13 +324,13 @@ A declaração é assim:
 
 ```
 
-Esta declaração é uma instrução e deve ser a primeira linha de código no seu documento HTML. Ele informa ao navegador que tipo de documento esperar, juntamente com qual versão do HTML está sendo usada no documento. Por enquanto, o navegador assumirá corretamente que o `html`in `<!DOCTYPE html>`está se referindo ao HTML5, pois é o padrão atual. O código HTML é sempre salvo em um arquivo com uma extensão **.html** .
+Esta declaração é uma instrução e deve ser a primeira linha de código no seu documento HTML. Ele informa ao navegador que tipo de documento esperar, juntamente com qual versão do HTML está sendo usada no documento. Por enquanto, o navegador assumirá corretamente que o `html` `<!DOCTYPE html>`está se referindo ao HTML5, pois é o padrão atual. O código HTML é sempre salvo em um arquivo com uma extensão **.html** .
 
 ‌
 
 ## A tag &lt;html&gt;
 
-A `<!DOCTYPE html>`declaração fornece ao navegador duas informações \(o tipo de documento e a versão HTML esperada\), mas na verdade não adiciona nenhuma estrutura ou conteúdo HTML.
+A declaração `<!DOCTYPE html>` fornece ao navegador duas informações \(o tipo de documento e a versão HTML esperada\), mas na verdade não adiciona nenhuma estrutura ou conteúdo HTML.
 
 Para criar estrutura e conteúdo HTML, precisamos adicionar `<html>`tag de abertura e fechamento após declarar `<!DOCTYPE html>`:
 
