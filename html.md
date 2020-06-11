@@ -362,7 +362,7 @@ A `<head>`elemento faz parte do HTML, vai acima do elemento `<body>`
 
 O `<head>` contém os _metadados_ para uma página da web. Metadados são informações sobre a página que não são exibidas diretamente na página da web. Diferentemente das informações dentro da tag `<body>` os metadados no cabeçalho são informações sobre a própria página. Vamos ver um exemplo.
 
-Ele contém informações como [title](https://developer.mozilla.org/en-US/docs/Glossary/title) , links para `[<css>](<https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/css>)` \(se você deseja modelar seu conteúdo HTML com CSS\), links para favicons personalizados e outros
+
 
 ```markup
 <! DOCTYPE html> 
