@@ -392,7 +392,7 @@ Quando você compartilha algum site nas redes sociais, você percebeu que quando
 
 _Open Graph_ Markup é um protocolo que permite administrar e monitorar os dados que são construídos nas visualizações estruturação das páginas web.
 
-permite que qualquer página da Web se torne um objeto rico em um gráfico social, saiba que não se trata apenas de embelezar seu post, mas, mas se pesquisarem sobre _marketing digital_, isso aumenta o tráfego da sua página, mas... sou desenvolvedor, preciso entender de marketing? não, mas acredito que quando você for desenvolver o seu site, você, vai querer que muitas pessoas visitem, conheça mais sobre você e possa surgir alguma oportunidade de trabalho, certo? então usando o _Open Graph_ Markup no seu código, vai te ajudar a atrair mais visitantes.
+permite que qualquer página da Web se torne um objeto rico em um gráfico social, saiba que não se trata apenas de embelezar seu post, mas, se pesquisarem sobre _marketing digital_, isso aumenta o tráfego da sua página, mas... sou desenvolvedor, preciso entender de marketing? não, mas acredito que quando você for desenvolver o seu site, você, vai querer que muitas pessoas visitem, conheça mais sobre você e possa surgir alguma oportunidade de trabalho, certo? então usando o _Open Graph_ Markup no seu código, vai te ajudar a atrair mais visitantes.
 
 ‌
 
