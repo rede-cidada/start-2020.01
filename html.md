@@ -140,8 +140,8 @@ Um dos elementos mais populares em HTML é o `<div>`elemento `<div>`é a abrevia
 ```markup
 <body> 
   <div> 
-    <h1>Por que usar divs?</h1> 
-    <p>Ótimo para agrupar elementos!</p> 
+      <h1>Por que usar divs?</h1> 
+      <p>Ótimo para agrupar elementos!</p> 
   </div> 
 </body>
 
