@@ -214,7 +214,7 @@ O elemento âncora `<a>`pode criar hiperlinks para diferentes partes do mesmo do
 O atributo`target` em um `<a>`elemento âncora especifica onde um hiperlink deve ser aberto. Um `target`valor de `"_blank"`dirá ao navegador para abrir o hiperlink em uma nova guia
 
 ```markup
-<a href="<http://www.redecidada.org.br/>" target="_blank">Visite este site</a> 
+<a href="http://www.redecidada.org.br" target="_blank">Visite este site</a> 
 
 ```
 
