@@ -468,6 +468,18 @@ A função do motor de renderização é renderizar, ou seja exibir os conteúdo
 * **Trident -** Internet Explorer
 * **Presto -** Opera
 
+Quando vamos implementar o estilo de uma página no CSS, usamos propriedades prefixadas pelos mecanismos de renderização relevantes,  \( `-webkit` para o Chrome e o Safari, `-moz` para o Firefox, `-o` para o Opera, `-ms` para o Internet Explorer\). 
+
+```markup
+.elementClass {
+-moz-border-radius: 2em;
+-ms-border-radius: 2em;
+-o-border-radius: 2em;
+-webkit-border-radius: 2em;
+border-radius: 2em;
+}
+```
+
 _Obs: por esse motivo, quando estamos desenvolvendo um site em HTML, criamos um arquivo onde padronizamos todos essa propriedades CSS. \( ex: reset.css\)_
 
 ## **HTML5**
