@@ -758,6 +758,7 @@ Essas verificações rápidas ajudam a garantir que os dados de entrada estejam 
 * [https://rockcontent.com/blog/meta-tags-para-redes-sociais/](https://rockcontent.com/blog/meta-tags-para-redes-sociais/)
 * [https://developers.facebook.com/docs/sharing/web](https://developers.facebook.com/docs/sharing/web)
 * [https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet](https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet)
+* [https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 ### 
 
