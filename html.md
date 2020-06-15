@@ -523,6 +523,7 @@ No HTML5 foram criadas diversas tags semânticas para indicar aos user-agents qu
          <h3>Titulo</h3>
          <p>Contúdo do Site</p>
       </section>
+   </article>   
    <footer>
       <p>Footer</p>
    </footer>
