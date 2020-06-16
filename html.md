@@ -596,9 +596,9 @@ Nesta parte do curso, aprenderemos como usar o `<table>`elemento HTML para apres
 ```markup
 <table>
     <tr> <!-- table row 1-->
-      <th>Aluno</th><!--Coluna - table heading-->
-      <th>Disciplina</th><!--Coluna - table heading-->
-      <th>Nota</th><!--Coluna - table heading-->
+      <th>Aluno</th><!--Título da Coluna - table heading-->
+      <th>Disciplina</th><!--Título da Coluna - table heading-->
+      <th>Nota</th><!--Título da Coluna - table heading-->
     </tr>
     <tr><!-- Row 1 -->
       <td>Aluno 1</td><!--conteúdo - table data-->
