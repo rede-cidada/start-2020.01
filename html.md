@@ -583,8 +583,6 @@ O Emmet é um kit de ferramentas para desenvolvedores da Web que pode melhorar b
 
 ![https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz\_%2F-M7xqvysh8XrZUYeJmOs%2F-M7xs3KGstWTsQN2O\_-M%2Femmet-multi-cursor.gif?alt=media&amp;token=36b29d41-43e5-4bb8-afa3-bf3992f63625](https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz_%2F-M7xqvysh8XrZUYeJmOs%2F-M7xs3KGstWTsQN2O_-M%2Femmet-multi-cursor.gif?alt=media&token=36b29d41-43e5-4bb8-afa3-bf3992f63625)
 
-Enter a caption for this image \(optional\)
-
 [Guia do Emmet](https://docs.emmet.io/cheat-sheet/), agora é aprender para os trechos de código para agilizar o desenvolvimento do seus sites, vamos praticar.
 
 ## Introdução às Tabelas
