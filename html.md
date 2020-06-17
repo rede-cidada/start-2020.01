@@ -704,7 +704,7 @@ O uso do `<form>`elemento em conjunto com os outros elementos listados acima nos
 
 ![https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz\_%2F-M83ff38Aty8p5b9lfiN%2F-M83fzZ8EsTymqCD33sQ%2Fform%2Bvalidation.gif?alt=media&amp;token=1082bdb9-9495-4215-93a2-c0148b74082f](https://gblobscdn.gitbook.com/assets%2F-M7-2eRyD9xvpTaq4bz_%2F-M83ff38Aty8p5b9lfiN%2F-M83fzZ8EsTymqCD33sQ%2Fform%2Bvalidation.gif?alt=media&token=1082bdb9-9495-4215-93a2-c0148b74082f)
 
-Enter a caption for this image \(optional\)
+
 
 A Validação é o conceito de verificar os dados fornecidos pelo usuário em relação aos dados necessários. O que vamos no HTML é _a validação do lado do cliente_ para verificar os dados no navegador \(o cliente\). Esta validação ocorre antes dos dados serem enviados para o servidor.
 
