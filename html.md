@@ -710,7 +710,7 @@ A Validação é o conceito de verificar os dados fornecidos pelo usuário em re
 
 Permite dar feedback rapidamente aos usuários para campos específicos, em vez de solicitá-los a preencher um formulário novamente se os dados inseridos no formulário foram rejeitados.
 
-required - nao permite deixar um campo em branco
+required - não permite deixar um campo em branco
 
 valores mínimos e máximos aceitáveis ​​em um campo numérico.
 
