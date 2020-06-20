@@ -458,6 +458,7 @@ Hoje em dia podemos acessar um site de diversos ambientes seja em diferentes tip
 * Mozilla Firefox
 * Edge
 * Opera
+* Safari
 
 **Motores de renderização dos Navegadores:**
 
