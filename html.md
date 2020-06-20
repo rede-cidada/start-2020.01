@@ -466,7 +466,7 @@ A função do motor de renderização é renderizar, ou seja exibir os conteúdo
 
 * **WebKit -** Safari/Chrome
 * **Gecko -** Firefox
-* **Trident -** Internet Explorer
+* **Trident -** Edge
 * **Presto -** Opera
 
 Quando vamos implementar o estilo de uma página no CSS, usamos propriedades prefixadas pelos mecanismos de renderização relevantes,  \( `-webkit` para o Chrome e o Safari, `-moz` para o Firefox, `-o` para o Opera, `-ms` para o Internet Explorer\). 
