@@ -252,7 +252,7 @@ Essa é uma combinação de uma ou mais classes, IDs ou elementos, separados por
  <article class="seletor_desc">
      <h1>Elementos com ID</h1>
      <p>Este parágrafo não tem ID</p>
-     <p>Este parágrafo tem um ID</p>
+     <p id="teste">Este parágrafo tem um ID</p>
  </article>
 ```
 
