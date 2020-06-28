@@ -355,6 +355,63 @@ Como esperado, o layout CSS é baseado principalmente no _modelo de caixas_. Cad
 
 ![](.gitbook/assets/captura-de-tela-2020-06-28-a-s-11.08.01.png)
 
+## Height e Width:
+
+O conteúdo de um elemento tem duas dimensões: uma altura e uma largura. Por padrão, as dimensões de uma caixa HTML são definidas para conter o conteúdo bruto da caixa.  
+  
+a propriedade `height`e as `width`podem ser usados ​​para modificar essas dimensões padrão.
+
+```css
+p{
+ width:240px;
+ height:80px;
+}
+```
+
+## Border:
+
+Uma _borda_ é uma linha que envolve um elemento, como uma moldura em torno de uma pintura. Fronteiras pode ser definido com um específico `width`, `style`e `color`.  
+  
+`width`- A espessura da borda. Espessura de uma borda pode ser definida em pixels ou com um dos seguintes palavras-chave: `thin`, `medium`ou `thick`.  
+  
+`style`- O design da fronteira. Os navegadores da Web podem renderizar qualquer um dos [10 estilos diferentes](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values) . Alguns destes estilos incluem: `none`, `dotted`, e `solid`.  
+  
+`color`- a cor da borda. Os navegadores da Web podem renderizar cores usando alguns formatos diferentes, incluindo [140 palavras-chave coloridas](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) .
+
+```css
+p{ border: 3px solid coral;}
+```
+
+No exemplo acima, a borda tem uma largura de 3 pixels, um estilo `solid`e uma cor de `coral`. Todas as três propriedades são definidas em uma linha de código.
+
+## Border-radius:
+
+Você pode modificar os cantos da caixa de borda de um elemento com a propriedade `border-radius`
+
+```css
+div.container {
+  border: 3px solid rgb(22, 77, 100);
+  border-radius: 5px;
+}
+```
+
+O código no exemplo acima definirá _todos os quatro cantos_ da borda com um raio de 5 pixels \(ou seja, a mesma curvatura que um círculo com raio de 5 pixels teria\).
+
+Você pode criar uma borda que seja um círculo perfeito, definindo o raio igual à altura da caixa ou a `100%`.
+
+```css
+div.container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid rgb(22, 77, 100);
+  border-radius: 100%;
+}
+```
+
+O código no exemplo acima cria um `<div>`círculo perfeito.
+
+## 
+
 ## Tipos de Box Model
 
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
