@@ -465,6 +465,39 @@ padding: 5px 10px;
 
 O primeiro valor `5px` define o valor de preenchimento para os lados superior e inferior do conteúdo. O segundo valor `10px`, define o valor de preenchimento para os lados esquerdo e direito do conteúdo.
 
+### Margin
+
+Até agora, você aprendeu sobre os seguintes componentes do modelo de caixa: conteúdo, bordas e preenchimento. O quarto e último componente do modelo de caixa é a _margem_ .
+
+Margem refere-se ao espaço diretamente fora da caixa. A `margin`propriedade é usada para especificar o tamanho desse espaço.
+
+```css
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+```
+
+O código no exemplo acima colocará 20 pixels de espaço na parte externa da caixa do parágrafo nos quatro lados. Isso significa que outros elementos HTML da página não podem ficar dentro de 20 pixels da borda do parágrafo.
+
+Se você quiser ser ainda mais específico sobre a quantidade de margem em cada lado de uma caixa, poderá usar as seguintes propriedades:
+
+1. `margin-top`
+2. `margin-right`
+3. `margin-bottom`
+4. `margin-left`
+
+Cada propriedade afeta a margem em apenas um lado da caixa, proporcionando mais flexibilidade na personalização.
+
+```css
+p {
+  border: 3px solid DarkSlateGrey;
+  margin-right: 15px;
+}
+```
+
+No exemplo acima, apenas o lado direito da caixa do parágrafo terá uma margem de 15 pixels. É comum ver valores de margem usados para um lado específico de um elemento.
+
 ## Tipos de Box Model
 
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
