@@ -441,6 +441,16 @@ p.content-header {
 
 no exemplo acima, o preenchimento será aplicado apenas na parte inferior.
 
+Outra implementação da `padding`propriedade permite especificar exatamente quanto preenchimento deve haver em cada lado do conteúdo em uma única declaração.
+
+```css
+p.content-header {
+  border: 3px solid grey;
+  padding: 6px 11px 4px 9px; 
+  /* top 6px, right 11px, bottom 4px e left 9px*/
+}
+```
+
 ## Tipos de Box Model
 
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
