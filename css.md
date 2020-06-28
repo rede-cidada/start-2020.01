@@ -657,31 +657,37 @@ O valor padrão dessa propriedade é `content-box`. Esse é o mesmo modelo de ca
 Width+Padding+Border =  Tamanho da Caixa - modelo de caixa afetado pela espessura da borda e pelo preenchimento.
 {% endhint %}
 
-```css
-div {
-  color: #FFF;
-  background-color: #5995DA;
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid #5D6063;
-  border-radius: 5px;
-  
-  width: 200px;
-  box-sizing: border-box;  /* Add this */
-}
-```
-
-### Border-box:
+## Modelo de Caixa: Border-Box
 
 O modelo da caixa de borda diz algo diferente sobre a propriedade width, que a margin e padding não está incluída, ou seja implementando a propriedade box-sizing: border-box o tamanho da sua caixa é 200px.  
 
 
-![](.gitbook/assets/box-sizing-border-box-ace2be.png)
+![](.gitbook/assets/captura-de-tela-2020-06-28-a-s-16.46.21.png)
 
- exemplo no [codepen](%20https://codepen.io/karinamachado/pen/LYpBEQj)
+{% hint style="info" %}
+a propriedade **width** é igual à largura real processada do elemento. A área de conteúdo é dimensionada automaticamente com base na largura restante, depois que a borda e o preenchimento são subtraídos. Segue exemplo abaixo.
+{% endhint %}
 
-## O que é Responsividade?
+```markup
+<h1>Hello World</h1>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
+</style>
+```
+
+ O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
   
