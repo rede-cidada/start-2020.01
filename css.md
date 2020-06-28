@@ -590,6 +590,12 @@ A `overflow`propriedade controla o que acontece com o conteúdo que derrama ou t
 * `visible`- quando definido para esse valor, o conteúdo excedente será exibido fora do elemento que o contém. Observe que esse é o valor padrão.
 
 ```css
+<p>
+
+
+
+</p>
+
 p {
   overflow: scroll; 
 }
