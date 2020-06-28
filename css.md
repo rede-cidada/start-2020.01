@@ -639,8 +639,6 @@ abordamos as quatro propriedades do modelo de caixa: altura e largura, preenchim
 
 ## Tipos de Box Model
 
-
-
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
 
 ### Content Box:
