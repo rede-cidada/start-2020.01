@@ -647,9 +647,19 @@ Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de 
 
 ### Content Box:
 
-O modelo da caixa de conteúdo é o que é usado por padrão pelo CSS. No caso do modelo da caixa de conteúdo, a propriedade  **width** no CSS refere-se à largura do conteúdo. Para determinar a largura total da caixa, adicione o padding e margin da esquerda e / ou direita que possam estar presentes. De acordo com o código abaixo, o tamanho total dessa caixa seria: 244px
+Muitas propriedades no CSS têm um valor padrão e não precisam ser definidas explicitamente na folha de estilo.
 
-![](.gitbook/assets/box-sizing-content-box-09f48a.png)
+Por exemplo, o padrão `font-weight`do texto é `normal`, mas esse par de propriedade e valor geralmente não é especificado em uma folha de estilo.
+
+O mesmo pode ser dito sobre o modelo de caixa que os navegadores assumem. Em CSS, a `box-sizing`propriedade controla o tipo de modelo de caixa que o navegador deve usar ao interpretar uma página da web.
+
+O valor padrão dessa propriedade é `content-box`. Esse é o mesmo modelo de caixa afetado pela espessura da borda e pelo preenchimento.
+
+![](.gitbook/assets/captura-de-tela-2020-06-28-a-s-16.34.44.png)
+
+{% hint style="info" %}
+Width+Padding+Border =  Tamanho da Caixa - modelo de caixa afetado pela espessura da borda e pelo preenchimento.
+{% endhint %}
 
 ```css
 div {
