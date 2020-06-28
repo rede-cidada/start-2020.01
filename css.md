@@ -589,16 +589,18 @@ A `overflow`propriedade controla o que acontece com o conteúdo que derrama ou t
 * `scroll` - quando definido como esse valor, uma barra de rolagem será adicionada à caixa do elemento para que o restante do conteúdo possa ser visualizado rolando.
 * `visible`- quando definido para esse valor, o conteúdo excedente será exibido fora do elemento que o contém. Observe que esse é o valor padrão.
 
-```css
+```markup
 <p>
-
-
-
+No exemplo acima, se algum conteúdo do parágrafo exceder o limite (talvez um usuário redimensione 
+a janela do navegador),uma barra de rolagem aparecerá para que os usuários 
+ possam visualizar o restante do conteúdo.
 </p>
 
+<style>
 p {
   overflow: scroll; 
 }
+</style>
 ```
 
 No exemplo acima, se algum conteúdo do parágrafo exceder o limite \(talvez um usuário redimensione a janela do navegador\), uma barra de rolagem aparecerá para que os usuários possam visualizar o restante do conteúdo.
