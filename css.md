@@ -667,11 +667,14 @@ Width+Padding+Border =  Tamanho da Caixa - modelo de caixa afetado pela espessur
 }
 
 h1 {
-  border: 2px solid red;
+  border: 1px solid red;
   height: 200px;
   width: 300px;
   padding: 10px;
 }
+/*Largura total da caixa é de 322px e altura 222px*/
+/* 300+10+10+1+1 Largura*/
+/* 200+10+10+1+1 Altura*/
 
 </style>
 ```
@@ -697,7 +700,7 @@ a propriedade **width** é igual à largura real processada do elemento. A área
 }
 
 h1 {
-  border: 2px solid blue;
+  border: 1px solid blue;
   height: 200px;
   width: 300px;
   padding: 10px;
