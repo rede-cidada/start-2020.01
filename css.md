@@ -657,6 +657,25 @@ O valor padrão dessa propriedade é `content-box`. Esse é o mesmo modelo de ca
 Width+Padding+Border =  Tamanho da Caixa - modelo de caixa afetado pela espessura da borda e pelo preenchimento.
 {% endhint %}
 
+```markup
+<h1>Hello World</h1>
+
+<style>
+
+* {
+  box-sizing: content-box;
+}
+
+h1 {
+  border: 2px solid red;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
+</style>
+```
+
 ## Modelo de Caixa: Border-Box
 
 O modelo da caixa de borda diz algo diferente sobre a propriedade width, que a margin e padding não está incluída, ou seja implementando a propriedade box-sizing: border-box o tamanho da sua caixa é 200px.  
@@ -678,7 +697,7 @@ a propriedade **width** é igual à largura real processada do elemento. A área
 }
 
 h1 {
-  border: 1px solid black;
+  border: 2px solid blue;
   height: 200px;
   width: 300px;
   padding: 10px;
