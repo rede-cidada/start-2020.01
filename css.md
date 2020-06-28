@@ -498,6 +498,14 @@ p {
 
 No exemplo acima, apenas o lado direito da caixa do parágrafo terá uma margem de 15 pixels. É comum ver valores de margem usados para um lado específico de um elemento.
 
+### Margin Auto:
+
+A `margin`propriedade também permite centralizar o conteúdo. No entanto, você deve seguir alguns requisitos de sintaxe. Veja o seguinte exemplo:
+
+```css
+div { margin : 0 auto ;}
+```
+
 ## Tipos de Box Model
 
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
