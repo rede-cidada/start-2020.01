@@ -566,6 +566,39 @@ No exemplo acima, a altura de todos os parágrafos não diminuirá abaixo de 150
 
 O que acontecerá com o conteúdo da caixa de um elemento se a `max-height`propriedade estiver configurada muito baixa? É possível que o conteúdo seja derramado fora da caixa,
 
+## Overflow
+
+Todos os componentes do modelo de caixa compreendem o tamanho de um elemento. Por exemplo, uma imagem com as seguintes dimensões tem 364 pixels de largura e 244 pixels de altura.
+
+* 300 pixels de largura
+* 200 pixels de altura
+* 10 pixels preenchidos à esquerda e à direita
+* 10 pixels de preenchimento na parte superior e inferior
+* Borda de 2 pixels à esquerda e à direita
+* Borda de 2 pixels na parte superior e inferior
+* Margem de 20 pixels à esquerda e à direita
+* Margem de 10 pixels na parte superior e inferior
+
+As dimensões totais \(364 por 244 pixels\) são calculadas adicionando todas as dimensões verticais e todas as dimensões horizontais. Às vezes, esses componentes resultam em um elemento que é maior que a área que contém os pais.
+
+Como podemos garantir que podemos visualizar todos os elementos maiores que a área contendo os pais?
+
+A `overflow`propriedade controla o que acontece com o conteúdo que derrama ou transborda fora da caixa. Pode ser definido como um dos seguintes valores:
+
+* `hidden` - quando definido com esse valor, qualquer conteúdo que exceda o limite será oculto.
+* `scroll` - quando definido como esse valor, uma barra de rolagem será adicionada à caixa do elemento para que o restante do conteúdo possa ser visualizado rolando.
+* `visible`- quando definido para esse valor, o conteúdo excedente será exibido fora do elemento que o contém. Observe que esse é o valor padrão.
+
+```css
+p {
+  overflow: scroll; 
+}
+```
+
+No exemplo acima, se algum conteúdo do parágrafo exceder o limite \(talvez um usuário redimensione a janela do navegador\), uma barra de rolagem aparecerá para que os usuários possam visualizar o restante do conteúdo.
+
+A propriedade overflow é configurada em um elemento pai para instruir um navegador da web como renderizar elementos filho. Por exemplo, se a propriedade overflow de uma div estiver definida como `scroll`, todos os filhos dessa div exibirão o conteúdo excedente com uma barra de rolagem.
+
 ## Tipos de Box Model
 
 
