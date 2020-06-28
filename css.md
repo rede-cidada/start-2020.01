@@ -319,7 +319,7 @@ Todos os elementos em uma página da web são interpretados pelo navegador como 
 
 Vamos ver o exemplo abaixo:
 
-```css
+```markup
 <h1>Introducção ao CSS</h1>
 
 <h3>Aprendendo Box Model</h3>
