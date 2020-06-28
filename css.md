@@ -463,6 +463,8 @@ padding: 5px 10px;
 }
 ```
 
+O primeiro valor `5px` define o valor de preenchimento para os lados superior e inferior do conteúdo. O segundo valor `10px`, define o valor de preenchimento para os lados esquerdo e direito do conteúdo.
+
 ## Tipos de Box Model
 
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
