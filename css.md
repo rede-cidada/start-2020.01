@@ -726,7 +726,7 @@ No exemplo acima, a altura da caixa permaneceria em 200 pixels e a largura em 30
 
 ## Revisão: Alterando o modelo de caixa
 
-Nesta lição, você aprendeu sobre uma importante limitação do modelo de caixa padrão: as dimensões da caixa são afetadas pela espessura da borda e pelo preenchimento.
+Você aprendeu sobre uma importante limitação do modelo de caixa padrão: as dimensões da caixa são afetadas pela espessura da borda e pelo preenchimento.
 
 Vamos revisar o que você aprendeu:
 
