@@ -722,8 +722,6 @@ No exemplo acima, a altura da caixa permaneceria em 200 pixels e a largura em 30
 
 [Link com exemplo no codepen.](https://codepen.io/karinamachado/pen/LYpBEQj?editors=1100)
 
-
-
 ## Revisão: Alterando o modelo de caixa
 
 Você aprendeu sobre uma importante limitação do modelo de caixa padrão: as dimensões da caixa são afetadas pela espessura da borda e pelo preenchimento.
