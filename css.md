@@ -722,6 +722,20 @@ No exemplo acima, a altura da caixa permaneceria em 200 pixels e a largura em 30
 
 [Link com exemplo no codepen.](https://codepen.io/karinamachado/pen/LYpBEQj?editors=1100)
 
+
+
+## Revisão: Alterando o modelo de caixa
+
+Nesta lição, você aprendeu sobre uma importante limitação do modelo de caixa padrão: as dimensões da caixa são afetadas pela espessura da borda e pelo preenchimento.
+
+Vamos revisar o que você aprendeu:
+
+1. No modelo de caixa padrão, as dimensões da caixa são afetadas pela espessura da borda e pelo preenchimento.
+2. A `box-sizing`propriedade controla o modelo de caixa usado pelo navegador.
+3. O valor padrão da `box-sizing`propriedade é `content-box`.
+4. O valor para o novo modelo de caixa é `border-box`.
+5. O `border-box`modelo não é afetado pela espessura da borda ou preenchimento.
+
 ##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
