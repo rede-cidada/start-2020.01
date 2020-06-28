@@ -317,7 +317,7 @@ Existem dois jeitos de importar uma fonte para o seu projeto:
 
 Todos os elementos em uma página da web são interpretados pelo navegador como dentro de uma caixa. Isto é o que se entende por modelo de caixa. Por exemplo, quando você altera a cor de fundo de um elemento, altera a cor de fundo de sua caixa inteira. Portanto cada elemento HTML, `<h1>...<h6>`, `<p>,` `<ul><ol>`, `<form>`, `<div> considere que encontra-se dentro de uma caixa.`
 
-Vamos ver o exemplo abaixo:
+**Vamos ver o exemplo abaixo:**
 
 ```markup
 <h1>Introducção ao CSS</h1>
@@ -340,11 +340,13 @@ Vamos começar fazendo nossas fontes e textos parecerem um pouco melhores.
 </p>
 ```
 
-Observando o exemplo acima, visualize cada elemento HTML  como quatro caixas empilhadas.
+_Observando o exemplo acima, visualize cada elemento HTML  como quatro caixas empilhadas._
 
 O "modelo de caixa CSS" é um conjunto de regras que definem como todas as páginas da Web na Internet são renderizadas. O CSS trata cada elemento do seu documento HTML como uma "caixa" com várias propriedades diferentes que determinam onde ele aparece na página. 
 
-Como esperado, o layout CSS é baseado principalmente no _modelo de caixas_. Cada um dos blocks que ocupam espaço na sua página tem propriedades como essas:
+Como esperado, o layout CSS é baseado principalmente no _modelo de caixas_. Cada um dos blocos que ocupam espaço na sua página tem propriedades como essas:  
+  
+    **O que consiste em uma caixa:**
 
 * `padding:` o espaço ao redor do conteúdo \(ex.: ao redor do texto de um parágrafo\).
 * `border:` a linha sólida do lado de fora do padding.
