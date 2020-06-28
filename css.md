@@ -709,6 +709,9 @@ h2 {
 }
 
  /*Largura total da caixa é de 300px e altura 200px*/
+ /* inspecione o código no navegador e veja a diferença
+ no modelo de caixa no Box Model*/
+ 
 
 </style>
 ```
@@ -716,6 +719,8 @@ h2 {
 {% hint style="info" %}
 No exemplo acima, a altura da caixa permaneceria em 200 pixels e a largura em 300 pixels. A espessura da borda e o preenchimento permaneceriam inteiramente _dentro_ da caixa.
 {% endhint %}
+
+[Link com exemplo no codepen.](https://codepen.io/karinamachado/pen/LYpBEQj?editors=1100)
 
 ##  O que é Responsividade?
 
