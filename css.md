@@ -699,7 +699,7 @@ a propriedade **width** é igual à largura real processada do elemento. A área
   box-sizing: border-box;
 }
 
-h1 {
+h2 {
   border: 1px solid blue;
   height: 200px;
   width: 300px;
