@@ -451,6 +451,18 @@ p.content-header {
 }
 ```
 
+No exemplo acima, os quatro valores `6px 11px 4px 9px`correspondem à quantidade de preenchimento em uma rotação no sentido horário. Em ordem, especifica a quantidade de preenchimento nos lados superior \(6 pixels\), direito \(11 pixels\), inferior \(4 pixels\) e esquerdo \(9 pixels\) do conteúdo.
+
+Ao usar esta implementação da `padding`propriedade, devemos especificar um valor de preenchimento para todos os quatro lados do elemento.
+
+No entanto, se os valores superior e inferior do preenchimento se igualarem, e os valores esquerdo e direito do preenchimento também se igualarem, você poderá usar o seguinte atalho:
+
+```css
+p.content-header{
+padding: 5px 10px;
+}
+```
+
 ## Tipos de Box Model
 
 Existem dois tipos de modelo de caixa que você encontrará no CSS: o modelo de caixa de conteúdo e o modelo de caixa de borda.
