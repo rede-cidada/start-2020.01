@@ -681,7 +681,9 @@ h1 {
 
 ## Modelo de Caixa: Border-Box
 
-O modelo da caixa de borda diz algo diferente sobre a propriedade width, que a margin e padding não está incluída, ou seja implementando a propriedade box-sizing: border-box o tamanho da sua caixa é 200px.  
+O código no exemplo acima redefine o modelo de caixa `border-box`para todos os elementos HTML. Esse novo modelo de caixa evita os problemas dimensionais existentes no modelo de caixa anterior que você aprendeu.
+
+Neste modelo de caixa, a altura e a largura da caixa permanecerão fixas. A espessura da borda e o preenchimento serão incluídos dentro da caixa, o que significa que as dimensões gerais da caixa não mudam.  
 
 
 ![](.gitbook/assets/captura-de-tela-2020-06-28-a-s-16.46.21.png)
