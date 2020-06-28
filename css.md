@@ -706,7 +706,7 @@ h1 {
 </style>
 ```
 
- O que é Responsividade?
+##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
   
