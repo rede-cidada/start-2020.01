@@ -410,6 +410,17 @@ div.container {
 
 O código no exemplo acima cria um `<div>`círculo perfeito.
 
+## Padding
+
+O espaço entre o conteúdo de uma caixa e as bordas de uma caixa é conhecido como _preenchimento_ . O preenchimento é como o espaço entre uma imagem e a moldura ao redor. Em CSS, você pode modificar esse espaço com a propriedade `padding`
+
+```css
+div {
+  border: 3px solid coral;
+  padding: 10px;
+}
+```
+
 ## 
 
 ## Tipos de Box Model
