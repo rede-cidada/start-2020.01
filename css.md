@@ -635,7 +635,7 @@ abordamos as quatro propriedades do modelo de caixa: altura e largura, preenchim
 6. As margens horizontais são adicionadas, portanto, o espaço total entre as bordas dos elementos adjacentes é igual à soma da margem direita de um elemento e da margem esquerda do elemento adjacente.
 7. As margens verticais são reduzidas, portanto o espaço entre os elementos adjacentes verticalmente é igual à margem maior.
 8. `margin: 0 auto` centraliza horizontalmente um elemento dentro de sua área de conteúdo pai, se tiver uma largura.
-9. A `overflow`propriedade pode ser definida como `display`, `hide`ou `scroll`, e determina como o HTML renderizará o conteúdo que excede a área de conteúdo de seu pai.
+9. A `overflow`propriedade pode ser definida como `display`, `hide`ou `scroll`, e determina como o HTML irá renderizar o conteúdo que excede a área de conteúdo de seu pai.
 
 ## Tipos de Box Model
 
