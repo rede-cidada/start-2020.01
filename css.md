@@ -625,8 +625,6 @@ Observe que ambas as propriedades estão definidas como `0`. Quando essas propri
 
 ### Revisando o Modelo de caixa
 
-
-
 abordamos as quatro propriedades do modelo de caixa: altura e largura, preenchimento, bordas e margens. Compreender o modelo de caixa é um passo importante para aprender tópicos mais avançados sobre HTML e CSS. Vamos dedicar um minuto para revisar o que você aprendeu.
 
 1. O modelo de caixa compreende um conjunto de propriedades usadas para criar espaço ao redor e entre elementos HTML.
