@@ -708,8 +708,14 @@ h2 {
   padding: 10px;
 }
 
+ /*Largura total da caixa é de 300px e altura 200px*/
+
 </style>
 ```
+
+{% hint style="info" %}
+No exemplo acima, a altura da caixa permaneceria em 200 pixels e a largura em 300 pixels. A espessura da borda e o preenchimento permaneceriam inteiramente _dentro_ da caixa.
+{% endhint %}
 
 ##  O que é Responsividade?
 
