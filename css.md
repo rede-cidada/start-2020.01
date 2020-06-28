@@ -607,6 +607,22 @@ No exemplo acima, se algum conteúdo do parágrafo exceder o limite \(talvez um 
 
 A propriedade overflow é configurada em um elemento pai para instruir um navegador da web como renderizar elementos filho. Por exemplo, se a propriedade overflow de uma div estiver definida como `scroll`, todos os filhos dessa div exibirão o conteúdo excedente com uma barra de rolagem.
 
+## Redefinindo padrões
+
+Todos os principais navegadores da Web possuem uma folha de estilo padrão que eles usam na ausência de uma folha de estilo externa. Essas folhas de estilo padrão são conhecidas como _folhas de estilo do agente do usuário_ . Nesse caso, o termo " [agente do usuário](https://en.wikipedia.org/wiki/User_agent) " é um termo técnico para o navegador.
+
+As folhas de estilo do agente do usuário geralmente têm regras CSS padrão que definem valores padrão para preenchimento e margem. Isso afeta a maneira como o navegador exibe elementos HTML, o que pode dificultar o desenvolvimento ou o estilo de uma página da web.
+
+Muitos desenvolvedores optam por redefinir esses valores padrão para que possam realmente trabalhar com uma lista limpa.
+
+```css
+*{ margin:0 ; padding:0;}
+```
+
+O código no exemplo acima redefine os valores padrão de margem e preenchimento de todos os elementos HTML. Geralmente, é a primeira regra de CSS em uma folha de estilo externa.
+
+Observe que ambas as propriedades estão definidas como `0`. Quando essas propriedades são definidas como `0`, elas não requerem uma unidade de medida.
+
 ## Tipos de Box Model
 
 
