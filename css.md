@@ -351,9 +351,9 @@ Como esperado, o layout CSS é baseado principalmente no _modelo de caixas_. Cad
 * `padding:` o espaço ao redor do conteúdo \(ex.: ao redor do texto de um parágrafo\).
 * `border:` a linha sólida do lado de fora do padding.
 * `margin:`o espaço externo a um elemento.
-* `content:`
+* `content:` o conteúdo da caixa.
 
-![](.gitbook/assets/css-box-model-73a525.png)
+![](.gitbook/assets/captura-de-tela-2020-06-28-a-s-11.08.01.png)
 
 ## Tipos de Box Model
 
