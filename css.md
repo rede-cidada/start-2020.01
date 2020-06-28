@@ -502,8 +502,34 @@ No exemplo acima, apenas o lado direito da caixa do parágrafo terá uma margem 
 
 A `margin`propriedade também permite centralizar o conteúdo. No entanto, você deve seguir alguns requisitos de sintaxe. Veja o seguinte exemplo:
 
-```css
-div { margin : 0 auto ;}
+```markup
+<div class="container">
+  <p>A propriedade margin também permite centralizar o conteúdo. 
+  No entanto, você deve seguir alguns requisitos de sintaxe. 
+  Veja o seguinte exemplo:</p>
+</div>
+<style>
+.container { margin : 0 auto ;}
+</style>
+```
+
+No exemplo acima, `margin: 0 auto;`centralizará a `div` nos elementos que os contêm. O valor  `0`define o margens superior e inferior a 0 pixels. O  valor `auto` informa ao navegador para ajustar as margens esquerda e direita até que o elemento seja centralizado dentro do elemento que o contém.
+
+As `div`elementos no exemplo acima devem estar centralizados em um elemento que preenche a página, mas isso não ocorre. Por quê?  
+  
+Para centralizar um elemento, uma largura deve ser definida para esse elemento. Caso contrário, a largura da div será automaticamente definida para a largura total do elemento que a contém, como , por exemplo. Não é possível centralizar um elemento que ocupa toda a largura da página.
+
+```markup
+<div class="container">
+  <p>agora vai centralizar o elemento!</p>
+</div>
+<style>
+.container 
+{ 
+   margin : 0 auto;
+   width: 800px;
+}
+</style>
 ```
 
 ## Tipos de Box Model
