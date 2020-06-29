@@ -737,7 +737,7 @@ Vamos revisar o que você aprendeu:
 ## Especificidade
 
 Especificidade é a ordem pela qual o navegador decide quais estilos CSS serão exibidos. Uma prática recomendada no CSS é estilizar elementos enquanto estiver usando o menor grau de especificidade, para que, se um elemento precisar de um novo estilo, seja fácil substituí-lo.  
-Os **IDs** são o seletor mais específico em CSS, seguido pelas **classes** e, finalmente, pelas **tags**. Por exemplo, considere o seguinte HTML e CSS:
+Os _**IDs**_ são o seletor mais específico em CSS, seguido pelas _**classes**_ ****e, finalmente, pelas _**tags**_. Por exemplo, considere o seguinte HTML e CSS:
 
 ```markup
 <h1 class="news">Notícias</h1>
