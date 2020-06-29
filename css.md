@@ -776,6 +776,23 @@ Com o tempo, à medida que os arquivos crescem com o código, muitos elementos p
 
 Para facilitar a edição dos estilos, é melhor estilizar com um seletor de **tags**, se possível. Caso contrário, adicione um seletor de classe. Se isso não for específico o suficiente, considere usar um seletor de ID.
 
+## Important!
+
+Há uma coisa que é ainda mais específico do que IDs: `!important`. pode ser aplicado a atributos específicos em vez de regras completas. Ele substituirá _qualquer_ estilo, por mais específico que seja. Como resultado, quase nunca deve ser usado. Uma vez `!important`usado, é muito difícil substituir.
+
+```css
+p {
+  color: blue !important;
+}
+
+
+.main p {
+  color: red;
+}
+```
+
+Como `!important`é usado no atributo `p`do seletor `color`, todos os `p`elementos aparecerão `blue`, mesmo que exista um `.main p`seletor mais específico que defina o `color`atributo `red`.
+
 ##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
