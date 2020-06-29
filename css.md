@@ -734,6 +734,29 @@ Vamos revisar o que você aprendeu:
 4. O valor para o novo modelo de caixa é `border-box`.
 5. O `border-box`modelo não é afetado pela espessura da borda ou preenchimento.
 
+## Especificidade
+
+Especificidade é a ordem pela qual o navegador decide quais estilos CSS serão exibidos. Uma prática recomendada no CSS é estilizar elementos enquanto estiver usando o menor grau de especificidade, para que, se um elemento precisar de um novo estilo, seja fácil substituí-lo.  
+Os **IDs** são o seletor mais específico em CSS, seguido pelas **classes** e, finalmente, pelas **tags**. Por exemplo, considere o seguinte HTML e CSS:
+
+```markup
+<h1 class="headline">Notícias</h1>
+
+<style>
+
+  h1 {
+  color: red;
+}
+
+.headline {
+  color: blue;
+}
+
+</style>
+```
+
+No exemplo acima, que terá prioridade para implementar o CSS será a classe `.headline`
+
 ##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
