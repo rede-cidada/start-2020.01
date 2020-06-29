@@ -740,7 +740,7 @@ Especificidade é a ordem pela qual o navegador decide quais estilos CSS serão 
 Os **IDs** são o seletor mais específico em CSS, seguido pelas **classes** e, finalmente, pelas **tags**. Por exemplo, considere o seguinte HTML e CSS:
 
 ```markup
-<h1 class="headline">Notícias</h1>
+<h1 class="news">Notícias</h1>
 
 <style>
 
@@ -748,7 +748,7 @@ Os **IDs** são o seletor mais específico em CSS, seguido pelas **classes** e, 
   color: red;
 }
 
-.headline {
+.news {
   color: blue;
 }
 
