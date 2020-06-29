@@ -755,7 +755,7 @@ Os **IDs** são o seletor mais específico em CSS, seguido pelas **classes** e, 
 </style>
 ```
 
-No exemplo acima, que terá prioridade para implementar o CSS será a classe .**headline** porque o seletor de classe é mais específico que a tag.
+No exemplo acima, que terá prioridade para implementar o CSS será a classe **`.news`** porque o seletor de classe é mais específico que a tag.
 
 Se um atributo de ID \(e seletor\) fosse adicionado ao código acima, os estilos no corpo do seletor de ID substituiriam todos os outros estilos para o cabeçalho. A única maneira de substituir um ID é adicionar _outro_ ID com estilo adicional.
 
