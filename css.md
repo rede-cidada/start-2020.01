@@ -790,6 +790,10 @@ p {
 
 Como `!important`é usado no atributo `p`do seletor `color`, todos os `p`elementos aparecerão `blue`, mesmo que exista um `.main p`seletor mais específico que defina o `color`atributo `red`.
 
+{% hint style="info" %}
+O `!important`sinalizador é útil apenas quando um elemento aparece da mesma maneira 100% do tempo. Como é quase impossível garantir que isso seja verdade ao longo de um projeto e ao longo do tempo, é melhor evitar
+{% endhint %}
+
 ##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
