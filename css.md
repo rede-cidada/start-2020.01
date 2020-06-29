@@ -763,15 +763,12 @@ Se um atributo de ID \(e seletor\) fosse adicionado ao código acima, os estilos
 <h1 id="news">Notícias</h1>
 
 <style>
-
 h1 {
   color: red;
 }
-
 #news {
   color: purple;
 }
-
 </style>
 ```
 
