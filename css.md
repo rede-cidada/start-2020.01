@@ -743,15 +743,12 @@ Os _**IDs**_ são o seletor mais específico em CSS, seguido pelas _**classes**_
 <h1 class="news">Notícias</h1>
 
 <style>
-
   h1 {
   color: red;
 }
-
 .news {
   color: blue;
 }
-
 </style>
 ```
 
