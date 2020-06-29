@@ -772,6 +772,10 @@ h1 {
 </style>
 ```
 
+Com o tempo, à medida que os arquivos crescem com o código, muitos elementos podem ter IDs, o que pode dificultar a edição do CSS, pois um novo estilo mais específico deve ser criado para alterar o estilo de um elemento.
+
+Para facilitar a edição dos estilos, é melhor estilizar com um seletor de tags, se possível. Caso contrário, adicione um seletor de classe. Se isso não for específico o suficiente, considere usar um seletor de ID.
+
 ##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
