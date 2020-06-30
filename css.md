@@ -844,10 +844,10 @@ Quando definida como **`absolute`**, a posição de um elemento é relativa ao s
 }
 ```
 
-
-
   
 Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição, não importa o quê.
+
+![](.gitbook/assets/fixed.gif)
 
 #### Exibição
 
