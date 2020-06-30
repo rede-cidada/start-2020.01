@@ -819,27 +819,10 @@ Quando definida como **`relative`**, a posição de um elemento é relativa à s
 
 ![](.gitbook/assets/relative.png)
 
-```css
-.box-bottom {
-  background-color: DeepSkyBlue;
-  position: relative;
-  top: 20px;
-  left: 50px; 
-  /* o elemento será posicionado relativamente a propriedade 
-  de deslocamento top (acima 20px e a direita 50px*/
-  
-  /*Para a propriedade funcionar é necessário definir a propriedade
-  de deslocamento: top, left, right, bottom - conforme a sua necessidade
-  e do layout da página.*/
-}
-```
-
    
 Quando definida como **`absolute`**, a posição de um elemento é relativa ao seu elemento pai posicionado mais próximo. Ele pode ser fixado em qualquer parte da página da Web, mas o elemento ainda será movido com o restante do documento quando a página for rolada.
 
-![](.gitbook/assets/absolute.gif)
-
-  
+![](.gitbook/assets/absolute.gif)  
 Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição.
 
 ```css
@@ -860,6 +843,13 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
     position: absolute;
     top: 20px;
     left:50px;
+    
+    /* o elemento será posicionado relativamente a propriedade 
+  de deslocamento top (acima 20px e a direita 50px*/
+  
+  /*Para a propriedade funcionar é necessário definir a propriedade
+  de deslocamento: top, left, right, bottom - conforme a sua necessidade
+  e do layout da página.*/
     
 }
 ```
