@@ -849,6 +849,8 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
 
 ![](.gitbook/assets/fixed.gif)
 
+### 
+
 ### Exibição
 
 * `display: inline, block, inline-block`
