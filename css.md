@@ -849,7 +849,14 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
 
 ![](.gitbook/assets/fixed.gif)
 
-### 
+```css
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: fixed;
+  top: 20px;
+  left: 50px;
+}
+```
 
 ### Exibição
 
