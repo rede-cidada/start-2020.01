@@ -827,6 +827,10 @@ Quando definida como **`relative`**, a posição de um elemento é relativa à s
   left: 50px; 
   /* o elemento será posicionado relativamente a propriedade 
   de deslocamento top (acima 20px e a direita 50px*/
+  
+  /*Para a propriedade funcionar é necessário definir a propriedade
+  de deslocamento: top, left, right, bottom - conforme a sua necessidade
+  e do layout da página.*/
 }
 ```
 
