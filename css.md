@@ -805,8 +805,6 @@ Conheça as cinco propriedades para ajustar a posição dos elementos HTML no na
 
 * `position: static,relative, absolute e fixed.`
 
-\`\`
-
 Cada uma dessas propriedades nos permitirá posicionar e visualizar elementos em uma página da web. Eles podem ser usados ​​em conjunto com quaisquer outras propriedades de estilo que você possa conhecer.
 
 ### Posicionamento
