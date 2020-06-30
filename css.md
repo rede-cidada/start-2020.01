@@ -824,7 +824,9 @@ Quando definida como **`relative`**, a posição de um elemento é relativa à s
   background-color: DeepSkyBlue;
   position: relative;
   top: 20px;
-  left: 50px;
+  left: 50px; 
+  /* o elemento será posicionado relativamente a propriedade 
+  de deslocamento top (acima 20px e a direita 50px*/
 }
 ```
 
