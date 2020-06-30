@@ -804,20 +804,30 @@ Além das propriedades que fornece para estilizar elementos HTML, o CSS inclui p
 Nesta lição, você aprenderá cinco propriedades para ajustar a posição dos elementos HTML no navegador:
 
 * `position: static,relative, absolute e fixed.`
-* `display: inline, block, inline-block`
-* `z-index: 1 ou 0`
-* `float: left, right`
+
+\`\`
 
 Cada uma dessas propriedades nos permitirá posicionar e visualizar elementos em uma página da web. Eles podem ser usados ​​em conjunto com quaisquer outras propriedades de estilo que você possa conhecer.
 
 #### Posicionamento
 
-A `position`propriedade permite especificar a posição de um elemento de três maneiras diferentes.  
-Quando definida como `relative`, a posição de um elemento é relativa à sua posição padrão na página.  
-Quando definida como `absolute`, a posição de um elemento é relativa ao seu elemento pai posicionado mais próximo. Ele pode ser fixado em qualquer parte da página da Web, mas o elemento ainda será movido com o restante do documento quando a página for rolada.  
-Quando definida como `fixed`, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição, não importa o quê.
+![](.gitbook/assets/static.png)
+
+A `position`propriedade permite especificar a posição de um elemento de três maneiras diferentes.
+
+**`static`** - o valor padrão \(não precisa ser especificado\)  
+  
+Quando definida como **`relative`**, a posição de um elemento é relativa à sua posição padrão na página.  
+  
+Quando definida como **`absolute`**, a posição de um elemento é relativa ao seu elemento pai posicionado mais próximo. Ele pode ser fixado em qualquer parte da página da Web, mas o elemento ainda será movido com o restante do documento quando a página for rolada.  
+  
+Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição, não importa o quê.
 
 #### Exibição
+
+* `display: inline, block, inline-block`
+* `z-index: 1 ou 0`
+* `float: left, right`
 
   
 A `display`propriedade permite controlar como um elemento flui vertical e horizontalmente um documento.  
