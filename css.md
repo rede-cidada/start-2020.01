@@ -799,9 +799,9 @@ O `!important`sinalizador é útil apenas quando um elemento aparece da mesma ma
   
 Um navegador irá renderizar os elementos de um documento HTML que não possui CSS da _esquerda_ para a _direita_, de _cima_ para _baixo_, na mesma ordem em que existem no documento. Isso é chamado de _fluxo_ de elementos em HTML.
 
-Além das propriedades que fornece para estilizar elementos HTML, o CSS inclui propriedades que alteram a maneira como um navegador _posiciona_ elementos. Essas propriedades especificam onde um elemento está localizado em uma página, se o elemento pode compartilhar linhas com outros elementos e outros atributos relacionados.
+Além das propriedades que fornece para estilizar elementos HTML, o CSS inclui propriedades que alteram a maneira como um navegador _posiciona_ elementos. Essas propriedades especificam onde um elemento está localizado em uma página.
 
-Nesta lição, você aprenderá cinco propriedades para ajustar a posição dos elementos HTML no navegador:
+Conheça as cinco propriedades para ajustar a posição dos elementos HTML no navegador:
 
 * `position: static,relative, absolute e fixed.`
 
