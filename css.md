@@ -861,8 +861,8 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
 ### Exibição
 
 * `display: inline, block, inline-block`
-* `z-index: 1 ou 0`
 * `float: left, right`
+* `z-index: 1 ou 0`
 
   
 A  propriedade `display`permite controlar como um elemento fluir vertical e horizontalmente um documento.  
@@ -873,7 +873,40 @@ A  propriedade `display`permite controlar como um elemento fluir vertical e hori
   
 A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à direita possível em uma página da web.
 
+* `z-index: 1 ou 0` Quando as caixas em uma página da web têm uma combinação de posições diferentes, as caixas \(e, portanto, seu conteúdo\) podem se sobrepor, dificultando a leitura ou o consumo do conteúdo.
 
+![](.gitbook/assets/z-index.png)
+
+```css
+.box-top {
+  background-color: Aquamarine;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+```
+
+A propriedade `z-index` controla a que distância o elemento "volta" ou "avança" um elemento deve aparecer na página da web quando os elementos se sobrepõem. Isso pode ser pensado na _profundidade_ dos elementos, com elementos mais profundos aparecendo atrás dos elementos mais rasos.
+
+```css
+.box-top {
+  background-color: Aquamarine;
+  position: relative;
+  z-index: 2;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 1;
+}
+```
 
 ##  O que é Responsividade?
 
