@@ -893,7 +893,7 @@ A propriedade `z-index` controla a que distância o elemento "volta" ou "avança
 
   
 A  propriedade `display`permite controlar como um elemento fluir vertical e horizontalmente um documento.  
-**`inline`**os elementos ocupam o mínimo de espaço possível e não podem ser ajustados **`width`**ou manualmente **`height`**.  
+**`inline`**os elementos ocupam o mínimo de espaço possível e não podem ser ajustados  ao **`width`**ou **`height`**.  
 **`block`**Os elementos ocupam a largura do contêiner e podem ter **`height`** ajustados manualmente .
 
 **`inline-block`**elementos podem ter definido **`width`**e _`height`_, mas também podem aparecer próximos um do outro e não ocupam toda a largura do contêiner.  
