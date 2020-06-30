@@ -775,7 +775,7 @@ Para facilitar a edição dos estilos, é melhor estilizar com um seletor de **t
 
 ## Important!
 
-Há uma coisa que é ainda mais específico do que IDs: `!important`. pode ser aplicado a atributos específicos em vez de regras completas. Ele substituirá _qualquer_ estilo, por mais específico que seja. Como resultado, quase nunca deve ser usado. Uma vez `!important`usado, é muito difícil substituir.
+Há uma coisa que é ainda mais específico do que IDs: `!important`. pode ser aplicado a atributos específicos em vez de regras completas. Ele substituirá _qualquer_ estilo, por mais específico que seja. Como resultado, quase nunca deve ser usado. Uma vez usado `!important`, é muito difícil substituir.
 
 ```css
 p {
