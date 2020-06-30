@@ -865,13 +865,13 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
 * `float: left, right`
 
   
-A `display`propriedade permite controlar como um elemento flui vertical e horizontalmente um documento.  
-`inline`os elementos ocupam o mínimo de espaço possível e não podem ser ajustados `width`ou manualmente `height`.  
-`block`Os elementos ocupam a largura do contêiner e podem ter `height` ajustados manualmente .
+A  propriedade `display`permite controlar como um elemento fluir vertical e horizontalmente um documento.  
+**`inline`**os elementos ocupam o mínimo de espaço possível e não podem ser ajustados **`width`**ou manualmente **`height`**.  
+**`block`**Os elementos ocupam a largura do contêiner e podem ter **`height`** ajustados manualmente .
 
-`inline-block`elementos podem ter definido `width`e `height`, mas também podem aparecer próximos um do outro e não ocupam toda a largura do contêiner.  
+**`inline-block`**elementos podem ter definido **`width`**e _`height`_, mas também podem aparecer próximos um do outro e não ocupam toda a largura do contêiner.  
   
-A `float`propriedade pode mover elementos o mais à esquerda ou o mais à direita possível em uma página da web.
+A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à direita possível em uma página da web.
 
 
 
