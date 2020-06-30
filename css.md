@@ -875,8 +875,6 @@ A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à dir
 
 ![](.gitbook/assets/float-right.png)
 
-* `z-index: 1 ou 0` Quando as caixas em uma página da web têm uma combinação de posições diferentes, as caixas \(e, portanto, seu conteúdo\) podem se sobrepor, dificultando a leitura ou o consumo do conteúdo.
-
 ![](.gitbook/assets/z-index.png)
 
 ```css
@@ -891,6 +889,8 @@ A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à dir
   left: 50px;
 }
 ```
+
+`z-index: 1 ou 0` Quando as caixas em uma página da web têm uma combinação de posições diferentes, as caixas \(e, portanto, seu conteúdo\) podem se sobrepor, dificultando a leitura ou o consumo do conteúdo.
 
 A propriedade `z-index` controla a que distância o elemento "volta" ou "avança" um elemento deve aparecer na página da web quando os elementos se sobrepõem. Isso pode ser pensado na _profundidade_ dos elementos, com elementos mais profundos aparecendo atrás dos elementos mais rasos.
 
