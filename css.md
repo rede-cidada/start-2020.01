@@ -794,6 +794,39 @@ Como `!important`é usado no atributo `p`do seletor `color`, todos os `p`element
 O `!important`sinalizador é útil apenas quando um elemento aparece da mesma maneira 100% do tempo. Como é quase impossível garantir que isso seja verdade ao longo de um projeto e ao longo do tempo, é melhor evitar
 {% endhint %}
 
+### EXIBIÇÃO E POSICIONAMENTO CSS
+
+  
+Um navegador irá renderizar os elementos de um documento HTML que não possui CSS da _esquerda_ para a _direita_, de _cima_ para _baixo_, na mesma ordem em que existem no documento. Isso é chamado de _fluxo_ de elementos em HTML.
+
+Além das propriedades que fornece para estilizar elementos HTML, o CSS inclui propriedades que alteram a maneira como um navegador _posiciona_ elementos. Essas propriedades especificam onde um elemento está localizado em uma página, se o elemento pode compartilhar linhas com outros elementos e outros atributos relacionados.
+
+Nesta lição, você aprenderá cinco propriedades para ajustar a posição dos elementos HTML no navegador:
+
+* `position: static,relative, absolute e fixed.`
+* `display: inline, block, inline-block`
+* `z-index: 1 ou 0`
+* `float: left, right`
+
+Cada uma dessas propriedades nos permitirá posicionar e visualizar elementos em uma página da web. Eles podem ser usados ​​em conjunto com quaisquer outras propriedades de estilo que você possa conhecer.
+
+#### Posicionamento
+
+A `position`propriedade permite especificar a posição de um elemento de três maneiras diferentes.  
+Quando definida como `relative`, a posição de um elemento é relativa à sua posição padrão na página.  
+Quando definida como `absolute`, a posição de um elemento é relativa ao seu elemento pai posicionado mais próximo. Ele pode ser fixado em qualquer parte da página da Web, mas o elemento ainda será movido com o restante do documento quando a página for rolada.  
+Quando definida como `fixed`, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição, não importa o quê.  
+  
+A `display`propriedade permite controlar como um elemento flui vertical e horizontalmente um documento.  
+`inline`os elementos ocupam o mínimo de espaço possível e não podem ser ajustados `width`ou manualmente `height`.  
+`block`Os elementos ocupam a largura do contêiner e podem ter `height` ajustados manualmente .
+
+`inline-block`elementos podem ter definido `width`e `height`, mas também podem aparecer próximos um do outro e não ocupam toda a largura do contêiner.  
+  
+A `float`propriedade pode mover elementos o mais à esquerda ou o mais à direita possível em uma página da web.
+
+
+
 ##  O que é Responsividade?
 
 Sabemos que o uso de dispositivo móvel para navegar na internet está crescendo cada vez mais, sempre estão lançando novos dispositivos e a cada dispositivo temos tamanho de tela diferentes, resoluções. maneiras de visualizar seja portrait ou landscape.  
