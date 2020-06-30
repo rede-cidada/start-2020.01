@@ -873,6 +873,8 @@ A  propriedade `display`permite controlar como um elemento fluir vertical e hori
   
 A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à direita possível em uma página da web.
 
+![](.gitbook/assets/float-right.png)
+
 * `z-index: 1 ou 0` Quando as caixas em uma página da web têm uma combinação de posições diferentes, as caixas \(e, portanto, seu conteúdo\) podem se sobrepor, dificultando a leitura ou o consumo do conteúdo.
 
 ![](.gitbook/assets/z-index.png)
