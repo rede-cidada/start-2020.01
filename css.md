@@ -839,17 +839,30 @@ Quando definida como **`absolute`**, a posição de um elemento é relativa ao s
 
 ![](.gitbook/assets/absolute.gif)
 
-```css
-.box-bottom {
-  background-color: DeepSkyBlue;
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-```
-
   
 Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição.
+
+```css
+.box-top{
+    background-color: Aquamarine;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    left: 50px;
+   
+}
+
+.box-bottom{
+    background-color: DeepSkyBlue;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20px;
+    left:50px;
+    
+}
+```
 
 ![](.gitbook/assets/fixed.gif)
 
@@ -901,19 +914,6 @@ A  propriedade `display`permite controlar como um elemento fluir vertical e hori
 A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à direita possível em uma página da web.
 
 ![](.gitbook/assets/float-right.png)
-
-```css
-.box-top {
-  background-color: Aquamarine;
-}
-
-.box-bottom {
-  background-color: DeepSkyBlue;
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-```
 
 ##  O que é Responsividade?
 
