@@ -858,37 +858,7 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
 }
 ```
 
-### Exibição
-
-* `display: inline, block, inline-block`
-* `float: left, right`
-* `z-index: 1 ou 0`
-
-  
-A  propriedade `display`permite controlar como um elemento fluir vertical e horizontalmente um documento.  
-**`inline`**os elementos ocupam o mínimo de espaço possível e não podem ser ajustados **`width`**ou manualmente **`height`**.  
-**`block`**Os elementos ocupam a largura do contêiner e podem ter **`height`** ajustados manualmente .
-
-**`inline-block`**elementos podem ter definido **`width`**e _`height`_, mas também podem aparecer próximos um do outro e não ocupam toda a largura do contêiner.  
-  
-A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à direita possível em uma página da web.
-
-![](.gitbook/assets/float-right.png)
-
-![](.gitbook/assets/z-index.png)
-
-```css
-.box-top {
-  background-color: Aquamarine;
-}
-
-.box-bottom {
-  background-color: DeepSkyBlue;
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-```
+### Posicionamento z-index
 
 `z-index: 1 ou 0` Quando as caixas em uma página da web têm uma combinação de posições diferentes, as caixas \(e, portanto, seu conteúdo\) podem se sobrepor, dificultando a leitura ou o consumo do conteúdo.
 
@@ -907,6 +877,37 @@ A propriedade `z-index` controla a que distância o elemento "volta" ou "avança
   top: 20px;
   left: 50px;
   z-index: 1;
+}
+```
+
+![](.gitbook/assets/z-index.png)
+
+### Exibição - Display
+
+* `display: inline, block, inline-block`
+* `float: left, right`
+
+  
+A  propriedade `display`permite controlar como um elemento fluir vertical e horizontalmente um documento.  
+**`inline`**os elementos ocupam o mínimo de espaço possível e não podem ser ajustados **`width`**ou manualmente **`height`**.  
+**`block`**Os elementos ocupam a largura do contêiner e podem ter **`height`** ajustados manualmente .
+
+**`inline-block`**elementos podem ter definido **`width`**e _`height`_, mas também podem aparecer próximos um do outro e não ocupam toda a largura do contêiner.  
+  
+A  propriedade**`float`** pode mover elementos mais à esquerda ou o mais à direita possível em uma página da web.
+
+![](.gitbook/assets/float-right.png)
+
+```css
+.box-top {
+  background-color: Aquamarine;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
 }
 ```
 
