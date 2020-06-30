@@ -809,7 +809,7 @@ Nesta lição, você aprenderá cinco propriedades para ajustar a posição dos 
 
 Cada uma dessas propriedades nos permitirá posicionar e visualizar elementos em uma página da web. Eles podem ser usados ​​em conjunto com quaisquer outras propriedades de estilo que você possa conhecer.
 
-#### Posicionamento
+### Posicionamento
 
 ![](.gitbook/assets/static.png)
 
@@ -849,7 +849,7 @@ Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em 
 
 ![](.gitbook/assets/fixed.gif)
 
-#### Exibição
+### Exibição
 
 * `display: inline, block, inline-block`
 * `z-index: 1 ou 0`
