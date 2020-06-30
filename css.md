@@ -831,7 +831,9 @@ Quando definida como **`relative`**, a posição de um elemento é relativa à s
 ```
 
    
-Quando definida como **`absolute`**, a posição de um elemento é relativa ao seu elemento pai posicionado mais próximo. Ele pode ser fixado em qualquer parte da página da Web, mas o elemento ainda será movido com o restante do documento quando a página for rolada.  
+Quando definida como **`absolute`**, a posição de um elemento é relativa ao seu elemento pai posicionado mais próximo. Ele pode ser fixado em qualquer parte da página da Web, mas o elemento ainda será movido com o restante do documento quando a página for rolada.
+
+![](.gitbook/assets/absolute.gif)   
   
 Quando definida como **`fixed`**, a posição de um elemento pode ser fixada em qualquer parte da página da web. O elemento permanecerá em exibição, não importa o quê.
 
