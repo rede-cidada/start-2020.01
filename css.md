@@ -962,7 +962,7 @@ A vantagem é que é totalmente flexível, embora já temos as medidas padrões 
 
 ![](.gitbook/assets/width.gif)
 
-Olhando a animação acima, percebemos que utilizando a propriedade max-width, ou seja o valor máximo, quando o layout chega nesse valor o site para de esticar, o conteúdo ano vai ultrapassar a largura determinada.
+Olhando a animação acima, percebemos que utilizando a propriedade max-width, ou seja o valor máximo, quando o layout chega nesse valor o site para de esticar, o conteúdo vai ultrapassar a largura determinada.
 
 A a maioria dos containers de conteúdo a dica é colocar max-width.  
   
