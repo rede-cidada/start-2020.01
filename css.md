@@ -1215,6 +1215,18 @@ Existem cinco valores para a propriedade **`justify-content`**
 
 _\(\*\)Nas definições acima, “sem espaço extra” significa que margens e bordas serão respeitadas, mas não será adicionado mais espaço \(além do especificado na regra de estilo para o elemento em particular\) entre os elementos. O tamanho de cada item flexível individual não é alterado por essa propriedade._
 
+## Align Items
+
+você aprendeu como justificar o conteúdo de um contêiner flexível da esquerda para a direita na página. Também é possível alinhar itens flexíveis verticalmente dentro do contêiner. A propriedade `align-items` torna possível espaçar itens flexíveis verticalmente.
+
+Existem cinco valores que podemos usar para a `align-items`propriedade:
+
+1. `flex-start` - todos os elementos serão posicionados na parte superior do contêiner pai.
+2. `flex-end` - todos os elementos serão posicionados na parte inferior do contêiner pai.
+3. `center` - o centro de todos os elementos será posicionado a meio caminho entre a parte superior e inferior do contêiner pai.
+4. `baseline` - a parte inferior do conteúdo de todos os itens será alinhada entre si.
+5. `stretch` - se possível, os itens serão estendidos de cima para baixo no contêiner \(este é o valor padrão; os elementos com uma altura especificada não serão esticados; os elementos com uma altura mínima ou nenhuma altura especificada serão estendidos\).
+
 Vamos dar uma olhada neste site abaixo para exemplos!
 
 [Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
