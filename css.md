@@ -1104,6 +1104,22 @@ Define a altura inicial, largura máxima e largura mínima de um elemento.
 \(torna o elemento fixo, independente do scroll do usuário, ele sempre permanece na mesma posição\)
 {% endhint %}
 
+{% hint style="info" %}
+**Valores possíveis:**
+
+**border -radius: 20px;**  
+ \(20px de arredondamento em todos lados\)
+
+**border -radius: 10px 20px;**  
+ \(10px de arredondamento no canto superior-esquerdo e no inferior-direito, 20px no restante\)
+
+**border- radius: 10px 20px 30px;**  
+ \(10px superior-esquerdo, 20px superior-direito e inferior-esquerdo, 30px inferior-direito\)
+
+**border- radius: 10px 20px 30px 40px;**  
+ \(10px superior-esquerdo, 20px superior-esquerdo, 30px inferior-direito, 40px inferior-esquerdo\)
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
