@@ -1120,6 +1120,24 @@ Define a altura inicial, largura máxima e largura mínima de um elemento.
  \(10px superior-esquerdo, 20px superior-esquerdo, 30px inferior-direito, 40px inferior-esquerdo\)
 {% endhint %}
 
+#### **Propriedades de espaçamento**
+
+{% hint style="info" %}
+Valores possíveis:
+
+padding: 20px;  
+ \(20px de espaçamento em todos lados\)
+
+padding: 10px 20px;  
+ \(10px de espaçamento vertical e 20px horizontal\)
+
+padding: 10px 20px 30px;  
+ \(10px no topo, 20px horizontal e 30px abaixo\)
+
+padding: 10px 20px 30px 40px;  
+ \(10px topo, 20px direita, 30px abaixo e 40px esquerda\)
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
