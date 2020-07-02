@@ -1205,7 +1205,7 @@ Se não quiséssemos que os elementos div fossem elementos em nível de bloco, u
 
 Para posicionar os itens da esquerda para a direita, usamos uma propriedade chamada `justify-content`.  
   
-Existem cinco valores para a `justify-content`propriedade:
+Existem cinco valores para a propriedade **`justify-content`**
 
 1. **`flex-start`** - todos os itens serão posicionados em ordem, a partir da esquerda do contêiner pai, sem espaço extra entre eles ou antes deles.
 2. **`flex-end`** - todos os itens serão posicionados em ordem, com o último item começando no lado direito do contêiner pai, sem espaço extra entre eles ou depois deles.
