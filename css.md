@@ -1042,6 +1042,11 @@ t**ext -align: center;**
 Define o alinhamento horizontal do texto, valore: left, center, right.
 {% endhint %}
 
+{% hint style="info" %}
+**text- decoration: underline;**  
+Define uma decoração ao texto. Principais valores possíveis: underline, line-through, none.
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
