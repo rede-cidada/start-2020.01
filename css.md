@@ -1221,11 +1221,11 @@ você aprendeu como justificar o conteúdo de um contêiner flexível da esquerd
 
 Existem cinco valores que podemos usar para a `align-items`propriedade:
 
-1. `flex-start` - todos os elementos serão posicionados na parte superior do contêiner pai.
-2. `flex-end` - todos os elementos serão posicionados na parte inferior do contêiner pai.
-3. `center` - o centro de todos os elementos será posicionado a meio caminho entre a parte superior e inferior do contêiner pai.
-4. `baseline` - a parte inferior do conteúdo de todos os itens será alinhada entre si.
-5. `stretch` - se possível, os itens serão estendidos de cima para baixo no contêiner \(este é o valor padrão; os elementos com uma altura especificada não serão esticados; os elementos com uma altura mínima ou nenhuma altura especificada serão estendidos\).
+1. **`flex-start`** - todos os elementos serão posicionados na parte superior do contêiner pai.
+2. **`flex-end`** - todos os elementos serão posicionados na parte inferior do contêiner pai.
+3. **`center`** - o centro de todos os elementos será posicionado a meio caminho entre a parte superior e inferior do contêiner pai.
+4. **`baseline`** - a parte inferior do conteúdo de todos os itens será alinhada entre si.
+5. **`stretch`** - se possível, os itens serão estendidos de cima para baixo no contêiner \(este é o valor padrão; os elementos com uma altura especificada não serão esticados; os elementos com uma altura mínima ou nenhuma altura especificada serão estendidos\).
 
 Vamos dar uma olhada neste site abaixo para exemplos!
 
