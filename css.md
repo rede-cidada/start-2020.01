@@ -1146,6 +1146,8 @@ Valores possíveis:
 
 Existem dois componentes importantes em um layout do flexbox: _**flex containers**_ ****e _**flex items**_ . Um contêiner flexível é um elemento em uma página que contém itens flexíveis. Todos os elementos filhos diretos de um contêiner flexível são itens flexíveis. Essa distinção é importante porque algumas das propriedades que você aprenderá nesta lição se aplicam aos contêineres flexíveis, enquanto outras se aplicam aos itens flexíveis.
 
+![](.gitbook/assets/flex-direction-terms.svg)
+
 Para designar um elemento como um contêiner flexível, defina a `display`propriedade do elemento como `flex`ou `inline-flex`. Depois que um item é um contêiner flexível, existem várias propriedades que podemos usar para especificar como seus filhos se comportam.
 
 #### Flex Container
