@@ -1144,7 +1144,7 @@ Valores possíveis:
 
  O _flexbox_ ou o Flexible Box Layout, uma nova ferramenta desenvolvida para CSS3 que simplifica bastante a posição dos elementos.
 
-Existem dois componentes importantes em um layout do flexbox: _**flex containers**_ ****e _**flex items**_ . Um contêiner flexível é um elemento em uma página que contém itens flexíveis. Todos os elementos filhos diretos de um contêiner flexível são itens flexíveis. Essa distinção é importante porque algumas das propriedades que você aprenderá nesta lição se aplicam aos contêineres flexíveis, enquanto outras se aplicam aos itens flexíveis.
+Existem dois componentes importantes em um layout do flexbox: _**flex containers**_ ****e _**flex items**_ . Um contêiner flexível é um elemento em uma página que contém itens flexíveis. Todos os elementos filhos diretos de um contêiner flexível são itens flexíveis. Essa distinção é importante porque algumas das propriedades que você aprenderá  se aplicam aos _**contêineres flexíveis**_, enquanto outras se aplicam aos _**itens flexíveis.**_
 
 ![](.gitbook/assets/flex-direction-terms.svg)
 
@@ -1176,6 +1176,30 @@ O Flex Container é a tag que envolve os itens flex, ao indicar `display: flex`,
 
 No exemplo acima, a div com a classe `.box` são containers flexíveis. Se eles têm filhos, os filhos são itens flexíveis. Uma div com a declaração `display: flex;`permanecerá no nível do bloco\(lembra do display, block?\) no entanto, ele mudará o _**comportamento de seus elementos filhos**_. Os elementos filhos não serão iniciados em _**novas linhas ou seja ele não se quebra.**_  
 
+
+## inline-flex
+
+Se não quiséssemos que os elementos div fossem elementos em nível de bloco, usaríamos `display: inline`. No Flexbox, no entanto, fornece o `inline-flex`valor para o atributo `display`, o que nos permite criar contêineres flexíveis que também são elementos em linha.
+
+```markup
+<div class="container">
+  <p>I’m inside of a flex container!</p>
+  <p>A flex container’s children are flex items!</p>
+</div>
+<div class="container">
+  <p>I’m also a flex item!</p>
+  <p>Me too!</p>
+</div>
+
+<style>
+  .container {
+  width: 200px;
+  height: 200px;
+  display: inline-flex;
+  background-color:tomato;
+}
+</style>
+```
 
 Vamos dar uma olhada neste site abaixo para exemplos!
 
