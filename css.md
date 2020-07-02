@@ -1201,6 +1201,20 @@ Se não quiséssemos que os elementos div fossem elementos em nível de bloco, u
 </style>
 ```
 
+### Justify-Content
+
+Para posicionar os itens da esquerda para a direita, usamos uma propriedade chamada `justify-content`.  
+  
+Existem cinco valores para a `justify-content`propriedade:
+
+1. **`flex-start`** - todos os itens serão posicionados em ordem, a partir da esquerda do contêiner pai, sem espaço extra entre eles ou antes deles.
+2. **`flex-end`** - todos os itens serão posicionados em ordem, com o último item começando no lado direito do contêiner pai, sem espaço extra entre eles ou depois deles.
+3. **`center`** - todos os itens serão posicionados em ordem, no centro do contêiner pai, sem espaço extra antes, entre ou depois deles.
+4. **`space-around`** - os itens serão posicionados com espaço igual antes e depois de cada item, resultando no dobro do espaço entre os elementos.
+5. **`space-between`** - os itens serão posicionados com espaço igual entre eles, mas sem espaço extra\(\*\) antes do primeiro ou após o último elemento.
+
+_\(\*\)Nas definições acima, “sem espaço extra” significa que margens e bordas serão respeitadas, mas não será adicionado mais espaço \(além do especificado na regra de estilo para o elemento em particular\) entre os elementos. O tamanho de cada item flexível individual não é alterado por essa propriedade._
+
 Vamos dar uma olhada neste site abaixo para exemplos!
 
 [Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
