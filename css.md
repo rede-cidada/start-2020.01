@@ -1154,6 +1154,41 @@ Para designar um elemento como um contêiner flexível, defina a `display`propri
 
 O Flex Container é a tag que envolve os itens flex, ao indicar `display: flex`, essa tag passa a ser um Flex Container.
 
+```markup
+<h1>Display: Flex</h1>
+<div class="container" id="flex">
+    <div class="box">
+        <h2>1</h2>
+    </div>
+    <div class="box">
+        <h2>2</h2>
+    </div>
+    <div class="box">
+        <h2>3</h2>
+    </div>
+</div>
+<h1>Display: Block</h1>
+<div class="container" id="block">
+    <div class="box">
+        <h2>1</h2>
+    </div>
+    <div class="box">
+        <h2>2</h2>
+    </div>
+    <div class="box">
+        <h2>3</h2>
+    </div>
+</div>
+
+<style>
+div.container {
+  display: flex;
+}
+</style>
+```
+
+No exemplo acima, todas as divs com a classe `container`são contêineres flexíveis. Se eles têm filhos, os filhos são itens flexíveis. Uma div com a declaração `display: flex;`permanecerá no nível do bloco - nenhum outro elemento aparecerá na mesma linha que ela.
+
 Vamos dar uma olhada neste site abaixo para exemplos!
 
 [Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
