@@ -1219,5 +1219,9 @@ https://developer.mozilla.org/pt-BR/docs/Aprender/Getting\_started\_with\_the\_w
 [ORIGAMID - Conceitos Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)  
 [https://origamid.com/projetos/flexbox-guia-completo/](https://origamid.com/projetos/flexbox-guia-completo/)
 
+{% embed url="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS\_Flexible\_Box\_Layout/Conceitos\_Basicos\_do\_Flexbox" %}
+
+[https://developer.mozilla.org/pt-BR/docs/CSS/Usando\_caixas\_flexiveis\_css](https://developer.mozilla.org/pt-BR/docs/CSS/Usando_caixas_flexiveis_css)
+
 
 
