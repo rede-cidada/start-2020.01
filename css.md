@@ -1167,7 +1167,6 @@ O Flex Container é a tag que envolve os itens flex, ao indicar `display: flex`,
         <h2>3</h2><!---Filho-->
     </div>
 </div>
-
 <style>
 .box{
   display: flex;
