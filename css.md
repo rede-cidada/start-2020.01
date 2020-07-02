@@ -1142,6 +1142,12 @@ Valores possíveis:
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
 
+ O _flexbox_ ou o Flexible Box Layout, uma nova ferramenta desenvolvida para CSS3 que simplifica bastante a posição dos elementos.
+
+Existem dois componentes importantes em um layout do flexbox: _**flex containers**_ ****e _**flex items**_ . Um contêiner flexível é um elemento em uma página que contém itens flexíveis. Todos os elementos filhos diretos de um contêiner flexível são itens flexíveis. Essa distinção é importante porque algumas das propriedades que você aprenderá nesta lição se aplicam aos contêineres flexíveis, enquanto outras se aplicam aos itens flexíveis.
+
+Para designar um elemento como um contêiner flexível, defina a `display`propriedade do elemento como `flex`ou `inline-flex`. Depois que um item é um contêiner flexível, existem várias propriedades que podemos usar para especificar como seus filhos se comportam.
+
 #### Flex Container
 
 O Flex Container é a tag que envolve os itens flex, ao indicar `display: flex`, essa tag passa a ser um Flex Container.
