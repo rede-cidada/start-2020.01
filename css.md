@@ -1217,7 +1217,7 @@ _\(\*\)Nas definições acima, “sem espaço extra” significa que margens e b
 
 ## Align Items
 
-você aprendeu como justificar o conteúdo de um contêiner flexível da esquerda para a direita na página. Também é possível alinhar itens flexíveis verticalmente dentro do contêiner. A propriedade `align-items` torna possível espaçar itens flexíveis verticalmente.
+você aprendeu como justificar o conteúdo de um contêiner flexível da esquerda para a direita na página. Também é possível alinhar itens flexíveis _**verticalmente dentro do contêiner**_. A propriedade `align-items` torna possível espaçar itens flexíveis verticalmente.
 
 Existem cinco valores que podemos usar para a `align-items`propriedade:
 
