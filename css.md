@@ -993,20 +993,54 @@ _Implementa uma imagem de fundo para o elemento._
 ****
 {% endhint %}
 
-\_\_
-
-\_\_
-
 {% hint style="info" %}
-background -position: center 20%;
+**background -position: center 20%;**  
+Implementa a posição da imagem de fundo, o primeiro valor determina a posição do eixo horizontal e o segundo valor no eixo vertical.
 {% endhint %}
 
 {% hint style="info" %}
-
+**background- repeat: no repeat;**  
+Define se a imagem de fundo deve se repetir ou não. Principais valores possíveis: no-repeat, repeat, repeat-x, repeat-y.
 {% endhint %}
 
-  
+####  Propriedades de fonte
 
+{% hint style="info" %}
+**font -size: 60px;**  
+Define o tamanho da fonte.
+{% endhint %}
+
+{% hint style="info" %}
+**font- weight: bold;**  
+Define o peso do texto, ex: 400, 500, 600, 700
+{% endhint %}
+
+{% hint style="info" %}
+**font- family: Roboto;**  
+Define a fonte utilizada no texto. A fonte precisa estar instalada na máquina do usuário ou importada de um endereço externo.
+{% endhint %}
+
+**Propriedades de texto**
+
+{% hint style="info" %}
+**font: 10px Open Sans regular;**  
+forma de definir várias propriedades em uma linha.
+{% endhint %}
+
+{% hint style="info" %}
+**line -height: 20px;**  
+Define o tamanho da linha do texto.
+{% endhint %}
+
+{% hint style="info" %}
+**letter -spacing: 2.5px;**  
+Define o espaçamento de cada caractere no texto.
+{% endhint %}
+
+{% hint style="info" %}
+t**ext -align: center;**    
+Define o alinhamento horizontal do texto, valore: left, center, right.
+{% endhint %}
 
 ## Flexbox
 
