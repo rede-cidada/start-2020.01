@@ -1047,6 +1047,33 @@ Define o alinhamento horizontal do texto, valore: left, center, right.
 Define uma decoração ao texto. Principais valores possíveis: underline, line-through, none.
 {% endhint %}
 
+#### Propriedade de exibição
+
+{% hint style="info" %}
+**display: block;**   
+\(O elemento se comporta como um bloco, ocupando toda largura possível\)
+{% endhint %}
+
+{% hint style="info" %}
+**display: inline;**   
+\(O elemento ocupa apenas o espaço necessário horizontalmente dentro da linha\)
+{% endhint %}
+
+{% hint style="info" %}
+**display: none;**   
+\(O elemento não seja exibido na tela\)
+{% endhint %}
+
+{% hint style="info" %}
+**display: grid;**   
+\(O elemento se comporta como um grid\)
+{% endhint %}
+
+{% hint style="info" %}
+**display: flex;**   
+\(O elemento se comporte como um container flexível\)
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
