@@ -1201,7 +1201,7 @@ Se não quiséssemos que os elementos div fossem elementos em nível de bloco, u
 </style>
 ```
 
-### Justify-Content
+## Justify-Content
 
 Para posicionar os itens da esquerda para a direita, usamos uma propriedade chamada `justify-content`.  
   
