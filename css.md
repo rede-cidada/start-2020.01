@@ -982,6 +982,29 @@ Mas não quer dizer que todas as imagens do meu site tem que ser em vetor , é i
 
 **Propriedades de background:**
 
+{% hint style="info" %}
+**background -color: pink;**  
+_Implementa uma cor de fundo para o elemento._
+{% endhint %}
+
+{% hint style="info" %}
+**background i- mage: url\(logo.png\);**  
+_Implementa uma imagem de fundo para o elemento._  
+****
+{% endhint %}
+
+\_\_
+
+\_\_
+
+{% hint style="info" %}
+background -position: center 20%;
+{% endhint %}
+
+{% hint style="info" %}
+
+{% endhint %}
+
   
 
 
