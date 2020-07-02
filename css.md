@@ -1156,38 +1156,27 @@ O Flex Container é a tag que envolve os itens flex, ao indicar `display: flex`,
 
 ```markup
 <h1>Display: Flex</h1>
-<div class="container" id="flex">
-    <div class="box">
-        <h2>1</h2>
+<div class="container">
+    <div class="box"><!---Pai-->
+        <h2>1</h2><!---Filho-->
     </div>
-    <div class="box">
-        <h2>2</h2>
+    <div class="box"><!---Pai-->
+        <h2>2</h2><!---Filho-->
     </div>
-    <div class="box">
-        <h2>3</h2>
-    </div>
-</div>
-<h1>Display: Block</h1>
-<div class="container" id="block">
-    <div class="box">
-        <h2>1</h2>
-    </div>
-    <div class="box">
-        <h2>2</h2>
-    </div>
-    <div class="box">
-        <h2>3</h2>
+    <div class="box"><!---Pai-->
+        <h2>3</h2><!---Filho-->
     </div>
 </div>
 
 <style>
-div.container {
+.box{
   display: flex;
 }
 </style>
 ```
 
-No exemplo acima, todas as divs com a classe `container`são contêineres flexíveis. Se eles têm filhos, os filhos são itens flexíveis. Uma div com a declaração `display: flex;`permanecerá no nível do bloco - nenhum outro elemento aparecerá na mesma linha que ela.
+No exemplo acima, a div com a classe `.box` são containers flexíveis. Se eles têm filhos, os filhos são itens flexíveis. Uma div com a declaração `display: flex;`permanecerá no nível do bloco\(lembra do display, block?\) - nenhum outro elemento aparecerá na mesma linha que ela.  
+No entanto, ele mudará o _**comportamento de seus elementos filhos**_. Os elementos filhos não serão iniciados em _**novas linhas**_.
 
 Vamos dar uma olhada neste site abaixo para exemplos!
 
