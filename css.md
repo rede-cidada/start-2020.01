@@ -1074,6 +1074,16 @@ Define uma decoração ao texto. Principais valores possíveis: underline, li
 \(O elemento se comporte como um container flexível\)
 {% endhint %}
 
+{% hint style="info" %}
+**opacity: 0.5;**   
+Define a opacidade do elemento, de 0 \(zero\) até 1 \(100%\).
+{% endhint %}
+
+{% hint style="info" %}
+**width: 100px / max- width: 80% / min -width: 10vw;**   
+Define a largura inicial, largura máxima e largura mínima de um elemento.
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
