@@ -978,6 +978,13 @@ Imagem em bitmap como:  png, jpg, se tivermos uma imagem de 200px e aumentar par
 
 Mas não quer dizer que todas as imagens do meu site tem que ser em vetor , é interessante usar em logomarcas, menus e ícones. Para as imagens tipo png ou jpg é legal usar para foto de perfil, de artigo entre outros.
 
+## Principais propriedades do CSS
+
+**Propriedades de background:**
+
+  
+
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
