@@ -1089,6 +1089,21 @@ Define a largura inicial, largura máxima e largura mínima de um elemento.
 Define a altura inicial, largura máxima e largura mínima de um elemento.
 {% endhint %}
 
+{% hint style="info" %}
+**position: relative;**   
+\(torna o elemento relativo, qualquer outro elemento dentro desse irá se posicionar sempre de forma relativa ao pai\)
+{% endhint %}
+
+{% hint style="info" %}
+**position: absolute;**   
+\(torna o elemento flutuante, sua posição se baseia no elemento pai mais próximo com posicionamento relativo\)
+{% endhint %}
+
+{% hint style="info" %}
+**position: fixed;**   
+\(torna o elemento fixo, independente do scroll do usuário, ele sempre permanece na mesma posição\)
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
