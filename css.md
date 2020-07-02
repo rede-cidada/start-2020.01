@@ -1084,6 +1084,11 @@ Define a opacidade do elemento, de 0 \(zero\) até 1 \(100%\).
 Define a largura inicial, largura máxima e largura mínima de um elemento.
 {% endhint %}
 
+{% hint style="info" %}
+**height: 100px / max- height: 80% / min- height: 10vh;**   
+Define a altura inicial, largura máxima e largura mínima de um elemento.
+{% endhint %}
+
 ## Flexbox
 
  Foi projetado tanto como um modelo de _layout_ unidimensional quanto como um método capaz de organizar os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.
