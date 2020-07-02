@@ -1175,7 +1175,7 @@ O Flex Container é a tag que envolve os itens flex, ao indicar `display: flex`,
 ```
 
 No exemplo acima, a div com a classe `.box` são containers flexíveis. Se eles têm filhos, os filhos são itens flexíveis. Uma div com a declaração `display: flex;`permanecerá no nível do bloco\(lembra do display, block?\) - nenhum outro elemento aparecerá na mesma linha que ela.  
-No entanto, ele mudará o _**comportamento de seus elementos filhos**_. Os elementos filhos não serão iniciados em _**novas linhas**_.
+No entanto, ele mudará o _**comportamento de seus elementos filhos**_. Os elementos filhos não serão iniciados em _**novas linhas ou seja ele não se quebra.**_
 
 Vamos dar uma olhada neste site abaixo para exemplos!
 
