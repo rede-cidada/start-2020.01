@@ -1229,6 +1229,24 @@ Existem cinco valores que podemos usar para a `align-items`propriedade:
 
 ## Flex-Grown \( Crescimento Flexível\)
 
+O flex-grow uma propriedade de um flex-item, o objetivo dele é fazer o item crescer ex: se o contêiner pai for maior que o necessário, os itens flexíveis não serão estendidos por padrão. A propriedade `flex-grow` permite especificar se os itens devem crescer para preencher um contêiner e também quais itens devem crescer proporcionalmente mais ou menos que outros.
+
+```css
+.container {
+  display: flex;
+}
+
+.side {
+  width: 100px;
+  flex-grow: 1;
+}
+
+.center {
+  width: 100px;
+  flex-grow: 2;
+}
+```
+
 Vamos dar uma olhada neste site abaixo para exemplos!
 
 [Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
