@@ -1227,6 +1227,8 @@ Existem cinco valores que podemos usar para a `align-items`propriedade:
 4. **`baseline`** - a parte inferior do conteúdo de todos os itens será alinhada entre si.
 5. **`stretch`** - se possível, os itens serão estendidos de cima para baixo no contêiner \(este é o valor padrão; os elementos com uma altura especificada não serão esticados; os elementos com uma altura mínima ou nenhuma altura especificada serão estendidos\).
 
+## Flex-Grown \( Crescimento Flexível\)
+
 Vamos dar uma olhada neste site abaixo para exemplos!
 
 [Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
@@ -1247,7 +1249,9 @@ https://developer.mozilla.org/pt-BR/docs/Aprender/Getting\_started\_with\_the\_w
 
 {% embed url="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS\_Flexible\_Box\_Layout/Conceitos\_Basicos\_do\_Flexbox" %}
 
-[https://developer.mozilla.org/pt-BR/docs/CSS/Usando\_caixas\_flexiveis\_css](https://developer.mozilla.org/pt-BR/docs/CSS/Usando_caixas_flexiveis_css)
+{% embed url="https://developer.mozilla.org/pt-BR/docs/CSS/Usando\_caixas\_flexiveis\_css" %}
+
+
 
 
 
