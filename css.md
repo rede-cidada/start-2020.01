@@ -1203,7 +1203,7 @@ Se não quiséssemos que os elementos div fossem elementos em nível de bloco, u
 
 ## Justify-Content
 
-Para posicionar os itens da esquerda para a direita, usamos uma propriedade chamada `justify-content`.  
+Propriedade do Container \( Pai\) objetivo de posicionar os itens  **horizontalmente** da esquerda, direita, centro e entre eles, usamos a propriedade chamada **`justify-content`**.  
   
 Existem cinco valores para a propriedade **`justify-content`**
 
