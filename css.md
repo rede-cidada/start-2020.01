@@ -1247,6 +1247,10 @@ O flex-grow uma propriedade de um flex-item, o objetivo dele é fazer o item cre
 }
 ```
 
+## flex-shrink
+
+Assim como a `flex-grow`propriedade estende proporcionalmente os itens flexíveis, a `flex-shrink`propriedade pode ser usada para especificar quais elementos serão reduzidos e em que proporções.
+
 Vamos dar uma olhada neste site abaixo para exemplos!
 
 [Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
