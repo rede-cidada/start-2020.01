@@ -121,7 +121,7 @@ Locais: São as variáveis que podem ser acessadas apenas no bloco de código qu
 2. O primeiro caractere não pode ser um dígito, ex: 9nome;
 3. Maiúsculas e minúsculas são diferentes \(case-sensitive\), ex: nomeCliente &lt;&gt; nomecliente;
 4. Não pode ser uma palavra reservada, ex: _for_, _if_, _int_;
-5. Não é aconselhável o uso de caracteres acentuados, ex: nomeUsuario;
+5. Não é aconselhável o uso de caracteres acentuados, ex: nomeUsuário;
 6. O nome deve ser identiﬁcador do que armazena, ex: codigoCliente no lugar de x;
 7. Não deve ser todo escrito em maiúsculas, ex: NOMECLIENTE;
 8. Usar _undeline_ ou a diferença entre maiúsculas e minúsculas \(camelCase\) caso o nome use mais de uma palavra, ex : nome\_cliente ou nomeCliente;
