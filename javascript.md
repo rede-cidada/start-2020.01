@@ -39,6 +39,22 @@ Vamos entender um pouco sobre esse ECMAScript,  e para isso vamos ver rapidinho 
 
 Portanto desde a sua criação a linguagem vem melhorando e em cada versão implementando novos recursos, vamos abrir esse [_**link**_](https://www.w3schools.com/js/js_versions.asp) para conhecer um pouco mais. 
 
+## Console
+
+O console é um painel que exibe mensagens importantes, como erros, para os desenvolvedores. Grande parte do trabalho que o computador faz com nosso código é invisível para nós por padrão. Se quisermos que as coisas apareçam na tela, podemos imprimir ou _fazer logon_ diretamente no nosso console.
+
+Em JavaScript, a `console`palavra - chave refere-se a um **objeto**, uma coleção de dados e ações, que podemos usar em nosso código. Palavras-chave são palavras incorporadas à linguagem JavaScript, para que o computador as reconheça e as trate especialmente.
+
+Uma ação ou método incorporado ao `console`objeto é o `.log()`método Quando escrevermos `console.log()`o que colocamos dentro dos parênteses, serão impressos ou registrados no console.
+
+```javascript
+console.log(5); 
+```
+
+Este exemplo faz logon `5` no console. O ponto e vírgula indica o fim da linha ou instrução. Embora em JavaScript seu código normalmente seja executado como pretendido sem ponto e vírgula, recomendamos que você aprenda o hábito de terminar cada instrução com ponto e vírgula, para que você nunca a deixe de fora nos poucos casos em que forem necessárias.
+
+
+
 ### Tipos de Dados
 
 O JavaScript tem seis tipos de dados primitivos:
