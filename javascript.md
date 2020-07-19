@@ -624,8 +624,6 @@ const rectangleArea = (width, height) => {
 
 ### Escopo
 
-### O que é o DOM
-
 ### Expressões regulares
 
 ### Promises
