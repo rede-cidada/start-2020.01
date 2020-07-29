@@ -647,7 +647,15 @@ Uma maneira de criar uma matriz é envolvendo itens entre colchetes `[]`.  As ma
 
 ![](.gitbook/assets/captura-de-tela-2020-07-29-a-s-18.28.54.png)
 
-## 
+Vamos dar uma olhada na sintaxe no exemplo do Array:  
+
+
+* A matriz é representada pelos colchetes `[]`e pelo conteúdo interno.
+* Cada item de conteúdo dentro de uma matriz é chamado de _elemento_ .
+* Existem três elementos diferentes dentro da matriz.
+* Cada elemento dentro da matriz é um tipo de dados diferente. 
+
+
 
 ### Escopo
 
