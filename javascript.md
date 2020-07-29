@@ -653,9 +653,64 @@ Vamos dar uma olhada na sintaxe no exemplo do Array:
 * A matriz é representada pelos colchetes `[]`e pelo conteúdo interno.
 * Cada item de conteúdo dentro de uma matriz é chamado de _elemento_ .
 * Existem três elementos diferentes dentro da matriz.
-* Cada elemento dentro da matriz é um tipo de dados diferente. 
+* Cada elemento dentro da matriz é um tipo de dados diferente.
 
+## Acessando elementos no Array
 
+Cada elemento em uma matriz possui uma posição numerada conhecida como seu _índice_ . Podemos acessar itens individuais usando seu índice, o que é semelhante a referenciar um item em uma lista com base na posição do item.
+
+Matrizes em JavaScript são _indexadas em zero_ , o que significa que as posições começam a contar em `0`vez de `1`. Portanto, o primeiro item de uma matriz estará na posição `0`. Vamos ver como podemos acessar um elemento em uma matriz:
+
+![](.gitbook/assets/captura-de-tela-2020-07-29-a-s-19.04.19.png)
+
+No trecho de código acima:
+
+* `cities` é uma matriz que possui três elementos.
+* Estamos usando a notação de colchete, `[]`com o índice após o nome da matriz para acessar o elemento.
+* `cities[0]`acessará o elemento no índice `0`na matriz `cities`. Você pode pensar `cities[0]`em acessar o espaço na memória que contém a string `'New York'`.
+
+Você também pode acessar caracteres individuais em uma sequência usando a notação entre colchetes e o índice. Por exemplo, você pode escrever:
+
+```javascript
+const hello = 'Hello World';
+console.log(hello[6]);
+// Saiída: W
+```
+
+## Atualizando elementos no Array
+
+Depois de ter acesso a um elemento em uma matriz, você pode atualizar seu valor.
+
+```javascript
+let estacoes = ['inverno', 'primavera', 'verao', 'Fall'];
+
+estacoes[3] = 'Outono';
+console.log(estacoes); 
+//Output: ['inverno', 'primavera', 'verao', 'Outono']
+```
+
+No exemplo acima, a `estacoes`  a matriz continha os nomes das quatro estações do ano. No entanto, atualizamos de `'Fall'`para  '`Outono'`
+
+A linha `estacoes[3] = 'Outono';`diz ao nosso programa para alterar o item no índice 3 da matriz estacoes para`'Outono'`
+
+## A propriedade .length - Array
+
+Uma das propriedades internas de uma matriz é `length`e retorna o número de itens na matriz. Acessamos a `.length`propriedade como fazemos com as cordas. Veja o exemplo abaixo:
+
+```javascript
+const anoNovo = ['Cuidar da saúde', 'Estudar inglês', 'JavaScript'];
+
+console.log(anoNovo.length);
+// Output: 3
+```
+
+No exemplo acima:
+
+* Usamos _notação de ponto_ , encadeando um período com o nome da propriedade para a matriz, para acessar a `length`  a propriedade da matriz `anoNovo`.
+* Em seguida, registramos o `length`de `anoNovo`no console.
+* Como `anoNovo`possui três elementos,  `3` seria registrado no console.
+
+Quando queremos saber quantos elementos há em uma matriz, podemos acessar a propriedade `.length`
 
 ### Escopo
 
