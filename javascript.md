@@ -617,9 +617,37 @@ const rectangleArea = (width, height) => {
 };
 ```
 
-### Objetos
+### Arrays
 
-### Arrays e Loops
+Organizar e armazenar dados é um conceito fundamental de programação.
+
+Uma maneira de organizar dados na vida real é fazendo listas. Vamos fazer um aqui:
+
+{% hint style="info" %}
+Ano Novo - Resoluções:   
+1. Cuidar da saúde  
+2. Estudar inglês  
+3. JavaScript
+{% endhint %}
+
+vamos pegar as anotações acima e transforma em uma lista \(array\)  
+
+
+```javascript
+
+let anoNovo = 
+['Cuidar da saúde', 'Estudar inglês', 'JavaScript'];
+```
+
+Arrays \(matrizes\) são a maneira de o JavaScript fazer listas. As matrizes podem armazenar qualquer tipo de dados \(incluindo cadeias, números e booleanos\). Como as listas, as matrizes são ordenadas, o que significa que cada item tem uma posição numerada.
+
+### Criando um array.
+
+Uma maneira de criar uma matriz é envolvendo itens entre colchetes `[]`.  As matrizes podem armazenar qualquer tipo de dados - podemos ter uma matriz que contém todos os mesmos tipos de dados ou uma matriz que contém tipos de dados diferentes.
+
+![](.gitbook/assets/captura-de-tela-2020-07-29-a-s-18.28.54.png)
+
+## 
 
 ### Escopo
 
