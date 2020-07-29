@@ -712,6 +712,28 @@ No exemplo acima:
 
 Quando queremos saber quantos elementos há em uma matriz, podemos acessar a propriedade `.length`
 
+## O método .push \(\)
+
+Vamos aprender sobre alguns métodos JavaScript internos que facilitam o trabalho com matrizes. Esses métodos são chamados especificamente de matrizes para tornar mais simples as tarefas comuns, como adicionar e remover elementos.
+
+Um método, `.push()`permite adicionar itens ao final de uma matriz. Aqui está um exemplo de como isso é usado:
+
+```javascript
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+
+itemTracker.push('item 3', 'item 4');
+
+console.log(itemTracker); 
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+```
+
+Então, como `.push()`funciona?
+
+* Acessamos o método  `push` usando a notação de ponto, conectando  o `itemTracker` 
+* Então chamamos isso de função.  O`.push()`ocorre porque é uma função que o JavaScript nos permite usar diretamente em uma matriz.
+* `.push()`pode levar um único argumento ou vários argumentos separados por vírgulas. Nesse caso, estamos adicionando dois elementos: `'item 3'`e `'item 4'`para `itemTracker`.
+* Observe que `.push()`muda, ou _se transforma_ , `itemTracker`. Você também pode ver `.push()`referido como um método de matriz _destrutiva_ , pois altera a matriz inicial.
+
 ### Escopo
 
 ### Expressões regulares
