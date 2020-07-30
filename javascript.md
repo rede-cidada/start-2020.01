@@ -793,8 +793,57 @@ Vamos revisar o que aconteceu no exemplo:
 
 Portanto, quando você passa um array para uma função, se o array estiver sido alterado dentro da função, essa alteração também será mantida fora da função. Você também pode ver esse conceito explicado como _passagem por referência,_ já que estamos passando a função de fato como uma referência para onde a memória variável está armazenada.
 
-  
 
+
+## Matrizes aninhadas
+
+Mencionamos anteriormente que matrizes podem armazenar outras matrizes. Quando uma matriz contém outra matriz, ela é conhecida como _matriz aninhada_ . Examine o exemplo abaixo:  
+  
+Mencionamos anteriormente que matrizes podem armazenar outras matrizes. Quando uma matriz contém outra matriz, ela é conhecida como _matriz aninhada_ . Examine o exemplo abaixo:
+
+```javascript
+const nestedArr = [[1], [2, 3]];
+```
+
+Para acessar as matrizes aninhadas, podemos usar a notação de colchete com o valor do índice, assim como fizemos para acessar qualquer outro elemento:
+
+```javascript
+const nestedArr = [[1], [2, 3]];
+
+console.log(nestedArr[1]); // Output: [2, 3]
+```
+
+Observe que `nestedArr[1]`o elemento do índice 1 será o array `[2, 3]`. Então, se quisermos acessar os elementos dentro da matriz aninhada, podemos _encadear_ ou adicionar mais notações de colchetes com valores de índice.  
+
+
+```javascript
+const nestedArr = [[1], [2, 3]];
+
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+```
+
+Na segunda declaração `console.log()`, temos duas notações de colchetes acorrentadas `nestedArr`. Sabemos que essa `nestedArr[1]`é a matriz `[2, 3]`. Então, para pegar o primeiro elemento desse array, usamos `nestedArr[1][0]`e obtemos o valor de `2`.
+
+## Revisar matrizes
+
+    Nesta assunto, aprendemos esses conceitos sobre matrizes:
+
+* Matrizes são listas que armazenam dados em JavaScript.
+* Matrizes são criadas com colchetes `[]`.
+* Cada item dentro de uma matriz está em uma posição numerada ou índice, começando em `0`.
+* Podemos acessar um item em uma matriz usando seu índice, com sintaxe como: `myArray[0]`.
+* Também podemos alterar um item em uma matriz usando seu índice, com sintaxe do tipo `myArray[0] = 'new string'`;
+* As matrizes têm uma propriedade `length`, que permite ver quantos itens estão em uma matriz.
+* As matrizes têm seus próprios métodos, incluindo `.push()`e `.pop()`, que adicionam e removem itens de uma matriz, respectivamente.
+* As matrizes têm muitos métodos que executam tarefas diferentes, como `.slice()`e `.shift()`, você pode encontrar documentação no site da [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) .
+* Alguns métodos internos estão em mutação, o que significa que o método alterará a matriz, enquanto outros não estão em mutação. Você sempre pode verificar a documentação.
+* Variáveis ​​que contêm matrizes podem ser declaradas com `let`ou `const`. Mesmo quando declarado com `const`, as matrizes ainda são mutáveis. No entanto, uma variável declarada com `const`não pode ser retribuída.
+* Matrizes mutáveis dentro de uma função manterão essa alteração mesmo fora da função.
+* Matrizes podem ser aninhadas dentro de outras matrizes.
+* Para acessar elementos em matrizes aninhadas, índices de cadeia usando notação de colchete.
+
+Aprender a trabalhar e manipular matrizes o ajudará a trabalhar com blocos de dados em JavaScript.
 
 ### Escopo
 
