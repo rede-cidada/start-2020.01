@@ -734,7 +734,71 @@ Então, como `.push()`funciona?
 * `.push()`pode levar um único argumento ou vários argumentos separados por vírgulas. Nesse caso, estamos adicionando dois elementos: `'item 3'`e `'item 4'`para `itemTracker`.
 * Observe que `.push()`muda, ou _se transforma_ , `itemTracker`. Você também pode ver `.push()`referido como um método de matriz _destrutiva_ , pois altera a matriz inicial.
 
+## O método .pop \(\)
+
+Outro método de matriz `.pop()`, remove o último item de uma matriz.
+
+```javascript
+const newItemTracker = ['item 0', 'item 1', 'item 2'];
+
+const removed = newItemTracker.pop();
+
+console.log(newItemTracker); 
+// Output: [ 'item 0', 'item 1' ]
+console.log(removed);
+// Output: item 2
+```
+
+* No exemplo acima, chamando `.pop()`a matriz `newItemTracker`removida `item 2`do final.
+* `.pop()`não aceita argumentos, simplesmente remove o último elemento de `newItemTracker`.
+* `.pop()`retorna o valor do último elemento. No exemplo, armazenamos o valor retornado em uma variável `removed`a ser usada para mais tarde.
+* `.pop()` é um método que modifica a matriz inicial.
+
+Quando você precisar alterar uma matriz removendo o último elemento, use `.pop()`.
+
+## Mais métodos de matriz
+
+Existem muitos outros métodos de matriz do que apenas `.push()`e `.pop()`. Você pode ler sobre todos os métodos de matriz existentes na [documentação da matriz](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) da [Mozilla Developer Network \(MDN\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) .
+
+`.pop()`e `.push()`modifique o array no qual eles são chamados. No entanto, há momentos em que não queremos alterar a matriz original e podemos usar métodos de matriz sem mutação. Verifique o MDN para entender o comportamento do método que você está usando.
+
+Algumas matrizes métodos que estão disponíveis para desenvolvedores de JavaScript incluem: `.join()`, `.slice()`, `.splice()`, `.shift()`, `.unshift()`, e `.concat()`entre muitos outros. O uso desses métodos internos facilita a execução de algumas tarefas comuns ao trabalhar com matrizes.
+
+Abaixo, exploraremos alguns métodos que ainda não aprendemos. Usaremos esses métodos para editar uma lista de compras. Ao concluir as etapas, você pode consultar a documentação do MDN para saber o que cada método faz!
+
+## Matrizes e funções
+
+Ao longo da lição, examinamos as matrizes que são mutáveis ​​ou mutáveis. Bem, o que acontece se tentarmos alterar uma matriz dentro de uma função? A matriz mantém a alteração após a chamada da função ou está dentro do escopo da função?
+
+Veja o exemplo a seguir, em que chamamos `.push()`uma matriz dentro de uma função. Lembre-se, o `.push()`método muda ou altera uma matriz:
+
+```javascript
+const flowers = ['peony', 'daffodil', 'marigold'];
+
+function addFlower(arr) {
+  arr.push('lily');
+}
+
+addFlower(flowers);
+
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+```
+
+Vamos revisar o que aconteceu no exemplo:
+
+* A matriz `flowers`  possui 3 elementos.
+* A função `addFlower()`possui um parâmetro de `arr` o método`.push()`vai adicionar o elemento`'lily'` no parâmetro`arr`.
+* Chamamos a função `addFlower()`como argumento para essa função vamos chamar a variável `flowers`que está armazenado o array e que executará o código dentro `addFlower`.
+* Verificamos o valor de `flowers`e agora inclui o `'lily'`elemento! A matriz foi alterada!
+
+Portanto, quando você passa um array para uma função, se o array estiver sido alterado dentro da função, essa alteração também será mantida fora da função. Você também pode ver esse conceito explicado como _passagem por referência,_ já que estamos passando a função de fato como uma referência para onde a memória variável está armazenada.
+
+  
+
+
 ### Escopo
+
+
 
 ### Expressões regulares
 
