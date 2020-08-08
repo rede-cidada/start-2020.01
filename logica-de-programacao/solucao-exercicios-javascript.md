@@ -2,8 +2,7 @@
 
 Introdução ao JavaScript - Exercício Aula 01 
 
-            O objetivo da atividade é colocar em prática os conceitos abordados na aula.  
-       
+            O objetivo da atividade é colocar em prática os conceitos abordados na aula.
 
 * introdução ao javascript 
 * Interatividade com os métodos nativos da linguagem
