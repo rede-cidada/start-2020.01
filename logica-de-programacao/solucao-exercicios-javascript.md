@@ -107,6 +107,8 @@ if (tempo === "nevando") {
 }
 ```
 
+Questão 3
+
 ```javascript
 
 let diaSemana = 'segunda-feira';
