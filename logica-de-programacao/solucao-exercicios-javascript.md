@@ -73,3 +73,68 @@ const frase = `<p>O programa StartLatam ${adjetivo} e ${verbo} muitas ${substant
 document.querySelector('main').innerHTML = frase;
 ```
 
+Introdução ao JavaScript - Exercício Aula 04   
+link do enunciado da questão
+
+```javascript
+
+// Criar uma condicional que verifica se tem saldo
+//suficente para a compra do produto.
+
+let preco = 100;
+let valorDinheiro = 50;
+
+if(valorDinheiro >=100){
+    console.log('compra efetuada com sucesso')
+}else{
+    console.log('a grana tá curta.')
+}
+```
+
+```javascript
+let tempo= "nevando";
+
+if (tempo === "nevando") {
+  console.log("usar um casaco");
+} else if (tempo === "chovendo") {
+  console.log("usar uma jaqueta.");
+} else {
+  console.log("hoje o está bom para roupas leves");
+}
+```
+
+```javascript
+
+let diaSemana = 'segunda-feira';
+
+switch(diaSemana){
+    case 'segunda-feira':
+    console.log('atividade física');
+    break;
+    
+    case 'terca-feira':
+    console.log('estudar Node')
+    break;
+
+    case 'quarta-feira':
+        console.log('atividade física')
+        break;
+
+    case 'quinta-feira':
+        console.log('faculdade')
+        break;
+
+    case 'sexta-feira':
+        console.log('inglês')
+        break;
+
+    case 'sábado':
+        console.log('Relaxar')
+        break; 
+        
+     default:
+         console.log('dia da semana inválido')   
+
+}
+```
+
