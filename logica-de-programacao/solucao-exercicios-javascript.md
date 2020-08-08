@@ -93,6 +93,8 @@ if(valorDinheiro >=100){
 }
 ```
 
+Questão 2
+
 ```javascript
 let tempo= "nevando";
 
