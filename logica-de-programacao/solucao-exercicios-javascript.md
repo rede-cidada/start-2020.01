@@ -39,10 +39,7 @@ Introdução ao JavaScript - Exercício Aula 01
 * sintaxe
 * tipos de dados
 
-1. **Declare uma variável e mostre no console do navegador.**
-2. **Declare outra variável e mostre com um alerta no navegador.**
-3. **Declare outra variável com uma mensagem de texto pedindo para o usuário clicar em um dos botões \(OK ou Cancel\).**
-4. **Declare uma variável e mostre no console do navegador, somente se essa variável for uma string**
+\*\*\*\*
 
   
   
