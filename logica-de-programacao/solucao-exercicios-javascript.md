@@ -60,6 +60,8 @@ let mensagem = 'Clique em um dos botões abaixo:';
 confirm(mensagem);
 ```
 
+4\)Declare uma variável e mostre no console do navegador somente se essa variável for uma string.
+
 ```javascript
 let nomeVariavel = 10;
 
