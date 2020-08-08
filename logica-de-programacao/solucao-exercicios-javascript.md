@@ -37,26 +37,32 @@ Introdução ao JavaScript - Exercício Aula 01
 * introdução ao javascript 
 * Interatividade com os métodos nativos da linguagem
 * sintaxe
-* tipos de dados
+* tipos de dados 
+
+1\) Declare uma variável e mostre no console do navegador
 
 ```javascript
 let nome = 'Patricia';
 console.log(nome);
 ```
 
-  
-  
-
-
 ```javascript
 let fruta = 'Banana';
 alert(fruta);
 ```
 
-
-
 ```javascript
 let mensagem = 'Clique em um dos botões abaixo:';
 confirm(mensagem);
+```
+
+```javascript
+let nomeVariavel = 10;
+
+if (typeof nomeVariavel === 'number') {
+  console.log(nomeVariavel); 
+  // essa mensagem só aparece se a minha variável for do 
+  //tipo string
+};
 ```
 
