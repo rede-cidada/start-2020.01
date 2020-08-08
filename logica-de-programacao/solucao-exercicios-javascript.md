@@ -74,7 +74,9 @@ document.querySelector('main').innerHTML = frase;
 ```
 
 Introdução ao JavaScript - Exercício Aula 04   
-link do enunciado da questão
+[link do enunciado da questão](https://docs.google.com/document/d/1HNhwtypK1Lg6J2mMUXGl6WDXeyjqRZuvynHgvqG0QDY/edit)
+
+Questão1
 
 ```javascript
 
