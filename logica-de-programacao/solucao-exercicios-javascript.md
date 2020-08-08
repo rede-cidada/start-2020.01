@@ -39,9 +39,24 @@ Introdução ao JavaScript - Exercício Aula 01
 * sintaxe
 * tipos de dados
 
-\*\*\*\*
+```javascript
+let nome = 'Patricia';
+console.log(nome);
+```
 
   
   
 
+
+```javascript
+let fruta = 'Banana';
+alert(fruta);
+```
+
+
+
+```javascript
+let mensagem = 'Clique em um dos botões abaixo:';
+confirm(mensagem);
+```
 
