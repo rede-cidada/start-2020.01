@@ -7,7 +7,7 @@ let nome = 'Patricia';
 console.log(nome);
 
 
-//Declare outra variável e mostre com um alerta no navegador
+//
 
 let fruta = 'Banana';
 alert(fruta);
@@ -46,10 +46,14 @@ let nome = 'Patricia';
 console.log(nome);
 ```
 
+2\) Declare outra variável e mostre com um alerta no navegador
+
 ```javascript
 let fruta = 'Banana';
 alert(fruta);
 ```
+
+3\) let mensagem = 'Clique em um dos botões abaixo:'; confirm\(mensagem\);
 
 ```javascript
 let mensagem = 'Clique em um dos botões abaixo:';
