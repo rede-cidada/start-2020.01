@@ -1,8 +1,5 @@
 # Solução Exercícios - JavaScript
 
-  
-Ex: 
-
 Introdução ao JavaScript - Exercício Aula 01 
 
             O objetivo da atividade é colocar em prática os conceitos abordados na aula.  
