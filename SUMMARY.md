@@ -21,4 +21,5 @@
 * [Variáveis/Constantes/Operadores/Tipos de Dados.](logica-de-programacao/variaveis-e-constantes.md)
 * [Estruturas de decisão e repetição](logica-de-programacao/estruturas-de-decisao-e-repeticao.md)
 * [Funções](logica-de-programacao/untitled-1.md)
+* [Solução Exercícios - JavaScript](logica-de-programacao/solucao-exercicios-javascript.md)
 
